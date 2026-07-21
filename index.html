@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maritime Stock Terminal</title>
+  <link rel="stylesheet" href="style.css?v=1.0.3">
+  <!-- Load Chart.js for Custom 20-Year Historical Chart -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <!-- Load TradingView Widget scripts -->
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <!-- Load jsPDF and jsPDF-AutoTable for Client-Side PDF Generation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.6.0/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+
+  <!-- Loading Overlay -->
+  <div id="hud-loader" class="hud-loader">
+    <div class="spinner"></div>
+    <p>INITIALIZING TERMINAL...</p>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="brand-hud" style="display: flex; align-items: center; gap: 14px;">
+      <div class="howe-robinson-logo-container" style="display: flex; align-items: stretch; height: 38px; border: 1.5px solid #003a6c; border-radius: 4px; overflow: hidden; background: #ffffff;">
+        <div style="display: flex; flex-direction: column; justify-content: stretch; width: 140px; text-shadow: none;">
+          <div style="background: #003a6c; color: #ffffff; display: flex; align-items: center; justify-content: center; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.65rem; letter-spacing: 1px; padding: 2px 6px; flex-grow: 1; text-transform: uppercase; line-height: 1.1;">
+            Howe Robinson
+          </div>
+          <div style="background: #cf2027; color: #ffffff; display: flex; align-items: center; justify-content: center; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.6rem; letter-spacing: 3.5px; padding: 2px 6px; flex-grow: 1; text-transform: uppercase; border-top: 1px solid #ffffff; line-height: 1.1;">
+            Partners
+          </div>
+        </div>
+        <div style="background: #ffffff; width: 38px; display: flex; align-items: center; justify-content: center; border-left: 1.5px solid #003a6c; padding: 3px;">
+          <svg viewBox="0 0 100 100" style="width: 100%; height: 100%;">
+            <path d="M 15,15 L 75,15 C 88,25 90,45 82,53 C 65,58 35,58 15,58 Z" fill="#003a6c" />
+            <path d="M 15,58 C 35,58 65,58 82,53 L 81,56 C 65,61 35,61 15,61 Z" fill="#ffffff" />
+            <path d="M 15,61 C 35,61 65,61 81,56 C 81,58 80,64 74,68 C 65,73 45,75 15,75 Z" fill="#cf2027" />
+            <path d="M 74,68 C 80,68 88,72 88,76 C 88,80 80,82 72,82 C 60,82 15,80 15,80 Z" fill="#cf2027" />
+          </svg>
+        </div>
+      </div>
+      <h1 style="font-size: 1.1rem; font-weight: 700; color: #ffffff; letter-spacing: 1px; text-transform: uppercase; margin: 0; background: none; -webkit-text-fill-color: initial; text-shadow: none;">Stock Terminal</h1>
+      <span class="status-tag">Live Feed</span>
+    </div>
+    <div id="market-time" class="market-time">SYS_TIME: --:--:--</div>
+  </header>
+
+  <!-- Scrolling Ticker Tape (Custom Bloomberg style) -->
+  <div class="ticker-tape-container">
+    <div class="ticker-tape-scroll">
+      <span style="color: var(--color-text-muted); font-size: 0.78rem; padding-left: 20px;">Connecting to market feeds...</span>
+    </div>
+  </div>
+
+  <!-- Main Terminal Layout -->
+  <div class="terminal-layout">
+    
+    <!-- Sidebar (Stock List) -->
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24">
+            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+          <input type="text" id="search-input" placeholder="Search shipping stocks...">
+        </div>
+        <div class="category-tabs">
+          <span class="category-tab active" data-category="all">All</span>
+          <span class="category-tab" data-category="Container">Container</span>
+          <span class="category-tab" data-category="Dry Bulk">Bulk</span>
+          <span class="category-tab" data-category="Tanker">Tanker</span>
+          <span class="category-tab" data-category="Gas Carrier">Gas</span>
+          <span class="category-tab" data-category="Ports & Logistics">Ports</span>
+          <span class="category-tab" data-category="Shipbuilding">Builders</span>
+          <span class="category-tab" data-category="Offshore">Offshore</span>
+          <span class="category-tab" data-category="Marine Services">Services</span>
+          <span class="category-tab" data-category="Diversified">Diversified</span>
+          <span class="category-tab" data-category="unlisted" style="border-color: var(--color-danger); color: rgba(255, 75, 75, 0.8);">Unlisted (50)</span>
+        </div>
+      </div>
+      
+      <!-- List of Stocks -->
+      <div id="stock-list" class="stock-list">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+
+    <!-- Main Display (Chart, Financials, News, Downloads) -->
+    <div class="main-display">
+      
+      <!-- Active Stock Details Banner -->
+      <div class="stock-detail-header">
+        <div class="stock-title-area">
+          <h2 id="active-name">Select a Stock</h2>
+          <div class="meta-info">
+            <span id="active-symbol">---</span> | 
+            <span id="active-region">---</span> | 
+            <span id="active-currency">---</span>
+          </div>
+        </div>
+        <div class="stock-metric-grid">
+          <div class="metric-box">
+            <div class="metric-label">Today's Rate</div>
+            <div id="active-price" class="metric-value">--.--</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-label">Yesterday's Rate</div>
+            <div id="active-close" class="metric-value">--.--</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-label">Daily Change</div>
+            <div id="active-daily-change" class="metric-value">--.--</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-label">Weekly Change (WoW)</div>
+            <div id="active-weekly-change" class="metric-value">--.--</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Chart Card -->
+      <div class="chart-card">
+        <div class="chart-header">
+          <h3 style="color: var(--color-primary); font-size: 0.95rem; text-transform: uppercase;">Performance Analytics</h3>
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <div id="chart-slider-container" style="display: flex; align-items: center; gap: 8px; font-size: 0.78rem; color: var(--color-text-muted);">
+              <span>Range:</span>
+              <input type="range" id="chart-year-slider" min="1" max="20" value="5" style="width: 80px; cursor: pointer; accent-color: var(--color-primary);">
+              <span id="chart-year-label" style="font-family: 'JetBrains Mono', monospace; font-weight: bold; color: var(--color-primary); width: 24px;">5Y</span>
+            </div>
+            <div class="chart-tabs">
+              <button class="chart-tab-btn active" onclick="switchChartTab('historical')">Historical</button>
+              <button class="chart-tab-btn" onclick="switchChartTab('tradingview')">Technical</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="chart-content">
+          <!-- 20-Year Historical Custom Time-Series (Chart.js) -->
+          <div id="historical-chart-container">
+            <canvas id="historyChart"></canvas>
+          </div>
+          
+          <!-- TradingView Interactive Widget Container -->
+          <div id="tradingview-chart-container">
+            <!-- Will be dynamically instantiated via TradingView SDK -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Panel: Rate Analysis + News + Download -->
+      <div class="bottom-panels three-col">
+        
+        <!-- Today's and Yesterday's Rates Display -->
+        <div class="panel-card">
+          <h3>Daily Rate Analysis</h3>
+          <div id="rate-analysis-content" style="padding-top: 10px; display: flex; flex-direction: column; gap: 12px;">
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+              <span>Today's Active Rate:</span>
+              <strong id="summary-today-rate" style="font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; color: var(--color-primary);">--.--</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+              <span>Yesterday's Close Rate:</span>
+              <strong id="summary-yesterday-rate" style="font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; color: var(--color-text-main);">--.--</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+              <span>Daily Rate Change:</span>
+              <strong id="summary-change" style="font-family: 'JetBrains Mono', monospace;">--.--</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+              <span>52-Week High:</span>
+              <strong id="summary-52w-high" style="font-family: 'JetBrains Mono', monospace; font-size: 1.05rem; color: var(--color-success);">--.--</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+              <span>52-Week Low:</span>
+              <strong id="summary-52w-low" style="font-family: 'JetBrains Mono', monospace; font-size: 1.05rem; color: var(--color-danger);">--.--</strong>
+            </div>
+            <p id="summary-text" style="font-size: 0.8rem; color: var(--color-text-muted); line-height: 1.4; margin-top: 4px;">
+              Select a stock to review real-time and historical pricing metrics.
+            </p>
+          </div>
+        </div>
+
+        <!-- Company News Feed -->
+        <div class="panel-card">
+          <h3>Latest News</h3>
+          <div id="news-feed-container" class="news-feed">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 8px; color: var(--color-text-muted);">
+              <svg viewBox="0 0 24 24" style="fill: var(--color-text-muted); width: 32px; height: 32px; opacity: 0.4;">
+                <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+              </svg>
+              <span style="font-size: 0.8rem;">Select a company to load news</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Download / Export Section -->
+        <div class="panel-card">
+          <h3>Export &amp; Download</h3>
+          <div id="export-section" style="padding-top: 10px; display: flex; flex-direction: column; gap: 14px; font-size: 0.85rem;">
+            
+            <!-- Single Company Export -->
+            <div class="export-option">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                <svg viewBox="0 0 24 24" style="fill: var(--color-primary); width: 20px; height: 20px;">
+                  <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                </svg>
+                <strong style="color: var(--color-primary);">Single Company Report</strong>
+              </div>
+              <p style="color: var(--color-text-muted); font-size: 0.78rem; margin-bottom: 8px;">
+                Download financial data for the selected company including rates, daily changes, and latest news headlines.
+              </p>
+              <button id="btn-export-single" class="export-btn" onclick="exportSingleCompany()" disabled>
+                <svg viewBox="0 0 24 24" style="fill: currentColor; width: 16px; height: 16px;">
+                  <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                </svg>
+                Download PDF Report
+              </button>
+            </div>
+
+            <div style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 12px;"></div>
+
+            <!-- Consolidated Category Export -->
+            <div class="export-option">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                <svg viewBox="0 0 24 24" style="fill: var(--color-secondary); width: 20px; height: 20px;">
+                  <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9h-4v4h-2v-4H9V9h4V5h2v4h4v2z"/>
+                </svg>
+                <strong style="color: var(--color-secondary);">Consolidated Category Report</strong>
+              </div>
+              <p style="color: var(--color-text-muted); font-size: 0.78rem; margin-bottom: 8px;">
+                Download all companies in a sector with financials in columns — ideal for comparing fleets.
+              </p>
+              <div class="sector-checkbox-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px 12px; margin-bottom: 12px; background: rgba(0,0,0,0.15); border: 1px solid rgba(255,255,255,0.05); padding: 8px 10px; border-radius: 4px; max-height: 120px; overflow-y: auto;">
+                <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem; font-weight: bold; color: var(--color-secondary);">
+                  <input type="checkbox" id="chk-all-sectors" checked onclick="toggleAllExportSectors(this)">
+                  All Sectors
+                </label>
+                <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                  <input type="checkbox" class="chk-export-sector" value="Container" checked onchange="updateAllSectorsCheckbox()">
+                  Container
+                </label>
+                <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                  <input type="checkbox" class="chk-export-sector" value="Dry Bulk" checked onchange="updateAllSectorsCheckbox()">
+                  Dry Bulk
+                </label>
+                <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                  <input type="checkbox" class="chk-export-sector" value="Tanker" checked onchange="updateAllSectorsCheckbox()">
+                  Tanker
+                </label>
+                <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                  <input type="checkbox" class="chk-export-sector" value="Gas Carrier" checked onchange="updateAllSectorsCheckbox()">
+                  Gas Carrier
+                </label>
+                <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                  <input type="checkbox" class="chk-export-sector" value="Ports & Logistics" checked onchange="updateAllSectorsCheckbox()">
+                  Ports & Logistics
+                </label>
+                <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                  <input type="checkbox" class="chk-export-sector" value="Shipbuilding" checked onchange="updateAllSectorsCheckbox()">
+                  Shipbuilding
+                </label>
+                <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                  <input type="checkbox" class="chk-export-sector" value="Offshore" checked onchange="updateAllSectorsCheckbox()">
+                  Offshore
+                </label>
+                <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                  <input type="checkbox" class="chk-export-sector" value="Marine Services" checked onchange="updateAllSectorsCheckbox()">
+                  Marine Services
+                </label>
+                <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                  <input type="checkbox" class="chk-export-sector" value="Diversified" checked onchange="updateAllSectorsCheckbox()">
+                  Diversified
+                </label>
+              </div>
+              <!-- Filter by Stock Exchange (Checkboxes) -->
+              <div style="margin-bottom: 12px; display: flex; flex-direction: column; gap: 4px;">
+                <label style="font-size: 0.76rem; color: var(--color-text-muted); font-weight: bold; display: flex; align-items: center; gap: 4px;">
+                  <svg viewBox="0 0 24 24" style="fill: var(--color-secondary); width: 14px; height: 14px;">
+                    <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/>
+                  </svg>
+                  Filter by Stock Exchange:
+                </label>
+                <div class="exchange-checkbox-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px 12px; background: rgba(0,0,0,0.15); border: 1px solid rgba(255,255,255,0.05); padding: 8px 10px; border-radius: 4px; max-height: 120px; overflow-y: auto;">
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem; font-weight: bold; color: var(--color-secondary);">
+                    <input type="checkbox" id="chk-all-exchanges" checked onclick="toggleAllExportExchanges(this)">
+                    All Exchanges
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                    <input type="checkbox" class="chk-export-exchange" value="US" checked onchange="updateAllExchangesCheckbox()">
+                    US (NYSE/NASDAQ)
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                    <input type="checkbox" class="chk-export-exchange" value="IN" checked onchange="updateAllExchangesCheckbox()">
+                    India (NSE/BSE)
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                    <input type="checkbox" class="chk-export-exchange" value="HK" checked onchange="updateAllExchangesCheckbox()">
+                    Hong Kong (HKEX)
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                    <input type="checkbox" class="chk-export-exchange" value="NO" checked onchange="updateAllExchangesCheckbox()">
+                    Oslo (OSE)
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                    <input type="checkbox" class="chk-export-exchange" value="JP" checked onchange="updateAllExchangesCheckbox()">
+                    Tokyo (TSE)
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                    <input type="checkbox" class="chk-export-exchange" value="MY" checked onchange="updateAllExchangesCheckbox()">
+                    Malaysia
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                    <input type="checkbox" class="chk-export-exchange" value="ID" checked onchange="updateAllExchangesCheckbox()">
+                    Indonesia (IDX)
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                    <input type="checkbox" class="chk-export-exchange" value="KR" checked onchange="updateAllExchangesCheckbox()">
+                    Korea (KRX)
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                    <input type="checkbox" class="chk-export-exchange" value="SG" checked onchange="updateAllExchangesCheckbox()">
+                    Singapore (SGX)
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                    <input type="checkbox" class="chk-export-exchange" value="TW" checked onchange="updateAllExchangesCheckbox()">
+                    Taiwan (TWSE)
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                    <input type="checkbox" class="chk-export-exchange" value="CN" checked onchange="updateAllExchangesCheckbox()">
+                    China (SSE/SZSE)
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                    <input type="checkbox" class="chk-export-exchange" value="TH" checked onchange="updateAllExchangesCheckbox()">
+                    Thailand (SET)
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                    <input type="checkbox" class="chk-export-exchange" value="AU" checked onchange="updateAllExchangesCheckbox()">
+                    Australia (ASX)
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                    <input type="checkbox" class="chk-export-exchange" value="GB" checked onchange="updateAllExchangesCheckbox()">
+                    London (LSE)
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                    <input type="checkbox" class="chk-export-exchange" value="DE" checked onchange="updateAllExchangesCheckbox()">
+                    Germany
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                    <input type="checkbox" class="chk-export-exchange" value="DK" checked onchange="updateAllExchangesCheckbox()">
+                    Denmark (OMXC)
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                    <input type="checkbox" class="chk-export-exchange" value="OtherEurope" checked onchange="updateAllExchangesCheckbox()">
+                    Other Europe
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.76rem;">
+                    <input type="checkbox" class="chk-export-exchange" value="OtherMarkets" checked onchange="updateAllExchangesCheckbox()">
+                    Other Global
+                  </label>
+                </div>
+              </div>
+
+              <button id="btn-export-consolidated" class="export-btn secondary" style="width: 100%;" onclick="exportConsolidated()">
+                <svg viewBox="0 0 24 24" style="fill: currentColor; width: 16px; height: 16px;">
+                  <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                </svg>
+                Download Consolidated PDF
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="app.js?v=1.0.3"></script>
+</body>
+</html>

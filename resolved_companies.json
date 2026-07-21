@@ -1,0 +1,1920 @@
+[
+  {
+    "symbol": "5077.KL",
+    "name": "Maybulk Berhad",
+    "category": "Dry Bulk",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "MAERSK-B.CO",
+    "name": "A. P. Moller Maersk A/S",
+    "category": "Container",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "5115.KL",
+    "name": "Alam Maritim Resources Berhad",
+    "category": "Offshore",
+    "region": "Asia",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "ASC",
+    "name": "Ardmore Shipping Corporation",
+    "category": "Tanker",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "ASB.AX",
+    "name": "Austal Limited",
+    "category": "Shipbuilding",
+    "region": "Global",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "AWQ.MU",
+    "name": "Awilco LNG ASA",
+    "category": "Gas Carrier",
+    "region": "Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "BLTA.JK",
+    "name": "PT Berlian Laju Tanker Tbk",
+    "category": "Tanker",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "BHP",
+    "name": "BHP Group Limited",
+    "category": "Diversified",
+    "region": "US/Global",
+    "industry": "Other Industrial Metals & Mining"
+  },
+  {
+    "symbol": "BORR",
+    "name": "Borr Drilling Limited",
+    "category": "Offshore",
+    "region": "US/Global",
+    "industry": "Oil & Gas Drilling"
+  },
+  {
+    "symbol": "8133.KL",
+    "name": "Boustead Heavy Industries Corporation Berhad",
+    "category": "Shipbuilding",
+    "region": "Asia",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "BHR",
+    "name": "Braemar Hotels & Resorts Inc.",
+    "category": "Marine Services",
+    "region": "US/Global",
+    "industry": "REIT—Hotel & Motel"
+  },
+  {
+    "symbol": "1PE.F",
+    "name": "BW LPG Limited",
+    "category": "Gas Carrier",
+    "region": "Europe",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "BWO.OL",
+    "name": "BW Offshore Limited",
+    "category": "Offshore",
+    "region": "Europe",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "2343.HK",
+    "name": "Pacific Basin Shipping Ltd",
+    "category": "Dry Bulk",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "N1M.F",
+    "name": "Capital Clean Energy Carriers Corp.",
+    "category": "Gas Carrier",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "CANI.JK",
+    "name": "PT Capitol Nusantara Indonesia Tbk",
+    "category": "Marine Services",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "028670.KS",
+    "name": "Pan Ocean Co., Ltd.",
+    "category": "Dry Bulk",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "600150.SS",
+    "name": "China CSSC Holdings Limited",
+    "category": "Shipbuilding",
+    "region": "Asia",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "601872.SS",
+    "name": "China Merchants Energy Shipping Co., Ltd.",
+    "category": "Tanker",
+    "region": "Asia",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "001872.SZ",
+    "name": "China Merchants Port Group Co., Ltd.",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "1DH.F",
+    "name": "Clarkson PLC",
+    "category": "Marine Services",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "0883.HK",
+    "name": "CNOOC Limited",
+    "category": "Diversified",
+    "region": "Asia",
+    "industry": "Oil & Gas E&P"
+  },
+  {
+    "symbol": "5071.KL",
+    "name": "Coastal Contracts Bhd",
+    "category": "Offshore",
+    "region": "Asia",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "COCHINSHIP.NS",
+    "name": "Cochin Shipyard Limited",
+    "category": "Shipbuilding",
+    "region": "Global",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "8050.HK",
+    "name": "City Coolxuan Company Limited",
+    "category": "Shipbuilding",
+    "region": "Asia",
+    "industry": "Information Technology Services"
+  },
+  {
+    "symbol": "CITAF",
+    "name": "COSCO SHIPPING Development Co., Ltd.",
+    "category": "Shipbuilding",
+    "region": "Global",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "HIFH.F",
+    "name": "COSCO SHIPPING Energy Transportation Co., Ltd.",
+    "category": "Ports & Logistics",
+    "region": "Europe",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "C6G.F",
+    "name": "COSCO SHIPPING Holdings Co., Ltd.",
+    "category": "Container",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "CSB.F",
+    "name": "COSCO SHIPPING International (Hong Kong) Co., Ltd.",
+    "category": "Shipbuilding",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "F83.SI",
+    "name": "COSCO SHIPPING International (Singapore) Co., Ltd.",
+    "category": "Shipbuilding",
+    "region": "Asia",
+    "industry": "Integrated Freight & Logistics"
+  },
+  {
+    "symbol": "CTH.F",
+    "name": "COSCO SHIPPING Ports Limited",
+    "category": "Ports & Logistics",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "600428.SS",
+    "name": "COSCO SHIPPING Specialized Carriers Co.,Ltd.",
+    "category": "Container",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "CMDB",
+    "name": "Costamare Bulkers Holdings Limited",
+    "category": "Dry Bulk",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "TMI.L",
+    "name": "Taylor Maritime Limited",
+    "category": "Diversified",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "3LL.F",
+    "name": "CSSC (Hong Kong) Shipping Company Limited",
+    "category": "Shipbuilding",
+    "region": "Europe",
+    "industry": "Rental & Leasing Services"
+  },
+  {
+    "symbol": "0317.HK",
+    "name": "CSSC Offshore & Marine Engineering (Group) Company Limited",
+    "category": "Offshore",
+    "region": "Asia",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "CISS",
+    "name": "C3is Inc.",
+    "category": "Dry Bulk",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "DAC",
+    "name": "Danaos Corporation",
+    "category": "Container",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "29K.F",
+    "name": "DFDS A/S",
+    "category": "Ports & Logistics",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "DHT",
+    "name": "DHT Holdings, Inc.",
+    "category": "Tanker",
+    "region": "US/Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "CTRM",
+    "name": "Castor Maritime Inc.",
+    "category": "Diversified",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "DOFG.OL",
+    "name": "DOF Group ASA",
+    "category": "Offshore",
+    "region": "Europe",
+    "industry": "Engineering & Construction"
+  },
+  {
+    "symbol": "LPG",
+    "name": "Dorian LPG Ltd.",
+    "category": "Gas Carrier",
+    "region": "US/Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "DREDGECORP.BO",
+    "name": "Dredging Corporation of India Limited",
+    "category": "Marine Services",
+    "region": "India",
+    "industry": "Engineering & Construction"
+  },
+  {
+    "symbol": "DGL.MU",
+    "name": "Dynagas LNG Partners LP",
+    "category": "Gas Carrier",
+    "region": "Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "ESSARSHPNG.BO",
+    "name": "Essar Shipping Limited",
+    "category": "Offshore",
+    "region": "India",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "EDRY",
+    "name": "EuroDry Ltd.",
+    "category": "Dry Bulk",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "EHLD",
+    "name": "Euroholdings Ltd.",
+    "category": "Dry Bulk",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "EUK3.HM",
+    "name": "EUROKAI GmbH & Co KGaA",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "2LE1.F",
+    "name": "Euroseas Ltd.",
+    "category": "Container",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "2603.TW",
+    "name": "Evergreen Marine Corporation (Taiwan) Ltd.",
+    "category": "Container",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "EE",
+    "name": "Excelerate Energy, Inc.",
+    "category": "Gas Carrier",
+    "region": "US/Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "1EX.SG",
+    "name": "Exmar NV",
+    "category": "Offshore",
+    "region": "Global",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "1F80.F",
+    "name": "Fincantieri S.p.A.",
+    "category": "Shipbuilding",
+    "region": "Europe",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "FLNG",
+    "name": "FLEX LNG Ltd.",
+    "category": "Gas Carrier",
+    "region": "US/Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "FMG.AX",
+    "name": "Fortescue Ltd",
+    "category": "Diversified",
+    "region": "Global",
+    "industry": "Other Industrial Metals & Mining"
+  },
+  {
+    "symbol": "FRO",
+    "name": "Frontline plc",
+    "category": "Tanker",
+    "region": "US/Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "2238.HK",
+    "name": "Guangzhou Automobile Group Co., Ltd.",
+    "category": "Diversified",
+    "region": "Asia",
+    "industry": "Auto Manufacturers"
+  },
+  {
+    "symbol": "GRSE.BO",
+    "name": "Garden Reach Shipbuilders & Engineers Limited",
+    "category": "Shipbuilding",
+    "region": "India",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "0G93.F",
+    "name": "Globus Maritime Limited",
+    "category": "Dry Bulk",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "GLEN.L",
+    "name": "Glencore plc",
+    "category": "Diversified",
+    "region": "Europe",
+    "industry": "Other Industrial Metals & Mining"
+  },
+  {
+    "symbol": "GSL",
+    "name": "Global Ship Lease, Inc.",
+    "category": "Container",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "GLNG",
+    "name": "Golar LNG Limited",
+    "category": "Gas Carrier",
+    "region": "US/Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "SVRN",
+    "name": "OceanPal Inc.",
+    "category": "Dry Bulk",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "GNDP.JO",
+    "name": "Grindrod Limited",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Integrated Freight & Logistics"
+  },
+  {
+    "symbol": "GPPL.BO",
+    "name": "Gujarat Pipavav Port Limited",
+    "category": "Ports & Logistics",
+    "region": "India",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "HATM.JK",
+    "name": "PT Habco Trans Maritima Tbk",
+    "category": "Dry Bulk",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "RE0.F",
+    "name": "Hafnia Limited",
+    "category": "Tanker",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "HHFA.MU",
+    "name": "Hamburger Hafen und Logistik AG",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "042660.KS",
+    "name": "Hanwha Ocean Co., Ltd.",
+    "category": "Shipbuilding",
+    "region": "Asia",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "HLAG.DE",
+    "name": "Hapag-Lloyd Aktiengesellschaft",
+    "category": "Container",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "HAIS.JK",
+    "name": "PT Hasnur Internasional Shipping Tbk",
+    "category": "Tanker",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "329180.KS",
+    "name": "HD Hyundai Heavy Industries Co., Ltd.",
+    "category": "Shipbuilding",
+    "region": "Asia",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "009540.KS",
+    "name": "HD Korea Shipbuilding & Offshore Engineering Co., Ltd.",
+    "category": "Offshore",
+    "region": "Asia",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "AW4.F",
+    "name": "Heidmar Maritime Holdings Corp.",
+    "category": "Marine Services",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "HLX",
+    "name": "Helix Energy Solutions Group, Inc.",
+    "category": "Offshore",
+    "region": "US/Global",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "PANL",
+    "name": "Pangaea Logistics Solutions Ltd.",
+    "category": "Dry Bulk",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "HMMCF",
+    "name": "HEMLO MINING CORP.",
+    "category": "Diversified",
+    "region": "Global",
+    "industry": "Gold"
+  },
+  {
+    "symbol": "7013.KL",
+    "name": "Hubline Berhad",
+    "category": "Container",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "HUMI.JK",
+    "name": "PT Humpuss Maritim Internasional Tbk",
+    "category": "Tanker",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "086280.KS",
+    "name": "Hyundai Glovis Co., Ltd.",
+    "category": "Ports & Logistics",
+    "region": "Asia",
+    "industry": "Integrated Freight & Logistics"
+  },
+  {
+    "symbol": "ICON",
+    "name": "Icon Energy Corp.",
+    "category": "Marine Services",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "1UD.F",
+    "name": "Iino Kaiun Kaisha, Ltd.",
+    "category": "Tanker",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "ICTEF",
+    "name": "International Container Terminal Services, Inc.",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "INSW",
+    "name": "International Seaways, Inc.",
+    "category": "Tanker",
+    "region": "US/Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "IR5B.F",
+    "name": "Irish Continental Group plc",
+    "category": "Ports & Logistics",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "8001.T",
+    "name": "ITOCHU Corporation",
+    "category": "Diversified",
+    "region": "Asia",
+    "industry": "Conglomerates"
+  },
+  {
+    "symbol": "SHIP",
+    "name": "Seanergy Maritime Holdings Corp",
+    "category": "Dry Bulk",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "JSWINFRA.NS",
+    "name": "JSW Infrastructure Limited",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "009540.KS",
+    "name": "HD Korea Shipbuilding & Offshore Engineering Co., Ltd.",
+    "category": "Offshore",
+    "region": "Asia",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "7012.T",
+    "name": "Kawasaki Heavy Industries, Ltd.",
+    "category": "Shipbuilding",
+    "region": "Asia",
+    "industry": "Conglomerates"
+  },
+  {
+    "symbol": "9107.T",
+    "name": "Kawasaki Kisen Kaisha, Ltd.",
+    "category": "Container",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "KEX",
+    "name": "Kirby Corporation",
+    "category": "Ports & Logistics",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "KNOP",
+    "name": "KNOT Offshore Partners LP",
+    "category": "Offshore",
+    "region": "US/Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "005880.KS",
+    "name": "Korea Line Corporation",
+    "category": "Dry Bulk",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "044450.KS",
+    "name": "KSS Line Ltd.",
+    "category": "Dry Bulk",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "9130.T",
+    "name": "Kyoei Tanker Co., Ltd.",
+    "category": "Tanker",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "5LY.SI",
+    "name": "Marco Polo Marine Ltd.",
+    "category": "Marine Services",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "8002.T",
+    "name": "Marubeni Corporation",
+    "category": "Diversified",
+    "region": "Asia",
+    "industry": "Conglomerates"
+  },
+  {
+    "symbol": "MATX",
+    "name": "Matson, Inc.",
+    "category": "Container",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "SBLK",
+    "name": "Star Bulk Carriers Corp.",
+    "category": "Dry Bulk",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "MAZDOCK.BO",
+    "name": "Mazagon Dock Shipbuilders Limited",
+    "category": "Shipbuilding",
+    "region": "India",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "9115.T",
+    "name": "Meiji Shipping Group Co., Ltd.",
+    "category": "Container",
+    "region": "Asia",
+    "industry": "Integrated Freight & Logistics"
+  },
+  {
+    "symbol": "DU4.SI",
+    "name": "Mermaid Maritime Public Company Limited",
+    "category": "Offshore",
+    "region": "Asia",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "3816.KL",
+    "name": "MISC Berhad",
+    "category": "Tanker",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "MBSS.JK",
+    "name": "PT Mitrabahtera Segara Sejati Tbk",
+    "category": "Tanker",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "8058.T",
+    "name": "Mitsubishi Corporation",
+    "category": "Diversified",
+    "region": "Asia",
+    "industry": "Conglomerates"
+  },
+  {
+    "symbol": "7011.T",
+    "name": "Mitsubishi Heavy Industries, Ltd.",
+    "category": "Shipbuilding",
+    "region": "Asia",
+    "industry": "Specialty Industrial Machinery"
+  },
+  {
+    "symbol": "8031.T",
+    "name": "Mitsui & Co., Ltd.",
+    "category": "Diversified",
+    "region": "Asia",
+    "industry": "Conglomerates"
+  },
+  {
+    "symbol": "7003.T",
+    "name": "MITSUI E&S Co., Ltd.",
+    "category": "Shipbuilding",
+    "region": "Asia",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "MSLOF",
+    "name": "Mitsui O.S.K. Lines, Ltd.",
+    "category": "Container",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "MP2.F",
+    "name": "MPC Container Ships ASA",
+    "category": "Container",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "5352.KL",
+    "name": "MTT Shipping and Logistics Berhad",
+    "category": "Container",
+    "region": "Asia",
+    "industry": "Integrated Freight & Logistics"
+  },
+  {
+    "symbol": "QGTS.QA",
+    "name": "Qatar Gas Transport Company Limited (Nakilat) (QPSC)",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "8AF.DU",
+    "name": "Namura Shipbuilding Co Ltd",
+    "category": "Shipbuilding",
+    "region": "Global",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "1NV.MU",
+    "name": "Navigator Holdings Ltd",
+    "category": "Gas Carrier",
+    "region": "Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "NMM",
+    "name": "Navios Maritime Partners L.P.",
+    "category": "Container",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "NESTE.HE",
+    "name": "Neste Oyj",
+    "category": "Diversified",
+    "region": "Global",
+    "industry": "Oil & Gas Refining & Marketing"
+  },
+  {
+    "symbol": "NFE",
+    "name": "New Fortress Energy Inc.",
+    "category": "Gas Carrier",
+    "region": "US/Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "601022.SS",
+    "name": "Ningbo Ocean Shipping Co., Ltd.",
+    "category": "Container",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "NPSCY",
+    "name": "Nippon Steel Corporation",
+    "category": "Diversified",
+    "region": "Global",
+    "industry": "Steel"
+  },
+  {
+    "symbol": "9101.T",
+    "name": "Nippon Yusen Kabushiki Kaisha",
+    "category": "Container",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "NE",
+    "name": "Noble Corporation plc",
+    "category": "Offshore",
+    "region": "US/Global",
+    "industry": "Oil & Gas Drilling"
+  },
+  {
+    "symbol": "NAT",
+    "name": "Nordic American Tankers Limited",
+    "category": "Tanker",
+    "region": "US/Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "YS9.F",
+    "name": "United Maritime Corporation",
+    "category": "Dry Bulk",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "8WN.F",
+    "name": "NS United Kaiun Kaisha, Ltd.",
+    "category": "Dry Bulk",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "OII",
+    "name": "Oceaneering International, Inc.",
+    "category": "Offshore",
+    "region": "US/Global",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "CMDB",
+    "name": "Costamare Bulkers Holdings Limited",
+    "category": "Dry Bulk",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "ODLO.OL",
+    "name": "Odfjell Drilling Ltd",
+    "category": "Offshore",
+    "region": "Europe",
+    "industry": "Maritime Transport"
+  },
+  {
+    "symbol": "0316.HK",
+    "name": "Orient Overseas (International) Limited",
+    "category": "Container",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "DSX",
+    "name": "Diana Shipping Inc.",
+    "category": "Dry Bulk",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "GNK",
+    "name": "Genco Shipping & Trading Limited",
+    "category": "Dry Bulk",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "BTM.SI",
+    "name": "Penguin International Limited",
+    "category": "Shipbuilding",
+    "region": "Asia",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "PEN.TA",
+    "name": "Peninsula Group Ltd",
+    "category": "Marine Services",
+    "region": "Global",
+    "industry": "Credit Services"
+  },
+  {
+    "symbol": "7108.KL",
+    "name": "Perdana Petroleum Berhad",
+    "category": "Offshore",
+    "region": "Asia",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "PSHG",
+    "name": "Performance Shipping Inc.",
+    "category": "Tanker",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "PBR",
+    "name": "Petróleo Brasileiro S.A. - Petrobras",
+    "category": "Diversified",
+    "region": "US/Global",
+    "industry": "Oil & Gas Integrated"
+  },
+  {
+    "symbol": "601857.SS",
+    "name": "PetroChina Company Limited",
+    "category": "Diversified",
+    "region": "Asia",
+    "industry": "Oil & Gas Integrated"
+  },
+  {
+    "symbol": "0FHO.L",
+    "name": "Piraeus Port Authority S.A.",
+    "category": "Ports & Logistics",
+    "region": "Europe",
+    "industry": "Maritime Transport"
+  },
+  {
+    "symbol": "PKF1.F",
+    "name": "Port of Tauranga Limited",
+    "category": "Ports & Logistics",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "PKX",
+    "name": "POSCO Holdings Inc.",
+    "category": "Diversified",
+    "region": "US/Global",
+    "industry": "Steel"
+  },
+  {
+    "symbol": "HSHP",
+    "name": "Himalaya Shipping Ltd.",
+    "category": "Dry Bulk",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "PXS",
+    "name": "Pyxis Tankers Inc.",
+    "category": "Tanker",
+    "region": "US/Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "QGTS.QA",
+    "name": "Qatar Gas Transport Company Limited (Nakilat) (QPSC)",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "QUB.AX",
+    "name": "Qube Holdings Limited",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Integrated Freight & Logistics"
+  },
+  {
+    "symbol": "RCL-R.BK",
+    "name": "Regional Container Lines Public Company Limited",
+    "category": "Container",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "RIO",
+    "name": "Rio Tinto Group",
+    "category": "Diversified",
+    "region": "US/Global",
+    "industry": "Other Industrial Metals & Mining"
+  },
+  {
+    "symbol": "SB",
+    "name": "Safe Bulkers, Inc.",
+    "category": "Dry Bulk",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "SPM.MI",
+    "name": "Saipem SpA",
+    "category": "Offshore",
+    "region": "Europe",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "010140.KS",
+    "name": "Samsung Heavy Industries Co., Ltd.",
+    "category": "Shipbuilding",
+    "region": "Asia",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "SMDR.JK",
+    "name": "PT Samudera Indonesia Tbk",
+    "category": "Container",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "S56.SI",
+    "name": "Samudera Shipping Line Ltd",
+    "category": "Container",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "7022.T",
+    "name": "Sanoyas Holdings Corporation",
+    "category": "Shipbuilding",
+    "region": "Asia",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "2223.SR",
+    "name": "Saudi Aramco Base Oil Company - Luberef",
+    "category": "Diversified",
+    "region": "Middle East",
+    "industry": "Oil & Gas Refining & Marketing"
+  },
+  {
+    "symbol": "SBMO.AS",
+    "name": "SBM Offshore N.V.",
+    "category": "Offshore",
+    "region": "Global",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "STNG",
+    "name": "Scorpio Tankers Inc.",
+    "category": "Tanker",
+    "region": "US/Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "SMHI",
+    "name": "SEACOR Marine Holdings Inc.",
+    "category": "Offshore",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "SDRL",
+    "name": "Seadrill Limited",
+    "category": "Offshore",
+    "region": "US/Global",
+    "industry": "Oil & Gas Drilling"
+  },
+  {
+    "symbol": "5145.KL",
+    "name": "Sealink International Berhad",
+    "category": "Marine Services",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "SEAMECLTD.NS",
+    "name": "Seamec Limited",
+    "category": "Marine Services",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "5E2.SI",
+    "name": "Seatrium Ltd",
+    "category": "Offshore",
+    "region": "Asia",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "SFL",
+    "name": "SFL Corporation Ltd.",
+    "category": "Tanker",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "S5H0.SG",
+    "name": "Siem Offshore Inc",
+    "category": "Offshore",
+    "region": "Global",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "SHIP.JK",
+    "name": "PT Sillo Maritime Perdana Tbk",
+    "category": "Offshore",
+    "region": "Global",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "J4O.F",
+    "name": "Jinhui Shipping and Transportation Limited",
+    "category": "Ports & Logistics",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "000852.SZ",
+    "name": "Sinopec Oilfield Equipment Corporation",
+    "category": "Offshore",
+    "region": "Global",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "1308.HK",
+    "name": "SITC International Holdings Company Limited",
+    "category": "Container",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "SOCI.JK",
+    "name": "PT Soechi Lines Tbk",
+    "category": "Tanker",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "SZL.DU",
+    "name": "Solstad Offshore ASA          N",
+    "category": "Offshore",
+    "region": "Global",
+    "industry": "Maritime Transport"
+  },
+  {
+    "symbol": "7EJ.F",
+    "name": "Western Bulk Chartering AS",
+    "category": "Dry Bulk",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "GASS",
+    "name": "StealthGas Inc.",
+    "category": "Gas Carrier",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "SNIO.OL",
+    "name": "Stolt-Nielsen Ltd.",
+    "category": "Tanker",
+    "region": "Europe",
+    "industry": "Maritime Transport"
+  },
+  {
+    "symbol": "SUBCO.XD",
+    "name": "Subsea 7 SA",
+    "category": "Offshore",
+    "region": "Global",
+    "industry": "Maritime Transport"
+  },
+  {
+    "symbol": "SSUMY",
+    "name": "Sumitomo Corporation",
+    "category": "Diversified",
+    "region": "Global",
+    "industry": "Conglomerates"
+  },
+  {
+    "symbol": "2020.OL",
+    "name": "2020 Bulkers Ltd.",
+    "category": "Dry Bulk",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "TALLINK.HE",
+    "name": "AS Tallink Grupp",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "PSL.BK",
+    "name": "Precious Shipping Public Company Limited",
+    "category": "Dry Bulk",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "FTI",
+    "name": "TechnipFMC plc",
+    "category": "Offshore",
+    "region": "US/Global",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "TNK",
+    "name": "Teekay Tankers Ltd.",
+    "category": "Tanker",
+    "region": "US/Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "GESHIP.BO",
+    "name": "The Great Eastern Shipping Company Limited",
+    "category": "Tanker",
+    "region": "India",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "SCI.BO",
+    "name": "The Shipping Corporation of India Limited",
+    "category": "Tanker",
+    "region": "India",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "OLTH.AT",
+    "name": "Thessaloniki Port Authority Societe Anonyme",
+    "category": "Ports & Logistics",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "TTA.BK",
+    "name": "Thoresen Thai Agencies Public Company Limited",
+    "category": "Dry Bulk",
+    "region": "Global",
+    "industry": "Conglomerates"
+  },
+  {
+    "symbol": "TDW",
+    "name": "Tidewater Inc.",
+    "category": "Offshore",
+    "region": "US/Global",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "TOPS",
+    "name": "Top Ships Inc.",
+    "category": "Tanker",
+    "region": "US/Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "TORO",
+    "name": "Toro Corp.",
+    "category": "Tanker",
+    "region": "US/Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "TPMA.JK",
+    "name": "PT Trans Power Marine Tbk",
+    "category": "Dry Bulk",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "TCPI.JK",
+    "name": "PT Transcoal Pacific Tbk",
+    "category": "Dry Bulk",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "RIG",
+    "name": "Transocean Ltd.",
+    "category": "Offshore",
+    "region": "US/Global",
+    "industry": "Oil & Gas Drilling"
+  },
+  {
+    "symbol": "2510.HK",
+    "name": "T.S. Lines Limited",
+    "category": "Container",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "TEN",
+    "name": "Tsakos Energy Navigation Limited",
+    "category": "Tanker",
+    "region": "US/Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "5608.TW",
+    "name": "Shih Wei Navigation Co., Ltd.",
+    "category": "Dry Bulk",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "2641.TWO",
+    "name": "Franbo Lines Corp.",
+    "category": "Container",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "VAL",
+    "name": "Valaris Limited",
+    "category": "Offshore",
+    "region": "US/Global",
+    "industry": "Oil & Gas Drilling"
+  },
+  {
+    "symbol": "VALE",
+    "name": "Vale S.A.",
+    "category": "Diversified",
+    "region": "US/Global",
+    "industry": "Other Industrial Metals & Mining"
+  },
+  {
+    "symbol": "1VK.F",
+    "name": "Viking Line Abp",
+    "category": "Ports & Logistics",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "WILWY",
+    "name": "Wallenius Wilhelmsen ASA",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "2615.TW",
+    "name": "Wan Hai Lines Ltd.",
+    "category": "Container",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "WML2.F",
+    "name": "Wilh. Wilhelmsen Holding ASA",
+    "category": "Ports & Logistics",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "WINS.JK",
+    "name": "PT Wintermar Offshore Marine Tbk",
+    "category": "Offshore",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "ACH.F",
+    "name": "Algoma Central Corporation",
+    "category": "Ports & Logistics",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "WKC",
+    "name": "World Kinect Corporation",
+    "category": "Ports & Logistics",
+    "region": "US/Global",
+    "industry": "Oil & Gas Refining & Marketing"
+  },
+  {
+    "symbol": "2609.TW",
+    "name": "Yang Ming Marine Transport Corporation",
+    "category": "Ports & Logistics",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "YSHLF",
+    "name": "Yangzijiang Shipbuilding (Holdings) Ltd.",
+    "category": "Shipbuilding",
+    "region": "Global",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "ZIM",
+    "name": "ZIM Integrated Shipping Services Ltd.",
+    "category": "Container",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "2605.TW",
+    "name": "Sincere Navigation Corporation",
+    "category": "Container",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "KCC.OL",
+    "name": "Klaveness Combination Carriers ASA",
+    "category": "Dry Bulk",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "ECO",
+    "name": "Okeanis Eco Tankers Corp.",
+    "category": "Tanker",
+    "region": "US/Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "CA2.F",
+    "name": "Cadeler A/S",
+    "category": "Offshore",
+    "region": "Europe",
+    "industry": "Engineering & Construction"
+  },
+  {
+    "symbol": "PRS.OL",
+    "name": "Prosafe SE",
+    "category": "Offshore",
+    "region": "Europe",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "DEME.BR",
+    "name": "DEME Group NV",
+    "category": "Offshore",
+    "region": "Global",
+    "industry": "Engineering & Construction"
+  },
+  {
+    "symbol": "B7C0.F",
+    "name": "d'Amico International Shipping S.A.",
+    "category": "Tanker",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "TK",
+    "name": "Teekay Corporation Ltd.",
+    "category": "Tanker",
+    "region": "US/Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "AR2.F",
+    "name": "Imperial Petroleum Inc.",
+    "category": "Tanker",
+    "region": "Europe",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "6FJ.F",
+    "name": "James Fisher and Sons plc",
+    "category": "Offshore",
+    "region": "Europe",
+    "industry": "Maritime Transport"
+  },
+  {
+    "symbol": "ERAG.DE",
+    "name": "Ernst Russ AG",
+    "category": "Offshore",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "2617.TW",
+    "name": "Taiwan Navigation Co., Ltd.",
+    "category": "Container",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "4RS.F",
+    "name": "Reach Subsea ASA",
+    "category": "Offshore",
+    "region": "Europe",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "D8DU.SI",
+    "name": "First Ship Lease Trust",
+    "category": "Offshore",
+    "region": "Asia",
+    "industry": "Rental & Leasing Services"
+  },
+  {
+    "symbol": "WPC.SI",
+    "name": "Vallianz Holdings Limited",
+    "category": "Offshore",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "5UL.SI",
+    "name": "Atlantic Navigation Holdings (Singapore) Limited",
+    "category": "Offshore",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "BEZ.SI",
+    "name": "Beng Kuang Marine Limited",
+    "category": "Offshore",
+    "region": "Asia",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "5G2.SI",
+    "name": "Kim Heng Limited",
+    "category": "Offshore",
+    "region": "Asia",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  {
+    "symbol": "2606.TW",
+    "name": "U-Ming Marine Transport Corporation",
+    "category": "Ports & Logistics",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "2637.TW",
+    "name": "Wisdom Marine Lines Co., Limited (Cayman)",
+    "category": "Dry Bulk",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "2601.TW",
+    "name": "First Steamship Co., Ltd.",
+    "category": "Container",
+    "region": "Asia",
+    "industry": "Department Stores"
+  },
+  {
+    "symbol": "2612.TW",
+    "name": "Chinese Maritime Transport Ltd.",
+    "category": "Ports & Logistics",
+    "region": "Asia",
+    "industry": "Integrated Freight & Logistics"
+  },
+  {
+    "symbol": "HAH.VN",
+    "name": "Hai An Transport And Stevedoring Joint Stock Company",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "VTO.VN",
+    "name": "Vietnam Tanker Joint Stock Company",
+    "category": "Tanker",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "BULL.JK",
+    "name": "PT Buana Lintas Lautan Tbk",
+    "category": "Dry Bulk",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "ELPI.JK",
+    "name": "PT Pelayaran Nasional Ekalya Purnamasari Tbk",
+    "category": "Dry Bulk",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "TIO.AX",
+    "name": "TEMASRES CDI 1:1 [TIO]",
+    "category": "Diversified",
+    "region": "Global",
+    "industry": "Other Industrial Metals & Mining"
+  },
+  {
+    "symbol": "GTSI.JK",
+    "name": "PT GTS Internasional Tbk",
+    "category": "Dry Bulk",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "5173.KL",
+    "name": "Shin Yang Group Berhad",
+    "category": "Shipbuilding",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "2062.KL",
+    "name": "Harbour-Link Group Berhad",
+    "category": "Ports & Logistics",
+    "region": "Asia",
+    "industry": "Integrated Freight & Logistics"
+  },
+  {
+    "symbol": "5246.KL",
+    "name": "Westports Holdings Berhad",
+    "category": "Ports & Logistics",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "5149.KL",
+    "name": "TAS Offshore Berhad",
+    "category": "Offshore",
+    "region": "Asia",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "PRM.BK",
+    "name": "Prima Marine Public Company Limited",
+    "category": "Gas Carrier",
+    "region": "Global",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "AMA-R.BK",
+    "name": "Ama Marine Public Company Limited",
+    "category": "Offshore",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "ASIMAR.BK",
+    "name": "Asian Marine Services Public Company Limited",
+    "category": "Marine Services",
+    "region": "Global",
+    "industry": "Aerospace & Defense"
+  },
+  {
+    "symbol": "600018.SS",
+    "name": "Shanghai International Port (Group) Co., Ltd.",
+    "category": "Ports & Logistics",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "601018.SS",
+    "name": "Ningbo Zhoushan Port Company Limited",
+    "category": "Ports & Logistics",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "0QP.MU",
+    "name": "Qingdao Port International Co Ltd",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "601975.SS",
+    "name": "Nanjing Tanker Corporation",
+    "category": "Tanker",
+    "region": "Asia",
+    "industry": "Oil & Gas Midstream"
+  },
+  {
+    "symbol": "600798.SS",
+    "name": "Ningbo Marine Company Limited",
+    "category": "Container",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "000582.SZ",
+    "name": "Beibu Gulf Port Co., Ltd.",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "601228.SS",
+    "name": "Guangzhou Port Company Limited",
+    "category": "Ports & Logistics",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "601000.SS",
+    "name": "TangShan Port Group Co.,Ltd",
+    "category": "Ports & Logistics",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "3382.HK",
+    "name": "Tianjin Port Development Holdings Limited",
+    "category": "Ports & Logistics",
+    "region": "Asia",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "D7P.MU",
+    "name": "Liaoning Port Co Ltd",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "K7N.F",
+    "name": "Rizhao Port Jurong Co., Ltd.",
+    "category": "Ports & Logistics",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "000905.SZ",
+    "name": "Xiamen Port Development Co., Ltd.",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "HBSA3.SA",
+    "name": "Hidrovias do Brasil S.A.",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Integrated Freight & Logistics"
+  },
+  {
+    "symbol": "SMSAAM.SN",
+    "name": "Sociedad Matriz SAAM S.A.",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "VSSAB-B.ST",
+    "name": "Viking Supply Ships AB (publ)",
+    "category": "Offshore",
+    "region": "Global",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "EIM.IC",
+    "name": "Eimskipafélag Íslands hf.",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Integrated Freight & Logistics"
+  },
+  {
+    "symbol": "CYJBY",
+    "name": "Hiab Oyj",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Farm & Heavy Construction Machinery"
+  },
+  {
+    "symbol": "K34.DU",
+    "name": "Konecranes Oyj",
+    "category": "Ports & Logistics",
+    "region": "Global",
+    "industry": "Farm & Heavy Construction Machinery"
+  },
+  {
+    "symbol": "2FA.F",
+    "name": "Luka Koper d.d.",
+    "category": "Ports & Logistics",
+    "region": "Europe",
+    "industry": "Marine Shipping"
+  },
+  {
+    "symbol": "GOGL",
+    "name": "Golden Ocean Group Limited",
+    "category": "Dry Bulk",
+    "region": "US/Global",
+    "currency": "USD"
+  },
+  {
+    "symbol": "DNORD.CO",
+    "name": "Dampskibsselskabet Norden A/S",
+    "category": "Dry Bulk",
+    "region": "Europe",
+    "currency": "DKK"
+  },
+  {
+    "symbol": "ODF.OL",
+    "name": "Odfjell SE",
+    "category": "Tanker",
+    "region": "Europe",
+    "currency": "NOK"
+  },
+  {
+    "symbol": "AGAS.OL",
+    "name": "Avance Gas Holding Ltd",
+    "category": "Gas Carrier",
+    "region": "Europe",
+    "currency": "NOK"
+  },
+  {
+    "symbol": "CHOWGUL.BO",
+    "name": "Chowgule Steamships Limited",
+    "category": "Dry Bulk",
+    "region": "Asia",
+    "currency": "INR"
+  },
+  {
+    "symbol": "6302.T",
+    "name": "Sumitomo Heavy Industries, Ltd.",
+    "category": "Shipbuilding",
+    "region": "Asia",
+    "currency": "JPY"
+  },
+  {
+    "symbol": "CMB.BR",
+    "name": "CMB.TECH NV (formerly Euronav)",
+    "category": "Tanker",
+    "region": "Europe",
+    "currency": "EUR"
+  },
+  {
+    "symbol": "HAUTO.OL",
+    "name": "Höegh Autoliners ASA",
+    "category": "Ports & Logistics",
+    "region": "Europe",
+    "currency": "NOK"
+  },
+  {
+    "symbol": "010620.KS",
+    "name": "HD Hyundai Mipo Co., Ltd.",
+    "category": "Shipbuilding",
+    "region": "Asia",
+    "currency": "KRW"
+  },
+  {
+    "symbol": "097230.KS",
+    "name": "HJ Shipbuilding & Construction Co., Ltd.",
+    "category": "Shipbuilding",
+    "region": "Asia",
+    "currency": "KRW"
+  },
+  {
+    "symbol": "TRMD",
+    "name": "TORM plc",
+    "category": "Tanker",
+    "region": "Europe",
+    "currency": "USD"
+  },
+  {
+    "symbol": "CCEC",
+    "name": "Capital Clean Energy Carriers L.P.",
+    "category": "Container",
+    "region": "Europe",
+    "currency": "USD"
+  },
+  {
+    "symbol": "011200.KS",
+    "name": "HMM Co., Ltd.",
+    "category": "Container",
+    "region": "Asia",
+    "currency": "KRW"
+  },
+  {
+    "symbol": "MPCC.OL",
+    "name": "MPC Container Ships ASA",
+    "category": "Container",
+    "region": "Europe",
+    "currency": "NOK"
+  },
+  {
+    "symbol": "0598.HK",
+    "name": "Sinotrans Limited",
+    "category": "Container",
+    "region": "Asia",
+    "currency": "HKD"
+  }
+]
