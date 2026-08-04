@@ -24,23 +24,8 @@
   <!-- Header -->
   <header>
     <div class="brand-hud" style="display: flex; align-items: center; gap: 14px;">
-      <div class="howe-robinson-logo-container" style="display: flex; align-items: stretch; height: 38px; border: 1.5px solid #003a6c; border-radius: 4px; overflow: hidden; background: #ffffff;">
-        <div style="display: flex; flex-direction: column; justify-content: stretch; width: 140px; text-shadow: none;">
-          <div style="background: #003a6c; color: #ffffff; display: flex; align-items: center; justify-content: center; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.65rem; letter-spacing: 1px; padding: 2px 6px; flex-grow: 1; text-transform: uppercase; line-height: 1.1;">
-            Howe Robinson
-          </div>
-          <div style="background: #cf2027; color: #ffffff; display: flex; align-items: center; justify-content: center; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.6rem; letter-spacing: 3.5px; padding: 2px 6px; flex-grow: 1; text-transform: uppercase; border-top: 1px solid #ffffff; line-height: 1.1;">
-            Partners
-          </div>
-        </div>
-        <div style="background: #ffffff; width: 38px; display: flex; align-items: center; justify-content: center; border-left: 1.5px solid #003a6c; padding: 3px;">
-          <svg viewBox="0 0 100 100" style="width: 100%; height: 100%;">
-            <path d="M 15,15 L 75,15 C 88,25 90,45 82,53 C 65,58 35,58 15,58 Z" fill="#003a6c" />
-            <path d="M 15,58 C 35,58 65,58 82,53 L 81,56 C 65,61 35,61 15,61 Z" fill="#ffffff" />
-            <path d="M 15,61 C 35,61 65,61 81,56 C 81,58 80,64 74,68 C 65,73 45,75 15,75 Z" fill="#cf2027" />
-            <path d="M 74,68 C 80,68 88,72 88,76 C 88,80 80,82 72,82 C 60,82 15,80 15,80 Z" fill="#cf2027" />
-          </svg>
-        </div>
+      <div class="howe-robinson-logo-container" style="display: flex; align-items: center; height: 42px; border-radius: 4px; overflow: hidden; background: #ffffff; padding: 2px 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+        <img src="logo.jpg" alt="Howe Robinson Partners" style="height: 38px; width: auto; object-fit: contain;">
       </div>
       <h1 style="font-size: 1.1rem; font-weight: 700; color: #ffffff; letter-spacing: 1px; text-transform: uppercase; margin: 0; background: none; -webkit-text-fill-color: initial; text-shadow: none;">Stock Terminal</h1>
       <span class="status-tag">Live Feed</span>
@@ -184,15 +169,32 @@
           </div>
         </div>
 
-        <!-- Company News Feed -->
-        <div class="panel-card">
-          <h3>Latest News</h3>
-          <div id="news-feed-container" class="news-feed">
+        <!-- Company News Feed & Qtr Reports -->
+        <div class="panel-card" style="display: flex; flex-direction: column; gap: 14px; height: 100%;">
+          <h3 style="margin: 0;">Latest News</h3>
+          <div id="news-feed-container" class="news-feed" style="height: 220px; max-height: 240px; overflow-y: auto; flex-shrink: 0;">
             <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 8px; color: var(--color-text-muted);">
-              <svg viewBox="0 0 24 24" style="fill: var(--color-text-muted); width: 32px; height: 32px; opacity: 0.4;">
+              <svg viewBox="0 0 24 24" style="fill: var(--color-text-muted); width: 28px; height: 28px; opacity: 0.4;">
                 <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
               </svg>
-              <span style="font-size: 0.8rem;">Select a company to load news</span>
+              <span style="font-size: 0.78rem;">Select a company to load news</span>
+            </div>
+          </div>
+
+          <!-- Space: Qtr reports (Selected Company's Last 4 Quarters) -->
+          <div class="qtr-reports-card" style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 12px; margin-top: 4px; flex: 1; display: flex; flex-direction: column; min-height: 0;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; flex-shrink: 0;">
+              <h3 style="margin: 0; font-size: 0.88rem; color: var(--color-secondary); display: flex; align-items: center; gap: 6px; border: none; padding: 0;">
+                <svg viewBox="0 0 24 24" style="fill: var(--color-secondary); width: 16px; height: 16px;">
+                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                </svg>
+                Qtr reports
+              </h3>
+              <span id="qtr-reports-stock-tag" style="font-size: 0.68rem; background: rgba(0, 130, 240, 0.15); border: 1px solid rgba(0, 130, 240, 0.3); color: var(--color-secondary); padding: 2px 8px; border-radius: 4px; font-weight: 600;">Last 4 Quarters</span>
+            </div>
+            
+            <div id="qtr-reports-container" class="qtr-reports-list" style="flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; justify-content: space-between; padding-right: 2px;">
+              <!-- Populated dynamically per selected company -->
             </div>
           </div>
         </div>
@@ -378,6 +380,60 @@
 
     </div>
 
+  </div>
+
+  <!-- Quarterly Report Viewer Modal -->
+  <div id="qtr-report-modal" class="modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); backdrop-filter: blur(6px); z-index: 9999; align-items: center; justify-content: center;">
+    <div style="background: #0b1329; border: 1px solid var(--color-primary); border-radius: 10px; width: 92%; max-width: 680px; max-height: 85vh; display: flex; flex-direction: column; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,0.8);">
+      
+      <!-- Modal Header -->
+      <div style="background: rgba(0,58,108,0.4); padding: 14px 18px; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: space-between;">
+        <div style="display: flex; align-items: center; gap: 10px; overflow: hidden;">
+          <span id="modal-qtr-badge" style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; font-weight: bold; background: rgba(0,242,254,0.15); color: var(--color-primary); border: 1px solid rgba(0,242,254,0.3); padding: 2px 8px; border-radius: 4px; flex-shrink: 0;">2026 Q1</span>
+          <h3 id="modal-qtr-title" style="margin: 0; font-size: 0.95rem; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Company Report</h3>
+        </div>
+        <button onclick="closeQtrReportModal()" style="background: none; border: none; color: var(--color-text-muted); font-size: 1.4rem; cursor: pointer; padding: 0 6px; line-height: 1;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--color-text-muted)'">&times;</button>
+      </div>
+
+      <!-- Modal Body -->
+      <div style="padding: 18px; overflow-y: auto; display: flex; flex-direction: column; gap: 14px;">
+        
+        <!-- Smart Quick Action Links -->
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <a id="modal-official-url" href="#" target="_blank" class="export-btn" style="flex: 1; min-width: 200px; text-decoration: none; justify-content: center; background: rgba(0,130,240,0.2); border: 1px solid var(--color-primary); color: #fff; padding: 8px 12px; font-size: 0.82rem;">
+            🌐 Official Company IR Website
+          </a>
+          <a id="modal-sec-url" href="#" target="_blank" class="export-btn" style="flex: 1; min-width: 200px; text-decoration: none; justify-content: center; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15); color: var(--color-text-main); padding: 8px 12px; font-size: 0.82rem;">
+            📄 SEC EDGAR Filing Search
+          </a>
+        </div>
+
+        <!-- Quarterly Overview Cards -->
+        <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 14px;">
+          <h4 style="margin: 0 0 10px 0; font-size: 0.82rem; color: var(--color-secondary); text-transform: uppercase; letter-spacing: 0.5px;">Quarterly Report Overview</h4>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px;">
+            <div style="background: rgba(255,255,255,0.03); padding: 8px 10px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.04);">
+              <span style="font-size: 0.7rem; color: var(--color-text-muted); display: block;">Period Ended</span>
+              <strong id="modal-period-end" style="font-size: 0.85rem; color: #fff;">Mar 31, 2026</strong>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 8px 10px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.04);">
+              <span style="font-size: 0.7rem; color: var(--color-text-muted); display: block;">Ticker Symbol</span>
+              <strong id="modal-ticker" style="font-size: 0.85rem; color: var(--color-primary); font-family: 'JetBrains Mono', monospace;">---</strong>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 8px 10px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.04);">
+              <span style="font-size: 0.7rem; color: var(--color-text-muted); display: block;">Report Category</span>
+              <strong id="modal-category" style="font-size: 0.85rem; color: #fff;">Quarterly Results</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Information Note -->
+        <div style="font-size: 0.8rem; color: var(--color-text-muted); line-height: 1.5; background: rgba(0,130,240,0.08); padding: 12px; border-radius: 6px; border-left: 3px solid var(--color-primary);">
+          Click <strong>"Official Company IR Website"</strong> to view audited financial statements, presentation decks, and executive transcripts directly on the company's corporate portal.
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <script src="app.js?v=1.0.3"></script>

@@ -6,6 +6,183 @@ let currentChartTab = 'historical';
 let collapsedCategories = {};
 let refreshTimer = null;
 let currentHistoryData = null;
+let logoDataUrl = '';
+
+(function preloadLogo() {
+  var img = new Image();
+  img.crossOrigin = 'Anonymous';
+  img.onload = function() {
+    try {
+      var canvas = document.createElement('canvas');
+      canvas.width = img.naturalWidth;
+      canvas.height = img.naturalHeight;
+      var ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0);
+      logoDataUrl = canvas.toDataURL('image/jpeg');
+    } catch(e) {}
+  };
+  img.src = 'logo.jpg';
+})();
+
+// Official Investor Relations website portals for shipping companies
+const COMPANY_OFFICIAL_IR_SITES = {
+  "SBLK": "https://www.starbulk.com/investor-relations",
+  "GOGL": "https://www.goldenocean.bm/investor-relations/",
+  "GNK": "https://investors.gencoshipping.com/financial-information/quarterly-results",
+  "2343.HK": "https://www.pacificbasin.com/en/ir/reports.php",
+  "MAERSK-B.CO": "https://investor.maersk.com/financial-information/reports-presentations",
+  "ZIM": "https://investors.zim.com/financials/quarterly-results/",
+  "DSX": "https://www.dianashippinginc.com/financial-reports/",
+  "SB": "https://www.safebulkers.com/financial-reports/",
+  "EDRY": "https://www.eurodry.gr/investor-relations/press-releases.html",
+  "ESEA": "https://www.euroseas.gr/investor-relations/press-releases.html",
+  "PANL": "https://investors.pangaeals.com/financial-information/quarterly-results",
+  "GRIN": "https://www.grindrodshipping.com/investor-relations",
+  "CTRM": "https://castormaritime.com/investor-relations/",
+  "HSHIP.OL": "https://www.himalaya-shipping.com/investors",
+  "2020.OL": "https://2020bulkers.com/investor-relations/",
+  "5077.KL": "https://www.maybulk.com.my/investor-relations",
+  "SCI.NS": "https://www.shipindia.com/investor-relations/financial-results",
+  "GESHIP.NS": "https://www.greatship.com/investors.html",
+  "MATS": "https://investors.matson.com/financials/quarterly-results",
+  "CMRE": "https://www.costamare.com/investors/press-releases",
+  "DAC": "https://www.danaos.com/investor-relations/news/default.aspx",
+  "INSW": "https://www.intlseaways.com/investors/news-and-events/press-releases",
+  "FRO": "https://www.frontline.bm/investor-relations/",
+  "DHT": "https://www.dhtankers.com/investors/",
+  "TNK": "https://www.teekay.com/investor-centre/teekay-tankers-ltd/",
+  "TK": "https://www.teekay.com/investor-centre/",
+  "STNG": "https://www.scorpiotankers.com/investor-relations/",
+  "TRMD": "https://www.torm.com/investors/",
+  "HESM": "https://investors.hessmidstream.com/",
+  "GLNG": "https://www.golarlng.com/investor-relations",
+  "CLCO": "https://www.coolco.com/investors",
+  "FLNG": "https://www.flexlng.com/investors/"
+};
+
+function getExactReportUrl(symbol, qLabel, companyName) {
+  if (COMPANY_OFFICIAL_IR_SITES[symbol]) {
+    return COMPANY_OFFICIAL_IR_SITES[symbol];
+  }
+  var query = (companyName || symbol) + " official investor relations website quarterly reports";
+  return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+}
+
+function renderQtrReports(selectedStock) {
+  var container = document.getElementById("qtr-reports-container");
+  var tagEl = document.getElementById("qtr-reports-stock-tag");
+  if (!container) return;
+
+  if (!selectedStock || selectedStock.isUnlisted) {
+    if (tagEl) tagEl.innerText = "Select Company";
+    container.innerHTML = `
+      <div style="display:flex;align-items:center;justify-content:center;height:90px;color:var(--color-text-muted);font-size:0.78rem;">
+        Select a company to view its last 4 quarterly reports
+      </div>`;
+    return;
+  }
+
+  var sym = selectedStock.symbol || "";
+  var name = selectedStock.name || sym;
+  if (tagEl) tagEl.innerText = sym;
+
+  // The last 4 Quarters (latest first): 2026 Q1, 2025 Q4, 2025 Q3, 2025 Q2
+  var quarters = [
+    {
+      qLabel: "2026 Q1",
+      badgeColor: "#00f2fe",
+      title: `${sym} 2026 Q1 Financial Report`,
+      desc: "Three Months Ended March 31, 2026",
+      isLatest: true,
+      url: getExactReportUrl(sym, "2026 Q1", name)
+    },
+    {
+      qLabel: "2025 Q4",
+      badgeColor: "#0082f0",
+      title: `${sym} 2025 Q4 & Annual Report`,
+      desc: "Fourth Quarter & Full Year Ended Dec 31, 2025",
+      isLatest: false,
+      url: getExactReportUrl(sym, "2025 Q4", name)
+    },
+    {
+      qLabel: "2025 Q3",
+      badgeColor: "#0082f0",
+      title: `${sym} 2025 Q3 Financial Report`,
+      desc: "Three Months Ended September 30, 2025",
+      isLatest: false,
+      url: getExactReportUrl(sym, "2025 Q3", name)
+    },
+    {
+      qLabel: "2025 Q2",
+      badgeColor: "#0082f0",
+      title: `${sym} 2025 Q2 Financial Report`,
+      desc: "Three Months Ended June 30, 2025",
+      isLatest: false,
+      url: getExactReportUrl(sym, "2025 Q2", name)
+    }
+  ];
+
+  var html = '';
+  quarters.forEach(function(q) {
+    var latestBadge = q.isLatest 
+      ? '<span style="font-size:0.6rem; background:linear-gradient(135deg, #00f2fe, #0082f0); color:#000; padding:1px 5px; border-radius:3px; font-weight:800; text-transform:uppercase; margin-left:4px;">Latest</span>' 
+      : '';
+
+    var cleanSym = sym.split('.')[0];
+    var secUrl = `https://www.sec.gov/edgar/search/#/q=${encodeURIComponent(cleanSym + " " + q.qLabel + " report")}`;
+
+    html += `
+      <div style="background: rgba(0, 0, 0, 0.25); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 6px; padding: 10px 12px; display: flex; align-items: center; justify-content: space-between; gap: 10px; transition: all 0.2s ease;" onmouseover="this.style.borderColor='rgba(0,242,254,0.3)';" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';">
+        <div style="display: flex; align-items: center; gap: 8px; overflow: hidden; flex: 1;">
+          <span style="font-size: 0.72rem; font-weight: 700; background: rgba(0, 130, 240, 0.15); color: ${q.badgeColor}; border: 1px solid rgba(0, 130, 240, 0.3); padding: 3px 7px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; flex-shrink: 0;">
+            ${q.qLabel}
+          </span>
+          <div style="display: flex; flex-direction: column; gap: 2px; overflow: hidden;">
+            <div style="display: flex; align-items: center; gap: 6px; flex-wrap: nowrap;">
+              <strong style="font-size: 0.78rem; color: var(--color-text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="${q.title}">${q.title}</strong>
+              ${latestBadge}
+            </div>
+            <span style="font-size: 0.7rem; color: var(--color-text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${q.desc}</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 6px; flex-shrink: 0;">
+          <a href="${q.url}" target="_blank" rel="noopener noreferrer" style="font-size: 0.72rem; color: var(--color-primary); font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 4px; background: rgba(0, 130, 240, 0.12); padding: 5px 9px; border-radius: 4px; border: 1px solid rgba(0, 130, 240, 0.25);" onmouseover="this.style.background='var(--color-primary)';this.style.color='#fff';" onmouseout="this.style.background='rgba(0, 130, 240, 0.12)';this.style.color='var(--color-primary)';" title="Visit Official Corporate Web Page">
+            🌐 Web ↗
+          </a>
+          <button onclick="openQtrReportModal('${q.qLabel}', '${q.title.replace(/'/g, "\\'")}', '${q.desc.replace(/'/g, "\\'")}', '${sym}', '${q.url}', '${secUrl}')" style="font-size: 0.72rem; color: var(--color-secondary); font-weight: 600; background: rgba(255, 255, 255, 0.05); padding: 5px 9px; border-radius: 4px; border: 1px solid rgba(255, 255, 255, 0.15); cursor: pointer;" onmouseover="this.style.background='rgba(255,255,255,0.15)';this.style.color='#fff';" onmouseout="this.style.background='rgba(255,255,255,0.05)';this.style.color='var(--color-secondary)';" title="View Report Overview">
+            📄 Overview
+          </button>
+        </div>
+      </div>
+    `;
+  });
+
+  container.innerHTML = html;
+}
+
+function openQtrReportModal(qLabel, title, periodEnd, symbol, officialUrl, secUrl) {
+  var bEl = document.getElementById("modal-qtr-badge");
+  var tEl = document.getElementById("modal-qtr-title");
+  var pEl = document.getElementById("modal-period-end");
+  var tkEl = document.getElementById("modal-ticker");
+  var offBtn = document.getElementById("modal-official-url");
+  var secBtn = document.getElementById("modal-sec-url");
+
+  if (bEl) bEl.innerText = qLabel;
+  if (tEl) tEl.innerText = title;
+  if (pEl) pEl.innerText = periodEnd;
+  if (tkEl) tkEl.innerText = symbol;
+  if (offBtn) offBtn.href = officialUrl;
+  if (secBtn) secBtn.href = secUrl;
+
+  var modal = document.getElementById("qtr-report-modal");
+  if (modal) modal.style.display = "flex";
+}
+
+function closeQtrReportModal() {
+  var modal = document.getElementById("qtr-report-modal");
+  if (modal) modal.style.display = "none";
+}
 
 // Category display names (no more "Fleet" everywhere)
 const CATEGORY_LABELS = {
@@ -457,6 +634,9 @@ async function selectStock(key, isUnlisted, cardId) {
     // News
     loadCompanyNews(stock.symbol);
   }
+
+  // Quarterly Reports
+  renderQtrReports(activeStock);
 }
 
 // ===== CHART PLACEHOLDER =====
@@ -787,47 +967,67 @@ function drawHeaderLogo(doc, title, subtitle, isLandscape) {
   doc.setFillColor(207, 32, 39); // Red
   doc.rect(0, 85, width, 5, 'F');
   
-  // Logo in Left Corner (starts at x=40, y=22)
-  // Navy Blue block
-  doc.setFillColor(0, 58, 108);
-  doc.rect(40, 22, 110, 20, 'F');
-  // Red block
-  doc.setFillColor(207, 32, 39);
-  doc.rect(40, 43, 110, 20, 'F');
-  // White icon box
-  doc.setFillColor(255, 255, 255);
-  doc.rect(150, 22, 41, 41, 'F');
-  
-  // White Line inside the logo separating blue and red blocks
-  doc.setDrawColor(255, 255, 255);
-  doc.setLineWidth(1);
-  doc.line(40, 42.5, 150, 42.5);
-  
-  // Logo Border
-  doc.setDrawColor(0, 58, 108);
-  doc.setLineWidth(1.5);
-  doc.rect(40, 22, 151, 41);
-  
-  // White texts inside logo
-  doc.setTextColor(255, 255, 255);
-  doc.setFont("Helvetica", "bold");
-  doc.setFontSize(8.5);
-  doc.text("HOWE ROBINSON", 45, 34);
-  doc.setFontSize(7.5);
-  doc.text("P A R T N E R S", 45, 56);
-  
-  // Stylized ship icon inside the white box
-  doc.setFillColor(0, 58, 108);
-  doc.triangle(155, 27, 185, 27, 180, 44, 'F');
-  doc.rect(155, 27, 25, 17, 'F');
-  
-  doc.setFillColor(207, 32, 39);
-  doc.rect(155, 45, 25, 13, 'F');
-  
-  // Waterline inside icon
-  doc.setDrawColor(255, 255, 255);
-  doc.setLineWidth(1);
-  doc.line(155, 44.5, 185, 44.5);
+  // Logo in Left Corner (starts at x=40, y=20)
+  if (logoDataUrl) {
+    try {
+      doc.addImage(logoDataUrl, 'JPEG', 40, 20, 150, 45);
+    } catch (e) {
+      // Fallback if image fails
+      doc.setFillColor(0, 58, 108);
+      doc.rect(40, 22, 110, 20, 'F');
+      doc.setFillColor(207, 32, 39);
+      doc.rect(40, 43, 110, 20, 'F');
+      doc.setFillColor(255, 255, 255);
+      doc.rect(150, 22, 41, 41, 'F');
+      doc.setDrawColor(255, 255, 255);
+      doc.setLineWidth(1);
+      doc.line(40, 42.5, 150, 42.5);
+      doc.setDrawColor(0, 58, 108);
+      doc.setLineWidth(1.5);
+      doc.rect(40, 22, 151, 41);
+      doc.setTextColor(255, 255, 255);
+      doc.setFont("Helvetica", "bold");
+      doc.setFontSize(8.5);
+      doc.text("HOWE ROBINSON", 45, 34);
+      doc.setFontSize(7.5);
+      doc.text("P A R T N E R S", 45, 56);
+      doc.setFillColor(0, 58, 108);
+      doc.triangle(155, 27, 185, 27, 180, 44, 'F');
+      doc.rect(155, 27, 25, 17, 'F');
+      doc.setFillColor(207, 32, 39);
+      doc.rect(155, 45, 25, 13, 'F');
+      doc.setDrawColor(255, 255, 255);
+      doc.setLineWidth(1);
+      doc.line(155, 44.5, 185, 44.5);
+    }
+  } else {
+    doc.setFillColor(0, 58, 108);
+    doc.rect(40, 22, 110, 20, 'F');
+    doc.setFillColor(207, 32, 39);
+    doc.rect(40, 43, 110, 20, 'F');
+    doc.setFillColor(255, 255, 255);
+    doc.rect(150, 22, 41, 41, 'F');
+    doc.setDrawColor(255, 255, 255);
+    doc.setLineWidth(1);
+    doc.line(40, 42.5, 150, 42.5);
+    doc.setDrawColor(0, 58, 108);
+    doc.setLineWidth(1.5);
+    doc.rect(40, 22, 151, 41);
+    doc.setTextColor(255, 255, 255);
+    doc.setFont("Helvetica", "bold");
+    doc.setFontSize(8.5);
+    doc.text("HOWE ROBINSON", 45, 34);
+    doc.setFontSize(7.5);
+    doc.text("P A R T N E R S", 45, 56);
+    doc.setFillColor(0, 58, 108);
+    doc.triangle(155, 27, 185, 27, 180, 44, 'F');
+    doc.rect(155, 27, 25, 17, 'F');
+    doc.setFillColor(207, 32, 39);
+    doc.rect(155, 45, 25, 13, 'F');
+    doc.setDrawColor(255, 255, 255);
+    doc.setLineWidth(1);
+    doc.line(155, 44.5, 185, 44.5);
+  }
   
   // Title and Subtitle next to the logo
   doc.setTextColor(255, 255, 255);
