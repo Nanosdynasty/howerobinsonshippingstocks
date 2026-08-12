@@ -14,14 +14,16 @@ let logoDataUrl = '';
   img.onload = function() {
     try {
       var canvas = document.createElement('canvas');
-      canvas.width = img.naturalWidth;
-      canvas.height = img.naturalHeight;
+      canvas.width = img.naturalWidth || 313;
+      canvas.height = img.naturalHeight || 84;
       var ctx = canvas.getContext('2d');
-      ctx.drawImage(img, 0, 0);
+      ctx.fillStyle = '#FFFFFF';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
       logoDataUrl = canvas.toDataURL('image/jpeg');
     } catch(e) {}
   };
-  img.src = 'logo.jpg';
+  img.src = 'logo.svg';
 })();
 
 // Official Investor Relations website portals for shipping companies

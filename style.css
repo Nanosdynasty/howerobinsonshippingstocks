@@ -101,8 +101,12 @@ header {
 .ticker-tape-scroll {
   display: flex;
   white-space: nowrap;
-  animation: ticker-scroll 350s linear infinite;
+  animation: ticker-scroll 750s linear infinite;
   padding-left: 100%;
+}
+
+.ticker-tape-container:hover .ticker-tape-scroll {
+  animation-play-state: paused;
 }
 
 .ticker-tape-item {

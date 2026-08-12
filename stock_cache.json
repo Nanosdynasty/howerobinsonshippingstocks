@@ -150,12 +150,12 @@
     "name": "A. P. Moller Maersk A/S",
     "category": "Container",
     "region": "Global",
-    "price": 17240,
+    "price": 16865,
     "prev_close": 17405,
-    "daily_change": -165,
-    "daily_change_pct": -0.95,
-    "wow_change": 590,
-    "wow_change_pct": 3.54,
+    "daily_change": -540,
+    "daily_change_pct": -3.1,
+    "wow_change": 215,
+    "wow_change_pct": 1.29,
     "high_52": 18625,
     "low_52": 12025,
     "currency": "DKK",
@@ -166,7 +166,7 @@
       17150,
       17335,
       17405,
-      17240
+      16865
     ],
     "history": [
       {
@@ -287,7 +287,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 17240
+        "price": 16865
       }
     ]
   },
@@ -442,33 +442,25 @@
     "name": "Ardmore Shipping Corporation",
     "category": "Tanker",
     "region": "US/Global",
-    "price": 17.44,
-    "prev_close": 17.39,
-    "daily_change": 0.05,
-    "daily_change_pct": 0.29,
-    "wow_change": 0.83,
-    "wow_change_pct": 5,
+    "price": 16.95,
+    "prev_close": 17.44,
+    "daily_change": -0.49,
+    "daily_change_pct": -2.81,
+    "wow_change": 0.56,
+    "wow_change_pct": 3.42,
     "high_52": 19.68,
     "low_52": 10.26,
     "currency": "USD",
     "sparkline": [
-      16.58,
-      16.61,
       16.39,
       16.39,
       16.75,
       17.23,
-      17.39
+      17.39,
+      17.44,
+      16.95
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 17.07
-      },
-      {
-        "date": "2026-06-22",
-        "price": 17.56
-      },
       {
         "date": "2026-06-23",
         "price": 17.89
@@ -580,6 +572,14 @@
       {
         "date": "2026-07-31",
         "price": 17.39
+      },
+      {
+        "date": "2026-08-03",
+        "price": 17.44
+      },
+      {
+        "date": "2026-08-04",
+        "price": 16.95
       }
     ]
   },
@@ -592,21 +592,25 @@
     "prev_close": 3.65,
     "daily_change": -0.01,
     "daily_change_pct": -0.27,
-    "wow_change": -0.02,
-    "wow_change_pct": -0.55,
+    "wow_change": -0.15,
+    "wow_change_pct": -3.96,
     "high_52": 8.76,
     "low_52": 3.39,
     "currency": "AUD",
     "sparkline": [
+      3.87,
       3.79,
       3.66,
       3.56,
       3.53,
       3.61,
-      3.65,
-      3.64
+      3.65
     ],
     "history": [
+      {
+        "date": "2026-06-23",
+        "price": 4.35
+      },
       {
         "date": "2026-06-24",
         "price": 4.22
@@ -722,10 +726,6 @@
       {
         "date": "2026-08-03",
         "price": 3.65
-      },
-      {
-        "date": "2026-08-04",
-        "price": 3.64
       }
     ]
   },
@@ -1026,33 +1026,25 @@
     "name": "BHP Group Limited",
     "category": "Diversified",
     "region": "US/Global",
-    "price": 83.5,
-    "prev_close": 84.49,
-    "daily_change": -0.99,
-    "daily_change_pct": -1.17,
-    "wow_change": -0.22,
-    "wow_change_pct": -0.26,
+    "price": 87.13,
+    "prev_close": 83.5,
+    "daily_change": 3.63,
+    "daily_change_pct": 4.34,
+    "wow_change": 3.33,
+    "wow_change_pct": 3.98,
     "high_52": 93.15,
     "low_52": 51.13,
     "currency": "USD",
     "sparkline": [
-      83.65,
-      83.72,
       83.93,
       83.79,
       83.11,
       85.9,
-      84.49
+      84.49,
+      83.5,
+      87.13
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 87.87
-      },
-      {
-        "date": "2026-06-22",
-        "price": 85.78
-      },
       {
         "date": "2026-06-23",
         "price": 82.25
@@ -1164,6 +1156,14 @@
       {
         "date": "2026-07-31",
         "price": 84.49
+      },
+      {
+        "date": "2026-08-03",
+        "price": 83.5
+      },
+      {
+        "date": "2026-08-04",
+        "price": 87.13
       }
     ]
   },
@@ -1172,33 +1172,25 @@
     "name": "Borr Drilling Limited",
     "category": "Offshore",
     "region": "US/Global",
-    "price": 3.93,
-    "prev_close": 4.03,
-    "daily_change": -0.1,
-    "daily_change_pct": -2.48,
-    "wow_change": -0.3,
-    "wow_change_pct": -7.09,
+    "price": 4.03,
+    "prev_close": 3.93,
+    "daily_change": 0.1,
+    "daily_change_pct": 2.65,
+    "wow_change": 0.13,
+    "wow_change_pct": 3.44,
     "high_52": 6.61,
     "low_52": 1.92,
     "currency": "USD",
     "sparkline": [
-      4.23,
-      4.23,
       4.11,
       3.9,
       3.85,
       3.99,
+      4.03,
+      3.93,
       4.03
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 4.22
-      },
-      {
-        "date": "2026-06-22",
-        "price": 4.34
-      },
       {
         "date": "2026-06-23",
         "price": 4.24
@@ -1309,6 +1301,14 @@
       },
       {
         "date": "2026-07-31",
+        "price": 4.03
+      },
+      {
+        "date": "2026-08-03",
+        "price": 3.93
+      },
+      {
+        "date": "2026-08-04",
         "price": 4.03
       }
     ]
@@ -1465,32 +1465,24 @@
     "category": "Marine Services",
     "region": "US/Global",
     "price": 2.16,
-    "prev_close": 2.27,
-    "daily_change": -0.11,
-    "daily_change_pct": -4.85,
-    "wow_change": -0.07,
-    "wow_change_pct": -3.14,
+    "prev_close": 2.16,
+    "daily_change": 0,
+    "daily_change_pct": 0,
+    "wow_change": -0.17,
+    "wow_change_pct": -7.3,
     "high_52": 3.14,
     "low_52": 1.92,
     "currency": "USD",
     "sparkline": [
-      2.15,
-      2.23,
       2.28,
       2.33,
       2.38,
       2.33,
-      2.27
+      2.27,
+      2.16,
+      2.16
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 2.08
-      },
-      {
-        "date": "2026-06-22",
-        "price": 2.03
-      },
       {
         "date": "2026-06-23",
         "price": 2.05
@@ -1602,6 +1594,14 @@
       {
         "date": "2026-07-31",
         "price": 2.27
+      },
+      {
+        "date": "2026-08-03",
+        "price": 2.16
+      },
+      {
+        "date": "2026-08-04",
+        "price": 2.16
       }
     ]
   },
@@ -1610,13 +1610,13 @@
     "name": "BW LPG Limited",
     "category": "Gas Carrier",
     "region": "Europe",
-    "price": 19.78,
+    "price": 19.47,
     "prev_close": 19.53,
-    "daily_change": 0.25,
-    "daily_change_pct": 1.28,
-    "wow_change": 1.23,
-    "wow_change_pct": 6.63,
-    "high_52": 19.78,
+    "daily_change": -0.06,
+    "daily_change_pct": -0.31,
+    "wow_change": 0.92,
+    "wow_change_pct": 4.96,
+    "high_52": 19.76,
     "low_52": 10.09,
     "currency": "EUR",
     "sparkline": [
@@ -1626,7 +1626,7 @@
       19,
       19.16,
       19.53,
-      19.78
+      19.47
     ],
     "history": [
       {
@@ -1747,7 +1747,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 19.78
+        "price": 19.47
       }
     ]
   },
@@ -1756,12 +1756,12 @@
     "name": "BW Offshore Limited",
     "category": "Offshore",
     "region": "Europe",
-    "price": 45.75,
+    "price": 46,
     "prev_close": 46.65,
-    "daily_change": -0.9,
-    "daily_change_pct": -1.93,
-    "wow_change": -0.05,
-    "wow_change_pct": -0.11,
+    "daily_change": -0.65,
+    "daily_change_pct": -1.39,
+    "wow_change": 0.2,
+    "wow_change_pct": 0.44,
     "high_52": 53.3,
     "low_52": 34.05,
     "currency": "NOK",
@@ -1772,7 +1772,7 @@
       46.6,
       46.1,
       46.65,
-      45.75
+      46
     ],
     "history": [
       {
@@ -1893,7 +1893,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 45.75
+        "price": 46
       }
     ]
   },
@@ -4676,33 +4676,25 @@
     "name": "Costamare Bulkers Holdings Limited",
     "category": "Dry Bulk",
     "region": "US/Global",
-    "price": 20.14,
-    "prev_close": 19.56,
-    "daily_change": 0.58,
-    "daily_change_pct": 2.97,
+    "price": 19.77,
+    "prev_close": 20.14,
+    "daily_change": -0.36,
+    "daily_change_pct": -1.81,
     "wow_change": 1.3,
-    "wow_change_pct": 6.9,
-    "high_52": 20.02,
+    "wow_change_pct": 7.01,
+    "high_52": 20.14,
     "low_52": 8.91,
     "currency": "USD",
     "sparkline": [
-      18.84,
-      18.84,
       18.37,
       18.48,
       18.36,
       19.41,
-      19.56
+      19.56,
+      20.14,
+      19.77
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 16.9
-      },
-      {
-        "date": "2026-06-22",
-        "price": 17.38
-      },
       {
         "date": "2026-06-23",
         "price": 17.56
@@ -4814,6 +4806,14 @@
       {
         "date": "2026-07-31",
         "price": 19.56
+      },
+      {
+        "date": "2026-08-03",
+        "price": 20.14
+      },
+      {
+        "date": "2026-08-04",
+        "price": 19.77
       }
     ]
   },
@@ -4822,12 +4822,12 @@
     "name": "Taylor Maritime Limited",
     "category": "Diversified",
     "region": "Europe",
-    "price": 0.81,
+    "price": 0.76,
     "prev_close": 0.8,
-    "daily_change": 0.01,
-    "daily_change_pct": 1.89,
-    "wow_change": 0.01,
-    "wow_change_pct": 1.25,
+    "daily_change": -0.04,
+    "daily_change_pct": -4.4,
+    "wow_change": -0.04,
+    "wow_change_pct": -5,
     "high_52": 0.87,
     "low_52": 0.76,
     "currency": "USD",
@@ -4838,7 +4838,7 @@
       0.79,
       0.8,
       0.8,
-      0.81
+      0.76
     ],
     "history": [
       {
@@ -4959,7 +4959,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 0.81
+        "price": 0.76
       }
     ]
   },
@@ -4968,12 +4968,12 @@
     "name": "CSSC (Hong Kong) Shipping Company Limited",
     "category": "Shipbuilding",
     "region": "Europe",
-    "price": 0.23,
+    "price": 0.24,
     "prev_close": 0.24,
-    "daily_change": 0,
-    "daily_change_pct": -0.85,
+    "daily_change": -0.01,
+    "daily_change_pct": -3.28,
     "wow_change": -0.01,
-    "wow_change_pct": -2.5,
+    "wow_change_pct": -2.48,
     "high_52": 0.29,
     "low_52": 0.19,
     "currency": "EUR",
@@ -4984,9 +4984,13 @@
       0.24,
       0.24,
       0.24,
-      0.23
+      0.24
     ],
     "history": [
+      {
+        "date": "2026-06-22",
+        "price": 0.25
+      },
       {
         "date": "2026-06-23",
         "price": 0.25
@@ -5100,12 +5104,8 @@
         "price": 0.24
       },
       {
-        "date": "2026-07-31",
-        "price": 0.24
-      },
-      {
         "date": "2026-08-04",
-        "price": 0.23
+        "price": 0.24
       }
     ]
   },
@@ -5260,33 +5260,25 @@
     "name": "C3is Inc.",
     "category": "Dry Bulk",
     "region": "US/Global",
-    "price": 0.11,
-    "prev_close": 0.12,
-    "daily_change": -0.01,
-    "daily_change_pct": -5.88,
-    "wow_change": -0.41,
-    "wow_change_pct": -78.46,
+    "price": 0.09,
+    "prev_close": 0.11,
+    "daily_change": -0.02,
+    "daily_change_pct": -19.64,
+    "wow_change": -0.08,
+    "wow_change_pct": -46.11,
     "high_52": 569.8,
-    "low_52": 0.1,
+    "low_52": 0.09,
     "currency": "USD",
     "sparkline": [
-      0.96,
-      0.52,
       0.1,
       0.17,
       0.13,
       0.14,
-      0.12
+      0.12,
+      0.11,
+      0.09
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 2.2
-      },
-      {
-        "date": "2026-06-22",
-        "price": 2.12
-      },
       {
         "date": "2026-06-23",
         "price": 1.87
@@ -5398,6 +5390,14 @@
       {
         "date": "2026-07-31",
         "price": 0.12
+      },
+      {
+        "date": "2026-08-03",
+        "price": 0.11
+      },
+      {
+        "date": "2026-08-04",
+        "price": 0.09
       }
     ]
   },
@@ -5406,33 +5406,25 @@
     "name": "Danaos Corporation",
     "category": "Container",
     "region": "US/Global",
-    "price": 142.08,
-    "prev_close": 141.63,
-    "daily_change": 0.45,
-    "daily_change_pct": 0.32,
-    "wow_change": 1.86,
-    "wow_change_pct": 1.33,
-    "high_52": 142.07,
+    "price": 140.59,
+    "prev_close": 142.08,
+    "daily_change": -1.5,
+    "daily_change_pct": -1.05,
+    "wow_change": 0.17,
+    "wow_change_pct": 0.12,
+    "high_52": 142.08,
     "low_52": 84.05,
     "currency": "USD",
     "sparkline": [
-      137.44,
-      140.22,
       140.31,
       140.41,
       138.6,
       142.07,
-      141.63
+      141.63,
+      142.08,
+      140.59
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 125.95
-      },
-      {
-        "date": "2026-06-22",
-        "price": 127.39
-      },
       {
         "date": "2026-06-23",
         "price": 127.5
@@ -5544,6 +5536,14 @@
       {
         "date": "2026-07-31",
         "price": 141.63
+      },
+      {
+        "date": "2026-08-03",
+        "price": 142.08
+      },
+      {
+        "date": "2026-08-04",
+        "price": 140.59
       }
     ]
   },
@@ -5553,24 +5553,28 @@
     "category": "Ports & Logistics",
     "region": "Europe",
     "price": 16.22,
-    "prev_close": 16.45,
-    "daily_change": -0.23,
-    "daily_change_pct": -1.4,
-    "wow_change": -0.41,
-    "wow_change_pct": -2.47,
+    "prev_close": 16.33,
+    "daily_change": -0.11,
+    "daily_change_pct": -0.67,
+    "wow_change": -0.15,
+    "wow_change_pct": -0.92,
     "high_52": 20.66,
     "low_52": 11.1,
     "currency": "EUR",
     "sparkline": [
+      16.46,
       16.37,
       16.63,
       16.33,
       16.41,
       16.33,
-      16.45,
       16.22
     ],
     "history": [
+      {
+        "date": "2026-06-22",
+        "price": 16.16
+      },
       {
         "date": "2026-06-23",
         "price": 16.08
@@ -5684,10 +5688,6 @@
         "price": 16.33
       },
       {
-        "date": "2026-07-31",
-        "price": 16.45
-      },
-      {
         "date": "2026-08-04",
         "price": 16.22
       }
@@ -5698,33 +5698,25 @@
     "name": "DHT Holdings, Inc.",
     "category": "Tanker",
     "region": "US/Global",
-    "price": 18.53,
-    "prev_close": 18.57,
-    "daily_change": -0.04,
-    "daily_change_pct": -0.22,
-    "wow_change": 0.08,
-    "wow_change_pct": 0.43,
+    "price": 18.11,
+    "prev_close": 18.53,
+    "daily_change": -0.42,
+    "daily_change_pct": -2.26,
+    "wow_change": -0.48,
+    "wow_change_pct": -2.57,
     "high_52": 19.96,
     "low_52": 10.72,
     "currency": "USD",
     "sparkline": [
-      18.41,
-      18.45,
       18.29,
       18.59,
       18.55,
       18.55,
-      18.57
+      18.57,
+      18.53,
+      18.11
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 18.89
-      },
-      {
-        "date": "2026-06-22",
-        "price": 19.77
-      },
       {
         "date": "2026-06-23",
         "price": 19.96
@@ -5836,6 +5828,14 @@
       {
         "date": "2026-07-31",
         "price": 18.57
+      },
+      {
+        "date": "2026-08-03",
+        "price": 18.53
+      },
+      {
+        "date": "2026-08-04",
+        "price": 18.11
       }
     ]
   },
@@ -5844,33 +5844,25 @@
     "name": "Castor Maritime Inc.",
     "category": "Diversified",
     "region": "US/Global",
-    "price": 2.08,
-    "prev_close": 1.95,
-    "daily_change": 0.13,
-    "daily_change_pct": 6.67,
-    "wow_change": 0.21,
-    "wow_change_pct": 11.23,
+    "price": 2.05,
+    "prev_close": 2.08,
+    "daily_change": -0.03,
+    "daily_change_pct": -1.44,
+    "wow_change": 0.16,
+    "wow_change_pct": 8.47,
     "high_52": 2.64,
     "low_52": 1.67,
     "currency": "USD",
     "sparkline": [
       1.86,
-      1.87,
-      1.86,
       1.89,
       1.89,
       1.96,
-      1.95
+      1.95,
+      2.08,
+      2.05
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 2.15
-      },
-      {
-        "date": "2026-06-22",
-        "price": 2.12
-      },
       {
         "date": "2026-06-23",
         "price": 2.1
@@ -5982,6 +5974,14 @@
       {
         "date": "2026-07-31",
         "price": 1.95
+      },
+      {
+        "date": "2026-08-03",
+        "price": 2.08
+      },
+      {
+        "date": "2026-08-04",
+        "price": 2.05
       }
     ]
   },
@@ -5990,12 +5990,12 @@
     "name": "DOF Group ASA",
     "category": "Offshore",
     "region": "Europe",
-    "price": 125.9,
+    "price": 124.7,
     "prev_close": 124.5,
-    "daily_change": 1.4,
-    "daily_change_pct": 1.12,
-    "wow_change": 1.4,
-    "wow_change_pct": 1.12,
+    "daily_change": 0.2,
+    "daily_change_pct": 0.16,
+    "wow_change": 0.2,
+    "wow_change_pct": 0.16,
     "high_52": 143.4,
     "low_52": 87.05,
     "currency": "NOK",
@@ -6006,7 +6006,7 @@
       121.6,
       123.5,
       124.5,
-      125.9
+      124.7
     ],
     "history": [
       {
@@ -6127,7 +6127,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 125.9
+        "price": 124.7
       }
     ]
   },
@@ -6136,33 +6136,25 @@
     "name": "Dorian LPG Ltd.",
     "category": "Gas Carrier",
     "region": "US/Global",
-    "price": 45.94,
-    "prev_close": 47.42,
-    "daily_change": -1.48,
-    "daily_change_pct": -3.12,
-    "wow_change": 0.62,
-    "wow_change_pct": 1.37,
+    "price": 44.55,
+    "prev_close": 45.94,
+    "daily_change": -1.39,
+    "daily_change_pct": -3.03,
+    "wow_change": 0.08,
+    "wow_change_pct": 0.18,
     "high_52": 47.72,
     "low_52": 23.93,
     "currency": "USD",
     "sparkline": [
-      45.61,
-      45.32,
       43.91,
       44.47,
       45.7,
       46.24,
-      47.42
+      47.42,
+      45.94,
+      44.55
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 39.56
-      },
-      {
-        "date": "2026-06-22",
-        "price": 39.99
-      },
       {
         "date": "2026-06-23",
         "price": 40.6
@@ -6274,6 +6266,14 @@
       {
         "date": "2026-07-31",
         "price": 47.42
+      },
+      {
+        "date": "2026-08-03",
+        "price": 45.94
+      },
+      {
+        "date": "2026-08-04",
+        "price": 44.55
       }
     ]
   },
@@ -6720,33 +6720,25 @@
     "name": "EuroDry Ltd.",
     "category": "Dry Bulk",
     "region": "US/Global",
-    "price": 25.18,
-    "prev_close": 26.51,
-    "daily_change": -1.33,
-    "daily_change_pct": -5.02,
-    "wow_change": 1.08,
-    "wow_change_pct": 4.48,
+    "price": 26.03,
+    "prev_close": 25.18,
+    "daily_change": 0.85,
+    "daily_change_pct": 3.38,
+    "wow_change": 1.68,
+    "wow_change_pct": 6.9,
     "high_52": 26.51,
     "low_52": 10.01,
     "currency": "USD",
     "sparkline": [
-      24.9,
-      24.1,
       24.8,
       24.35,
       24.29,
       25.51,
-      26.51
+      26.51,
+      25.18,
+      26.03
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 23.1
-      },
-      {
-        "date": "2026-06-22",
-        "price": 20.16
-      },
       {
         "date": "2026-06-23",
         "price": 23.18
@@ -6858,6 +6850,14 @@
       {
         "date": "2026-07-31",
         "price": 26.51
+      },
+      {
+        "date": "2026-08-03",
+        "price": 25.18
+      },
+      {
+        "date": "2026-08-04",
+        "price": 26.03
       }
     ]
   },
@@ -6866,33 +6866,25 @@
     "name": "Euroholdings Ltd.",
     "category": "Dry Bulk",
     "region": "US/Global",
-    "price": 7.91,
-    "prev_close": 8.12,
-    "daily_change": -0.21,
-    "daily_change_pct": -2.54,
-    "wow_change": -0.34,
-    "wow_change_pct": -4.12,
+    "price": 8.2,
+    "prev_close": 7.91,
+    "daily_change": 0.29,
+    "daily_change_pct": 3.67,
+    "wow_change": 0.29,
+    "wow_change_pct": 3.73,
     "high_52": 8.96,
     "low_52": 6.17,
     "currency": "USD",
     "sparkline": [
-      8.59,
-      8.25,
       8.14,
       7.91,
       7.91,
       8.12,
-      7.91
+      7.91,
+      7.91,
+      8.2
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 8
-      },
-      {
-        "date": "2026-06-22",
-        "price": 8.07
-      },
       {
         "date": "2026-06-23",
         "price": 7.9
@@ -7004,6 +6996,14 @@
       {
         "date": "2026-07-31",
         "price": 7.91
+      },
+      {
+        "date": "2026-08-03",
+        "price": 7.91
+      },
+      {
+        "date": "2026-08-04",
+        "price": 8.2
       }
     ]
   },
@@ -7016,21 +7016,25 @@
     "prev_close": 58,
     "daily_change": 0,
     "daily_change_pct": 0,
-    "wow_change": -0.4,
-    "wow_change_pct": -0.68,
+    "wow_change": 0,
+    "wow_change_pct": 0,
     "high_52": 63.8,
     "low_52": 40.1,
     "currency": "EUR",
     "sparkline": [
       58,
+      58,
       58.4,
       58.2,
-      58,
       58,
       58,
       58
     ],
     "history": [
+      {
+        "date": "2026-06-22",
+        "price": 59
+      },
       {
         "date": "2026-06-23",
         "price": 56
@@ -7141,10 +7145,6 @@
       },
       {
         "date": "2026-07-30",
-        "price": 58
-      },
-      {
-        "date": "2026-07-31",
         "price": 58
       },
       {
@@ -7450,33 +7450,25 @@
     "name": "Excelerate Energy, Inc.",
     "category": "Gas Carrier",
     "region": "US/Global",
-    "price": 39.03,
-    "prev_close": 39.27,
-    "daily_change": -0.24,
-    "daily_change_pct": -0.61,
-    "wow_change": 0.4,
-    "wow_change_pct": 1.04,
+    "price": 38.58,
+    "prev_close": 39.03,
+    "daily_change": -0.45,
+    "daily_change_pct": -1.17,
+    "wow_change": 1.24,
+    "wow_change_pct": 3.34,
     "high_52": 42.89,
     "low_52": 23.01,
     "currency": "USD",
     "sparkline": [
-      39.68,
-      38.63,
       37.67,
       37.33,
       37.26,
       38.22,
-      39.27
+      39.27,
+      39.03,
+      38.58
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 34.56
-      },
-      {
-        "date": "2026-06-22",
-        "price": 35.9
-      },
       {
         "date": "2026-06-23",
         "price": 36.06
@@ -7588,6 +7580,14 @@
       {
         "date": "2026-07-31",
         "price": 39.27
+      },
+      {
+        "date": "2026-08-03",
+        "price": 39.03
+      },
+      {
+        "date": "2026-08-04",
+        "price": 38.58
       }
     ]
   },
@@ -7596,12 +7596,12 @@
     "name": "Exmar NV",
     "category": "Offshore",
     "region": "Global",
-    "price": 11.2,
+    "price": 11.25,
     "prev_close": 11.3,
-    "daily_change": -0.1,
-    "daily_change_pct": -0.88,
-    "wow_change": 0,
-    "wow_change_pct": 0,
+    "daily_change": -0.05,
+    "daily_change_pct": -0.44,
+    "wow_change": 0.05,
+    "wow_change_pct": 0.45,
     "high_52": 14.12,
     "low_52": 8.94,
     "currency": "EUR",
@@ -7612,7 +7612,7 @@
       11.3,
       11.25,
       11.3,
-      11.2
+      11.25
     ],
     "history": [
       {
@@ -7733,7 +7733,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 11.2
+        "price": 11.25
       }
     ]
   },
@@ -7888,33 +7888,25 @@
     "name": "FLEX LNG Ltd.",
     "category": "Gas Carrier",
     "region": "US/Global",
-    "price": 30.83,
-    "prev_close": 31.21,
-    "daily_change": -0.38,
-    "daily_change_pct": -1.22,
-    "wow_change": -0.02,
-    "wow_change_pct": -0.06,
+    "price": 30.42,
+    "prev_close": 30.83,
+    "daily_change": -0.41,
+    "daily_change_pct": -1.33,
+    "wow_change": -0.48,
+    "wow_change_pct": -1.55,
     "high_52": 33.27,
     "low_52": 24.34,
     "currency": "USD",
     "sparkline": [
-      30.96,
-      30.85,
       30.48,
       30.9,
       31.27,
       31.1,
-      31.21
+      31.21,
+      30.83,
+      30.42
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 29.74
-      },
-      {
-        "date": "2026-06-22",
-        "price": 30.36
-      },
       {
         "date": "2026-06-23",
         "price": 30.89
@@ -8026,6 +8018,14 @@
       {
         "date": "2026-07-31",
         "price": 31.21
+      },
+      {
+        "date": "2026-08-03",
+        "price": 30.83
+      },
+      {
+        "date": "2026-08-04",
+        "price": 30.42
       }
     ]
   },
@@ -8038,21 +8038,25 @@
     "prev_close": 17.8,
     "daily_change": 0.28,
     "daily_change_pct": 1.57,
-    "wow_change": -0.62,
-    "wow_change_pct": -3.32,
+    "wow_change": -0.72,
+    "wow_change_pct": -3.83,
     "high_52": 22.99,
     "low_52": 17.8,
     "currency": "AUD",
     "sparkline": [
+      18.57,
       18.8,
       18.7,
       19.08,
       18.86,
       18.51,
-      17.8,
-      18.08
+      17.8
     ],
     "history": [
+      {
+        "date": "2026-06-23",
+        "price": 19.27
+      },
       {
         "date": "2026-06-24",
         "price": 19.25
@@ -8168,10 +8172,6 @@
       {
         "date": "2026-08-03",
         "price": 17.8
-      },
-      {
-        "date": "2026-08-04",
-        "price": 18.08
       }
     ]
   },
@@ -8180,33 +8180,25 @@
     "name": "Frontline plc",
     "category": "Tanker",
     "region": "US/Global",
-    "price": 39.91,
-    "prev_close": 39.37,
-    "daily_change": 0.54,
-    "daily_change_pct": 1.37,
-    "wow_change": 0.62,
-    "wow_change_pct": 1.58,
+    "price": 39.39,
+    "prev_close": 39.91,
+    "daily_change": -0.52,
+    "daily_change_pct": -1.3,
+    "wow_change": 0.61,
+    "wow_change_pct": 1.57,
     "high_52": 42.88,
     "low_52": 18.48,
     "currency": "USD",
     "sparkline": [
-      38.85,
-      39.29,
       38.59,
       38.78,
       39.13,
       39.1,
-      39.37
+      39.37,
+      39.91,
+      39.39
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 40.93
-      },
-      {
-        "date": "2026-06-22",
-        "price": 41.58
-      },
       {
         "date": "2026-06-23",
         "price": 42.88
@@ -8318,6 +8310,14 @@
       {
         "date": "2026-07-31",
         "price": 39.37
+      },
+      {
+        "date": "2026-08-03",
+        "price": 39.91
+      },
+      {
+        "date": "2026-08-04",
+        "price": 39.39
       }
     ]
   },
@@ -8619,24 +8619,28 @@
     "category": "Dry Bulk",
     "region": "Europe",
     "price": 2.76,
-    "prev_close": 2.54,
-    "daily_change": 0.22,
-    "daily_change_pct": 8.66,
-    "wow_change": 0.14,
-    "wow_change_pct": 5.34,
+    "prev_close": 2.46,
+    "daily_change": 0.3,
+    "daily_change_pct": 12.2,
+    "wow_change": 0.22,
+    "wow_change_pct": 8.66,
     "high_52": 2.76,
     "low_52": 0.82,
     "currency": "EUR",
     "sparkline": [
+      2.68,
       2.54,
       2.62,
       2.54,
       2.44,
       2.46,
-      2.54,
       2.76
     ],
     "history": [
+      {
+        "date": "2026-06-22",
+        "price": 2.36
+      },
       {
         "date": "2026-06-23",
         "price": 2.62
@@ -8750,10 +8754,6 @@
         "price": 2.46
       },
       {
-        "date": "2026-07-31",
-        "price": 2.54
-      },
-      {
         "date": "2026-08-04",
         "price": 2.76
       }
@@ -8764,12 +8764,12 @@
     "name": "Glencore plc",
     "category": "Diversified",
     "region": "Europe",
-    "price": 554,
+    "price": 555.5,
     "prev_close": 543,
-    "daily_change": 11,
-    "daily_change_pct": 2.03,
-    "wow_change": 34.9,
-    "wow_change_pct": 6.72,
+    "daily_change": 12.5,
+    "daily_change_pct": 2.3,
+    "wow_change": 36.4,
+    "wow_change_pct": 7.01,
     "high_52": 615,
     "low_52": 280.45,
     "currency": "GBp",
@@ -8780,7 +8780,7 @@
       520.7,
       539,
       543,
-      554
+      555.5
     ],
     "history": [
       {
@@ -8901,7 +8901,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 554
+        "price": 555.5
       }
     ]
   },
@@ -8910,33 +8910,25 @@
     "name": "Global Ship Lease, Inc.",
     "category": "Container",
     "region": "US/Global",
-    "price": 44.04,
-    "prev_close": 44.34,
-    "daily_change": -0.3,
-    "daily_change_pct": -0.68,
-    "wow_change": 0.43,
-    "wow_change_pct": 0.99,
+    "price": 43.7,
+    "prev_close": 44.04,
+    "daily_change": -0.35,
+    "daily_change_pct": -0.78,
+    "wow_change": 0.1,
+    "wow_change_pct": 0.22,
     "high_52": 44.47,
     "low_52": 27.41,
     "currency": "USD",
     "sparkline": [
-      43.02,
-      43.61,
       43.14,
       43.6,
       43.34,
       44.47,
-      44.34
+      44.34,
+      44.04,
+      43.69
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 37.89
-      },
-      {
-        "date": "2026-06-22",
-        "price": 38.32
-      },
       {
         "date": "2026-06-23",
         "price": 39.04
@@ -9048,6 +9040,14 @@
       {
         "date": "2026-07-31",
         "price": 44.34
+      },
+      {
+        "date": "2026-08-03",
+        "price": 44.04
+      },
+      {
+        "date": "2026-08-04",
+        "price": 43.69
       }
     ]
   },
@@ -9056,33 +9056,25 @@
     "name": "Golar LNG Limited",
     "category": "Gas Carrier",
     "region": "US/Global",
-    "price": 49.16,
-    "prev_close": 49.15,
-    "daily_change": 0.01,
-    "daily_change_pct": 0.02,
-    "wow_change": 0.54,
-    "wow_change_pct": 1.11,
+    "price": 49.62,
+    "prev_close": 49.16,
+    "daily_change": 0.46,
+    "daily_change_pct": 0.94,
+    "wow_change": 0.94,
+    "wow_change_pct": 1.93,
     "high_52": 57.36,
     "low_52": 35.33,
     "currency": "USD",
     "sparkline": [
-      49.83,
-      48.62,
       48.98,
       48.68,
       47.35,
       48.24,
-      49.15
+      49.15,
+      49.16,
+      49.62
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 49.6
-      },
-      {
-        "date": "2026-06-22",
-        "price": 50.75
-      },
       {
         "date": "2026-06-23",
         "price": 51.21
@@ -9194,6 +9186,14 @@
       {
         "date": "2026-07-31",
         "price": 49.15
+      },
+      {
+        "date": "2026-08-03",
+        "price": 49.16
+      },
+      {
+        "date": "2026-08-04",
+        "price": 49.62
       }
     ]
   },
@@ -9202,33 +9202,25 @@
     "name": "OceanPal Inc.",
     "category": "Dry Bulk",
     "region": "US/Global",
-    "price": 6.31,
-    "prev_close": 6.46,
-    "daily_change": -0.15,
-    "daily_change_pct": -2.32,
-    "wow_change": -0.4,
-    "wow_change_pct": -5.96,
+    "price": 6.7,
+    "prev_close": 6.31,
+    "daily_change": 0.39,
+    "daily_change_pct": 6.18,
+    "wow_change": 0.47,
+    "wow_change_pct": 7.54,
     "high_52": 60,
     "low_52": 4.1,
     "currency": "USD",
     "sparkline": [
-      7.4,
-      6.71,
       6.7,
       6.23,
       6.3,
       6.1,
-      6.46
+      6.46,
+      6.31,
+      6.7
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 10.02
-      },
-      {
-        "date": "2026-06-22",
-        "price": 9.24
-      },
       {
         "date": "2026-06-23",
         "price": 8.97
@@ -9340,6 +9332,14 @@
       {
         "date": "2026-07-31",
         "price": 6.46
+      },
+      {
+        "date": "2026-08-03",
+        "price": 6.31
+      },
+      {
+        "date": "2026-08-04",
+        "price": 6.7
       }
     ]
   },
@@ -10224,12 +10224,12 @@
     "name": "Hapag-Lloyd Aktiengesellschaft",
     "category": "Container",
     "region": "Global",
-    "price": 125.9,
+    "price": 123.5,
     "prev_close": 127.1,
-    "daily_change": -1.2,
-    "daily_change_pct": -0.94,
-    "wow_change": 0.2,
-    "wow_change_pct": 0.16,
+    "daily_change": -3.6,
+    "daily_change_pct": -2.83,
+    "wow_change": -2.2,
+    "wow_change_pct": -1.75,
     "high_52": 156.5,
     "low_52": 109.7,
     "currency": "EUR",
@@ -10240,7 +10240,7 @@
       125.8,
       126.9,
       127.1,
-      125.9
+      123.5
     ],
     "history": [
       {
@@ -10361,7 +10361,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 125.9
+        "price": 123.5
       }
     ]
   },
@@ -10808,25 +10808,29 @@
     "name": "Heidmar Maritime Holdings Corp.",
     "category": "Marine Services",
     "region": "Europe",
-    "price": 0.94,
-    "prev_close": 0.89,
-    "daily_change": 0.05,
-    "daily_change_pct": 5.59,
-    "wow_change": 0.01,
-    "wow_change_pct": 1.61,
+    "price": 0.9,
+    "prev_close": 0.88,
+    "daily_change": 0.01,
+    "daily_change_pct": 1.13,
+    "wow_change": -0.02,
+    "wow_change_pct": -2.19,
     "high_52": 1.58,
     "low_52": 0.6,
     "currency": "EUR",
     "sparkline": [
+      0.94,
       0.92,
       0.93,
       1.03,
       0.9,
       0.88,
-      0.89,
-      0.94
+      0.89
     ],
     "history": [
+      {
+        "date": "2026-06-22",
+        "price": 0.89
+      },
       {
         "date": "2026-06-23",
         "price": 0.9
@@ -10940,12 +10944,8 @@
         "price": 0.88
       },
       {
-        "date": "2026-07-31",
-        "price": 0.89
-      },
-      {
         "date": "2026-08-04",
-        "price": 0.94
+        "price": 0.89
       }
     ]
   },
@@ -10954,33 +10954,25 @@
     "name": "Helix Energy Solutions Group, Inc.",
     "category": "Offshore",
     "region": "US/Global",
-    "price": 9.26,
-    "prev_close": 9.51,
-    "daily_change": -0.25,
-    "daily_change_pct": -2.63,
-    "wow_change": -0.65,
-    "wow_change_pct": -6.56,
+    "price": 9.39,
+    "prev_close": 9.26,
+    "daily_change": 0.13,
+    "daily_change_pct": 1.4,
+    "wow_change": 0.26,
+    "wow_change_pct": 2.85,
     "high_52": 10.55,
     "low_52": 5.7,
     "currency": "USD",
     "sparkline": [
-      9.7,
-      9.91,
       9.64,
       9.13,
       9.07,
       9.2,
-      9.51
+      9.51,
+      9.26,
+      9.39
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 8.69
-      },
-      {
-        "date": "2026-06-22",
-        "price": 8.85
-      },
       {
         "date": "2026-06-23",
         "price": 8.83
@@ -11092,6 +11084,14 @@
       {
         "date": "2026-07-31",
         "price": 9.51
+      },
+      {
+        "date": "2026-08-03",
+        "price": 9.26
+      },
+      {
+        "date": "2026-08-04",
+        "price": 9.39
       }
     ]
   },
@@ -11100,33 +11100,25 @@
     "name": "Pangaea Logistics Solutions Ltd.",
     "category": "Dry Bulk",
     "region": "US/Global",
-    "price": 7.61,
-    "prev_close": 7.54,
-    "daily_change": 0.07,
-    "daily_change_pct": 0.93,
-    "wow_change": -0.05,
-    "wow_change_pct": -0.65,
+    "price": 7.51,
+    "prev_close": 7.61,
+    "daily_change": -0.1,
+    "daily_change_pct": -1.25,
+    "wow_change": -0.02,
+    "wow_change_pct": -0.33,
     "high_52": 9.35,
     "low_52": 4.56,
     "currency": "USD",
     "sparkline": [
-      7.63,
-      7.66,
       7.46,
       7.54,
       7.4,
       7.54,
-      7.61
+      7.61,
+      7.61,
+      7.51
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 7.38
-      },
-      {
-        "date": "2026-06-22",
-        "price": 7.5
-      },
       {
         "date": "2026-06-23",
         "price": 7.58
@@ -11238,6 +11230,14 @@
       {
         "date": "2026-07-31",
         "price": 7.61
+      },
+      {
+        "date": "2026-08-03",
+        "price": 7.61
+      },
+      {
+        "date": "2026-08-04",
+        "price": 7.51
       }
     ]
   },
@@ -11246,29 +11246,25 @@
     "name": "HEMLO MINING CORP.",
     "category": "Diversified",
     "region": "Global",
-    "price": 3.61,
-    "prev_close": 3.63,
-    "daily_change": -0.03,
-    "daily_change_pct": -0.74,
-    "wow_change": -0.4,
-    "wow_change_pct": -10.07,
+    "price": 3.72,
+    "prev_close": 3.61,
+    "daily_change": 0.11,
+    "daily_change_pct": 3.15,
+    "wow_change": -0.07,
+    "wow_change_pct": -1.86,
     "high_52": 6.54,
     "low_52": 0.15,
     "currency": "USD",
     "sparkline": [
-      3.91,
       4.01,
       3.79,
       3.62,
       3.72,
       3.63,
-      3.61
+      3.61,
+      3.72
     ],
     "history": [
-      {
-        "date": "2026-06-22",
-        "price": 4.48
-      },
       {
         "date": "2026-06-23",
         "price": 4.17
@@ -11384,6 +11380,10 @@
       {
         "date": "2026-08-03",
         "price": 3.61
+      },
+      {
+        "date": "2026-08-04",
+        "price": 3.72
       }
     ]
   },
@@ -11830,33 +11830,25 @@
     "name": "Icon Energy Corp.",
     "category": "Marine Services",
     "region": "US/Global",
-    "price": 1.03,
-    "prev_close": 1.04,
-    "daily_change": -0.01,
-    "daily_change_pct": -0.96,
-    "wow_change": 0.09,
-    "wow_change_pct": 9.57,
+    "price": 1.06,
+    "prev_close": 1.03,
+    "daily_change": 0.04,
+    "daily_change_pct": 3.4,
+    "wow_change": 0.05,
+    "wow_change_pct": 4.41,
     "high_52": 12.1,
     "low_52": 0.81,
     "currency": "USD",
     "sparkline": [
-      1.02,
-      0.94,
       1.15,
       1.02,
       0.97,
       1.06,
-      1.04
+      1.04,
+      1.03,
+      1.07
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 0.92
-      },
-      {
-        "date": "2026-06-22",
-        "price": 0.93
-      },
       {
         "date": "2026-06-23",
         "price": 0.91
@@ -11968,6 +11960,14 @@
       {
         "date": "2026-07-31",
         "price": 1.04
+      },
+      {
+        "date": "2026-08-03",
+        "price": 1.03
+      },
+      {
+        "date": "2026-08-04",
+        "price": 1.07
       }
     ]
   },
@@ -12122,12 +12122,12 @@
     "name": "International Container Terminal Services, Inc.",
     "category": "Ports & Logistics",
     "region": "Global",
-    "price": 15.54,
+    "price": 16.42,
     "prev_close": 15.54,
-    "daily_change": 0,
-    "daily_change_pct": 0,
-    "wow_change": -1.16,
-    "wow_change_pct": -6.95,
+    "daily_change": 0.88,
+    "daily_change_pct": 5.66,
+    "wow_change": -0.28,
+    "wow_change_pct": -1.68,
     "high_52": 17.44,
     "low_52": 7.94,
     "currency": "USD",
@@ -12268,33 +12268,25 @@
     "name": "International Seaways, Inc.",
     "category": "Tanker",
     "region": "US/Global",
-    "price": 95.23,
-    "prev_close": 96.18,
-    "daily_change": -0.95,
-    "daily_change_pct": -0.99,
-    "wow_change": 2.95,
-    "wow_change_pct": 3.2,
+    "price": 93.21,
+    "prev_close": 95.23,
+    "daily_change": -2.02,
+    "daily_change_pct": -2.12,
+    "wow_change": -0.39,
+    "wow_change_pct": -0.42,
     "high_52": 96.18,
     "low_52": 41.5,
     "currency": "USD",
     "sparkline": [
-      91.35,
-      92.28,
       90.69,
       93.6,
       94.55,
       95.21,
-      96.18
+      96.18,
+      95.23,
+      93.21
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 84.49
-      },
-      {
-        "date": "2026-06-22",
-        "price": 88.41
-      },
       {
         "date": "2026-06-23",
         "price": 89.98
@@ -12406,6 +12398,14 @@
       {
         "date": "2026-07-31",
         "price": 96.18
+      },
+      {
+        "date": "2026-08-03",
+        "price": 95.23
+      },
+      {
+        "date": "2026-08-04",
+        "price": 93.21
       }
     ]
   },
@@ -12706,33 +12706,25 @@
     "name": "Seanergy Maritime Holdings Corp",
     "category": "Dry Bulk",
     "region": "US/Global",
-    "price": 18.17,
-    "prev_close": 17.49,
-    "daily_change": 0.68,
-    "daily_change_pct": 3.89,
-    "wow_change": 1.99,
-    "wow_change_pct": 12.3,
-    "high_52": 17.82,
+    "price": 17.89,
+    "prev_close": 18.17,
+    "daily_change": -0.28,
+    "daily_change_pct": -1.51,
+    "wow_change": 1.83,
+    "wow_change_pct": 11.36,
+    "high_52": 18.17,
     "low_52": 6.95,
     "currency": "USD",
     "sparkline": [
-      16.37,
-      16.18,
       16.14,
       16.07,
       16.09,
       17.82,
-      17.49
+      17.49,
+      18.17,
+      17.9
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 14.63
-      },
-      {
-        "date": "2026-06-22",
-        "price": 15.14
-      },
       {
         "date": "2026-06-23",
         "price": 15.24
@@ -12844,6 +12836,14 @@
       {
         "date": "2026-07-31",
         "price": 17.49
+      },
+      {
+        "date": "2026-08-03",
+        "price": 18.17
+      },
+      {
+        "date": "2026-08-04",
+        "price": 17.9
       }
     ]
   },
@@ -13290,33 +13290,25 @@
     "name": "Kirby Corporation",
     "category": "Ports & Logistics",
     "region": "US/Global",
-    "price": 130.53,
-    "prev_close": 131.14,
-    "daily_change": -0.61,
-    "daily_change_pct": -0.47,
-    "wow_change": -18.12,
-    "wow_change_pct": -12.19,
+    "price": 131.43,
+    "prev_close": 130.53,
+    "daily_change": 0.9,
+    "daily_change_pct": 0.69,
+    "wow_change": -13.96,
+    "wow_change_pct": -9.6,
     "high_52": 152.59,
     "low_52": 79.95,
     "currency": "USD",
     "sparkline": [
-      149.1,
-      148.65,
       145.08,
       145.39,
       131.07,
       132.34,
-      131.14
+      131.14,
+      130.53,
+      131.43
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 140.64
-      },
-      {
-        "date": "2026-06-22",
-        "price": 141.32
-      },
       {
         "date": "2026-06-23",
         "price": 138.23
@@ -13428,6 +13420,14 @@
       {
         "date": "2026-07-31",
         "price": 131.14
+      },
+      {
+        "date": "2026-08-03",
+        "price": 130.53
+      },
+      {
+        "date": "2026-08-04",
+        "price": 131.43
       }
     ]
   },
@@ -13436,33 +13436,25 @@
     "name": "KNOT Offshore Partners LP",
     "category": "Offshore",
     "region": "US/Global",
-    "price": 10.7,
-    "prev_close": 10.77,
-    "daily_change": -0.07,
-    "daily_change_pct": -0.65,
-    "wow_change": 0.42,
-    "wow_change_pct": 4.09,
+    "price": 10.56,
+    "prev_close": 10.7,
+    "daily_change": -0.14,
+    "daily_change_pct": -1.31,
+    "wow_change": 0.36,
+    "wow_change_pct": 3.53,
     "high_52": 11.53,
     "low_52": 6.86,
     "currency": "USD",
     "sparkline": [
-      10.43,
-      10.28,
       10.23,
       10.2,
       10.24,
       10.37,
-      10.77
+      10.77,
+      10.7,
+      10.56
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 10.26
-      },
-      {
-        "date": "2026-06-22",
-        "price": 10.39
-      },
       {
         "date": "2026-06-23",
         "price": 10.37
@@ -13574,6 +13566,14 @@
       {
         "date": "2026-07-31",
         "price": 10.77
+      },
+      {
+        "date": "2026-08-03",
+        "price": 10.7
+      },
+      {
+        "date": "2026-08-04",
+        "price": 10.56
       }
     ]
   },
@@ -14312,33 +14312,25 @@
     "name": "Matson, Inc.",
     "category": "Container",
     "region": "US/Global",
-    "price": 207.45,
-    "prev_close": 202.59,
-    "daily_change": 4.86,
-    "daily_change_pct": 2.4,
-    "wow_change": -3.12,
-    "wow_change_pct": -1.48,
+    "price": 214.8,
+    "prev_close": 207.45,
+    "daily_change": 7.35,
+    "daily_change_pct": 3.54,
+    "wow_change": 11.7,
+    "wow_change_pct": 5.76,
     "high_52": 223.55,
     "low_52": 88.05,
     "currency": "USD",
     "sparkline": [
-      213.59,
-      210.57,
       205.45,
       203.1,
       201.84,
       203.65,
-      202.59
+      202.59,
+      207.45,
+      214.8
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 191.24
-      },
-      {
-        "date": "2026-06-22",
-        "price": 196.83
-      },
       {
         "date": "2026-06-23",
         "price": 195.76
@@ -14450,6 +14442,14 @@
       {
         "date": "2026-07-31",
         "price": 202.59
+      },
+      {
+        "date": "2026-08-03",
+        "price": 207.45
+      },
+      {
+        "date": "2026-08-04",
+        "price": 214.8
       }
     ]
   },
@@ -14458,33 +14458,25 @@
     "name": "Star Bulk Carriers Corp.",
     "category": "Dry Bulk",
     "region": "US/Global",
-    "price": 28.73,
-    "prev_close": 28.75,
-    "daily_change": -0.02,
-    "daily_change_pct": -0.07,
-    "wow_change": 0.59,
-    "wow_change_pct": 2.1,
+    "price": 28.57,
+    "prev_close": 28.73,
+    "daily_change": -0.15,
+    "daily_change_pct": -0.54,
+    "wow_change": 0.57,
+    "wow_change_pct": 2.05,
     "high_52": 29.15,
     "low_52": 16.79,
     "currency": "USD",
     "sparkline": [
-      27.15,
-      28.14,
       27.1,
       28,
       27.39,
       29.15,
-      28.75
+      28.75,
+      28.73,
+      28.58
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 25.81
-      },
-      {
-        "date": "2026-06-22",
-        "price": 26.52
-      },
       {
         "date": "2026-06-23",
         "price": 26.98
@@ -14596,6 +14588,14 @@
       {
         "date": "2026-07-31",
         "price": 28.75
+      },
+      {
+        "date": "2026-08-03",
+        "price": 28.73
+      },
+      {
+        "date": "2026-08-04",
+        "price": 28.58
       }
     ]
   },
@@ -15938,10 +15938,6 @@
     ],
     "history": [
       {
-        "date": "2026-06-18",
-        "price": 37.33
-      },
-      {
         "date": "2026-06-22",
         "price": 37.33
       },
@@ -16055,6 +16051,10 @@
       },
       {
         "date": "2026-07-31",
+        "price": 34.07
+      },
+      {
+        "date": "2026-08-03",
         "price": 34.07
       }
     ]
@@ -16794,33 +16794,25 @@
     "name": "Navios Maritime Partners L.P.",
     "category": "Container",
     "region": "US/Global",
-    "price": 81.11,
-    "prev_close": 80.76,
-    "daily_change": 0.35,
-    "daily_change_pct": 0.43,
-    "wow_change": 2.01,
-    "wow_change_pct": 2.54,
-    "high_52": 80.76,
+    "price": 79.66,
+    "prev_close": 81.11,
+    "daily_change": -1.45,
+    "daily_change_pct": -1.79,
+    "wow_change": 0.42,
+    "wow_change_pct": 0.53,
+    "high_52": 81.11,
     "low_52": 43,
     "currency": "USD",
     "sparkline": [
-      76.82,
-      79.1,
       77.71,
       79.24,
       78.01,
       79.27,
-      80.76
+      80.76,
+      81.11,
+      79.66
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 70.16
-      },
-      {
-        "date": "2026-06-22",
-        "price": 71.84
-      },
       {
         "date": "2026-06-23",
         "price": 72.53
@@ -16932,6 +16924,14 @@
       {
         "date": "2026-07-31",
         "price": 80.76
+      },
+      {
+        "date": "2026-08-03",
+        "price": 81.11
+      },
+      {
+        "date": "2026-08-04",
+        "price": 79.66
       }
     ]
   },
@@ -16940,12 +16940,12 @@
     "name": "Neste Oyj",
     "category": "Diversified",
     "region": "Global",
-    "price": 29.88,
+    "price": 29.14,
     "prev_close": 30.56,
-    "daily_change": -0.68,
-    "daily_change_pct": -2.23,
-    "wow_change": 0.08,
-    "wow_change_pct": 0.27,
+    "daily_change": -1.42,
+    "daily_change_pct": -4.65,
+    "wow_change": -0.66,
+    "wow_change_pct": -2.21,
     "high_52": 33.59,
     "low_52": 13.56,
     "currency": "EUR",
@@ -16956,7 +16956,7 @@
       30.51,
       31.11,
       30.56,
-      29.88
+      29.14
     ],
     "history": [
       {
@@ -17077,7 +17077,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 29.88
+        "price": 29.14
       }
     ]
   },
@@ -17087,32 +17087,24 @@
     "category": "Gas Carrier",
     "region": "US/Global",
     "price": 0.34,
-    "prev_close": 0.32,
-    "daily_change": 0.01,
-    "daily_change_pct": 3.99,
-    "wow_change": -0.02,
-    "wow_change_pct": -4.84,
+    "prev_close": 0.34,
+    "daily_change": 0,
+    "daily_change_pct": 1.25,
+    "wow_change": 0.01,
+    "wow_change_pct": 3.09,
     "high_52": 3.27,
     "low_52": 0.32,
     "currency": "USD",
     "sparkline": [
       0.34,
-      0.35,
-      0.34,
       0.33,
       0.32,
       0.33,
-      0.32
+      0.32,
+      0.34,
+      0.34
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 0.43
-      },
-      {
-        "date": "2026-06-22",
-        "price": 0.4
-      },
       {
         "date": "2026-06-23",
         "price": 0.38
@@ -17224,6 +17216,14 @@
       {
         "date": "2026-07-31",
         "price": 0.32
+      },
+      {
+        "date": "2026-08-03",
+        "price": 0.34
+      },
+      {
+        "date": "2026-08-04",
+        "price": 0.34
       }
     ]
   },
@@ -17378,33 +17378,25 @@
     "name": "Nippon Steel Corporation",
     "category": "Diversified",
     "region": "Global",
-    "price": 4.13,
-    "prev_close": 4.08,
-    "daily_change": 0.05,
-    "daily_change_pct": 1.23,
-    "wow_change": 0.3,
-    "wow_change_pct": 7.83,
+    "price": 4.25,
+    "prev_close": 4.13,
+    "daily_change": 0.12,
+    "daily_change_pct": 2.91,
+    "wow_change": 0.19,
+    "wow_change_pct": 4.68,
     "high_52": 7.88,
     "low_52": 3.34,
     "currency": "USD",
     "sparkline": [
-      3.74,
-      3.83,
       3.95,
       4.06,
       4.15,
       4.2,
-      4.08
+      4.08,
+      4.13,
+      4.25
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 3.55
-      },
-      {
-        "date": "2026-06-22",
-        "price": 3.53
-      },
       {
         "date": "2026-06-23",
         "price": 3.45
@@ -17516,6 +17508,14 @@
       {
         "date": "2026-07-31",
         "price": 4.08
+      },
+      {
+        "date": "2026-08-03",
+        "price": 4.13
+      },
+      {
+        "date": "2026-08-04",
+        "price": 4.25
       }
     ]
   },
@@ -17670,33 +17670,25 @@
     "name": "Noble Corporation plc",
     "category": "Offshore",
     "region": "US/Global",
-    "price": 40.42,
-    "prev_close": 42.4,
-    "daily_change": -1.98,
-    "daily_change_pct": -4.67,
-    "wow_change": -2.84,
-    "wow_change_pct": -6.56,
+    "price": 40.47,
+    "prev_close": 40.42,
+    "daily_change": 0.05,
+    "daily_change_pct": 0.12,
+    "wow_change": 1.27,
+    "wow_change_pct": 3.24,
     "high_52": 54.37,
     "low_52": 25.9,
     "currency": "USD",
     "sparkline": [
       43.11,
-      43.26,
-      43.11,
       39.2,
       41.01,
       41.44,
-      42.4
+      42.4,
+      40.42,
+      40.47
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 41.68
-      },
-      {
-        "date": "2026-06-22",
-        "price": 42.35
-      },
       {
         "date": "2026-06-23",
         "price": 41.95
@@ -17808,6 +17800,14 @@
       {
         "date": "2026-07-31",
         "price": 42.4
+      },
+      {
+        "date": "2026-08-03",
+        "price": 40.42
+      },
+      {
+        "date": "2026-08-04",
+        "price": 40.47
       }
     ]
   },
@@ -17816,33 +17816,25 @@
     "name": "Nordic American Tankers Limited",
     "category": "Tanker",
     "region": "US/Global",
-    "price": 6.43,
-    "prev_close": 6.53,
-    "daily_change": -0.1,
-    "daily_change_pct": -1.53,
-    "wow_change": -0.02,
-    "wow_change_pct": -0.31,
+    "price": 6.28,
+    "prev_close": 6.43,
+    "daily_change": -0.15,
+    "daily_change_pct": -2.33,
+    "wow_change": -0.11,
+    "wow_change_pct": -1.72,
     "high_52": 6.66,
     "low_52": 2.8,
     "currency": "USD",
     "sparkline": [
-      6.42,
-      6.45,
       6.46,
       6.39,
       6.41,
       6.66,
-      6.53
+      6.53,
+      6.43,
+      6.28
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 5.85
-      },
-      {
-        "date": "2026-06-22",
-        "price": 6.21
-      },
       {
         "date": "2026-06-23",
         "price": 6.46
@@ -17954,6 +17946,14 @@
       {
         "date": "2026-07-31",
         "price": 6.53
+      },
+      {
+        "date": "2026-08-03",
+        "price": 6.43
+      },
+      {
+        "date": "2026-08-04",
+        "price": 6.28
       }
     ]
   },
@@ -18109,24 +18109,28 @@
     "category": "Dry Bulk",
     "region": "Europe",
     "price": 57.5,
-    "prev_close": 51,
-    "daily_change": 6.5,
-    "daily_change_pct": 12.75,
-    "wow_change": 17.7,
-    "wow_change_pct": 44.47,
+    "prev_close": 41,
+    "daily_change": 16.5,
+    "daily_change_pct": 40.24,
+    "wow_change": 18.5,
+    "wow_change_pct": 47.44,
     "high_52": 57.5,
     "low_52": 24.6,
     "currency": "EUR",
     "sparkline": [
+      38.8,
       39,
       39.8,
       39.8,
       40.2,
       41,
-      51,
       57.5
     ],
     "history": [
+      {
+        "date": "2026-06-22",
+        "price": 36.6
+      },
       {
         "date": "2026-06-23",
         "price": 36.8
@@ -18240,10 +18244,6 @@
         "price": 41
       },
       {
-        "date": "2026-07-31",
-        "price": 51
-      },
-      {
         "date": "2026-08-04",
         "price": 57.5
       }
@@ -18254,33 +18254,25 @@
     "name": "Oceaneering International, Inc.",
     "category": "Offshore",
     "region": "US/Global",
-    "price": 48.72,
-    "prev_close": 48.78,
-    "daily_change": -0.06,
-    "daily_change_pct": -0.12,
-    "wow_change": -4.01,
-    "wow_change_pct": -7.6,
+    "price": 49.75,
+    "prev_close": 48.72,
+    "daily_change": 1.03,
+    "daily_change_pct": 2.11,
+    "wow_change": 1.76,
+    "wow_change_pct": 3.67,
     "high_52": 52.73,
     "low_52": 21.36,
     "currency": "USD",
     "sparkline": [
-      48.02,
-      52.73,
       52.17,
       47.99,
       46.58,
       47.64,
-      48.78
+      48.78,
+      48.72,
+      49.75
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 36.06
-      },
-      {
-        "date": "2026-06-22",
-        "price": 36.19
-      },
       {
         "date": "2026-06-23",
         "price": 36.28
@@ -18392,6 +18384,14 @@
       {
         "date": "2026-07-31",
         "price": 48.78
+      },
+      {
+        "date": "2026-08-03",
+        "price": 48.72
+      },
+      {
+        "date": "2026-08-04",
+        "price": 49.75
       }
     ]
   },
@@ -18400,22 +18400,22 @@
     "name": "Odfjell Drilling Ltd",
     "category": "Offshore",
     "region": "Europe",
-    "price": 91.9,
-    "prev_close": 91.9,
+    "price": 91.6,
+    "prev_close": 91.6,
     "daily_change": 0,
     "daily_change_pct": 0,
     "wow_change": 0,
     "wow_change_pct": 0,
-    "high_52": 91.9,
-    "low_52": 91.9,
+    "high_52": 91.6,
+    "low_52": 91.6,
     "currency": "NOK",
     "sparkline": [
-      91.9
+      91.6
     ],
     "history": [
       {
         "date": "2026-08-04",
-        "price": 91.9
+        "price": 91.6
       }
     ]
   },
@@ -18570,33 +18570,25 @@
     "name": "Diana Shipping Inc.",
     "category": "Dry Bulk",
     "region": "US/Global",
-    "price": 2.5,
-    "prev_close": 2.43,
-    "daily_change": 0.07,
-    "daily_change_pct": 2.88,
-    "wow_change": 0.25,
-    "wow_change_pct": 11.11,
+    "price": 2.47,
+    "prev_close": 2.5,
+    "daily_change": -0.03,
+    "daily_change_pct": -1.04,
+    "wow_change": 0.3,
+    "wow_change_pct": 14.01,
     "high_52": 2.9,
     "low_52": 1.51,
     "currency": "USD",
     "sparkline": [
-      2.22,
-      2.25,
       2.2,
       2.17,
       2.14,
       2.3,
-      2.43
+      2.43,
+      2.5,
+      2.47
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 2.1
-      },
-      {
-        "date": "2026-06-22",
-        "price": 2.15
-      },
       {
         "date": "2026-06-23",
         "price": 2.15
@@ -18708,6 +18700,14 @@
       {
         "date": "2026-07-31",
         "price": 2.43
+      },
+      {
+        "date": "2026-08-03",
+        "price": 2.5
+      },
+      {
+        "date": "2026-08-04",
+        "price": 2.47
       }
     ]
   },
@@ -18716,33 +18716,25 @@
     "name": "Genco Shipping & Trading Limited",
     "category": "Dry Bulk",
     "region": "US/Global",
-    "price": 26.24,
-    "prev_close": 25.54,
-    "daily_change": 0.7,
-    "daily_change_pct": 2.74,
-    "wow_change": -0.53,
-    "wow_change_pct": -1.98,
+    "price": 26.63,
+    "prev_close": 26.24,
+    "daily_change": 0.39,
+    "daily_change_pct": 1.49,
+    "wow_change": 1.24,
+    "wow_change_pct": 4.88,
     "high_52": 27.08,
     "low_52": 15.57,
     "currency": "USD",
     "sparkline": [
-      25.75,
-      26.77,
       25.09,
       25.39,
       25.22,
       25.98,
-      25.54
+      25.54,
+      26.24,
+      26.63
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 23.68
-      },
-      {
-        "date": "2026-06-22",
-        "price": 23.57
-      },
       {
         "date": "2026-06-23",
         "price": 24.85
@@ -18854,6 +18846,14 @@
       {
         "date": "2026-07-31",
         "price": 25.54
+      },
+      {
+        "date": "2026-08-03",
+        "price": 26.24
+      },
+      {
+        "date": "2026-08-04",
+        "price": 26.63
       }
     ]
   },
@@ -19300,33 +19300,25 @@
     "name": "Performance Shipping Inc.",
     "category": "Tanker",
     "region": "US/Global",
-    "price": 1.8,
-    "prev_close": 1.74,
-    "daily_change": 0.06,
-    "daily_change_pct": 3.45,
-    "wow_change": 0.02,
-    "wow_change_pct": 1.12,
+    "price": 1.73,
+    "prev_close": 1.8,
+    "daily_change": -0.07,
+    "daily_change_pct": -3.89,
+    "wow_change": -0.08,
+    "wow_change_pct": -4.42,
     "high_52": 2.55,
     "low_52": 1.64,
     "currency": "USD",
     "sparkline": [
       1.79,
-      1.78,
-      1.79,
       1.81,
       1.89,
       1.83,
-      1.74
+      1.74,
+      1.8,
+      1.73
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 1.68
-      },
-      {
-        "date": "2026-06-22",
-        "price": 1.71
-      },
       {
         "date": "2026-06-23",
         "price": 1.7
@@ -19438,6 +19430,14 @@
       {
         "date": "2026-07-31",
         "price": 1.74
+      },
+      {
+        "date": "2026-08-03",
+        "price": 1.8
+      },
+      {
+        "date": "2026-08-04",
+        "price": 1.73
       }
     ]
   },
@@ -19446,33 +19446,25 @@
     "name": "Petróleo Brasileiro S.A. - Petrobras",
     "category": "Diversified",
     "region": "US/Global",
-    "price": 19.06,
-    "prev_close": 19.4,
-    "daily_change": -0.34,
-    "daily_change_pct": -1.75,
-    "wow_change": 0.29,
-    "wow_change_pct": 1.55,
+    "price": 18.66,
+    "prev_close": 19.06,
+    "daily_change": -0.4,
+    "daily_change_pct": -2.12,
+    "wow_change": 0.59,
+    "wow_change_pct": 3.24,
     "high_52": 22.03,
     "low_52": 11.54,
     "currency": "USD",
     "sparkline": [
-      19,
-      18.77,
       18,
       18.07,
       18.59,
       19.12,
-      19.4
+      19.4,
+      19.06,
+      18.66
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 16.75
-      },
-      {
-        "date": "2026-06-22",
-        "price": 17.01
-      },
       {
         "date": "2026-06-23",
         "price": 17.03
@@ -19584,6 +19576,14 @@
       {
         "date": "2026-07-31",
         "price": 19.4
+      },
+      {
+        "date": "2026-08-03",
+        "price": 19.06
+      },
+      {
+        "date": "2026-08-04",
+        "price": 18.66
       }
     ]
   },
@@ -20030,33 +20030,25 @@
     "name": "POSCO Holdings Inc.",
     "category": "Diversified",
     "region": "US/Global",
-    "price": 52.94,
-    "prev_close": 53.17,
-    "daily_change": -0.23,
-    "daily_change_pct": -0.43,
-    "wow_change": 0.6,
-    "wow_change_pct": 1.15,
+    "price": 54.91,
+    "prev_close": 52.94,
+    "daily_change": 1.97,
+    "daily_change_pct": 3.72,
+    "wow_change": 3.71,
+    "wow_change_pct": 7.25,
     "high_52": 91.72,
     "low_52": 45.13,
     "currency": "USD",
     "sparkline": [
-      53.34,
-      52.34,
       53.1,
       51.2,
       48.68,
       54.49,
-      53.17
+      53.17,
+      52.94,
+      54.91
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 60.69
-      },
-      {
-        "date": "2026-06-22",
-        "price": 57.84
-      },
       {
         "date": "2026-06-23",
         "price": 54.08
@@ -20168,6 +20160,14 @@
       {
         "date": "2026-07-31",
         "price": 53.17
+      },
+      {
+        "date": "2026-08-03",
+        "price": 52.94
+      },
+      {
+        "date": "2026-08-04",
+        "price": 54.91
       }
     ]
   },
@@ -20176,33 +20176,25 @@
     "name": "Himalaya Shipping Ltd.",
     "category": "Dry Bulk",
     "region": "US/Global",
-    "price": 15.94,
-    "prev_close": 15.71,
-    "daily_change": 0.23,
-    "daily_change_pct": 1.46,
-    "wow_change": -0.18,
-    "wow_change_pct": -1.12,
+    "price": 15.74,
+    "prev_close": 15.94,
+    "daily_change": -0.2,
+    "daily_change_pct": -1.25,
+    "wow_change": 0.46,
+    "wow_change_pct": 3.01,
     "high_52": 16.24,
     "low_52": 6.89,
     "currency": "USD",
     "sparkline": [
-      15.97,
-      16.12,
       15.47,
       15.28,
       14.62,
       15.54,
-      15.71
+      15.71,
+      15.94,
+      15.74
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 13.86
-      },
-      {
-        "date": "2026-06-22",
-        "price": 14.33
-      },
       {
         "date": "2026-06-23",
         "price": 14.74
@@ -20314,6 +20306,14 @@
       {
         "date": "2026-07-31",
         "price": 15.71
+      },
+      {
+        "date": "2026-08-03",
+        "price": 15.94
+      },
+      {
+        "date": "2026-08-04",
+        "price": 15.74
       }
     ]
   },
@@ -20322,33 +20322,25 @@
     "name": "Pyxis Tankers Inc.",
     "category": "Tanker",
     "region": "US/Global",
-    "price": 4.85,
-    "prev_close": 4.76,
-    "daily_change": 0.09,
-    "daily_change_pct": 1.89,
-    "wow_change": 0.38,
-    "wow_change_pct": 8.5,
-    "high_52": 4.83,
+    "price": 4.83,
+    "prev_close": 4.85,
+    "daily_change": -0.02,
+    "daily_change_pct": -0.52,
+    "wow_change": 0.29,
+    "wow_change_pct": 6.51,
+    "high_52": 4.85,
     "low_52": 2.48,
     "currency": "USD",
     "sparkline": [
-      4.53,
-      4.47,
       4.47,
       4.53,
       4.59,
       4.74,
-      4.76
+      4.76,
+      4.85,
+      4.82
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 4.38
-      },
-      {
-        "date": "2026-06-22",
-        "price": 4.43
-      },
       {
         "date": "2026-06-23",
         "price": 4.57
@@ -20460,6 +20452,14 @@
       {
         "date": "2026-07-31",
         "price": 4.76
+      },
+      {
+        "date": "2026-08-03",
+        "price": 4.85
+      },
+      {
+        "date": "2026-08-04",
+        "price": 4.82
       }
     ]
   },
@@ -20760,33 +20760,25 @@
     "name": "Rio Tinto Group",
     "category": "Diversified",
     "region": "US/Global",
-    "price": 95.9,
-    "prev_close": 96.85,
-    "daily_change": -0.95,
-    "daily_change_pct": -0.98,
-    "wow_change": 4.68,
-    "wow_change_pct": 5.13,
+    "price": 98.86,
+    "prev_close": 95.9,
+    "daily_change": 2.96,
+    "daily_change_pct": 3.09,
+    "wow_change": 7.22,
+    "wow_change_pct": 7.88,
     "high_52": 112.04,
     "low_52": 59.7,
     "currency": "USD",
     "sparkline": [
-      91.51,
-      91.22,
       91.95,
       91.64,
       93.66,
       97.18,
-      96.85
+      96.85,
+      95.9,
+      98.86
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 100.08
-      },
-      {
-        "date": "2026-06-22",
-        "price": 99.36
-      },
       {
         "date": "2026-06-23",
         "price": 95.58
@@ -20898,6 +20890,14 @@
       {
         "date": "2026-07-31",
         "price": 96.85
+      },
+      {
+        "date": "2026-08-03",
+        "price": 95.9
+      },
+      {
+        "date": "2026-08-04",
+        "price": 98.86
       }
     ]
   },
@@ -20906,33 +20906,25 @@
     "name": "Safe Bulkers, Inc.",
     "category": "Dry Bulk",
     "region": "US/Global",
-    "price": 7.89,
-    "prev_close": 7.81,
-    "daily_change": 0.08,
-    "daily_change_pct": 1.02,
-    "wow_change": 0.22,
-    "wow_change_pct": 2.87,
+    "price": 7.77,
+    "prev_close": 7.89,
+    "daily_change": -0.12,
+    "daily_change_pct": -1.52,
+    "wow_change": 0.3,
+    "wow_change_pct": 4.02,
     "high_52": 7.95,
     "low_52": 4.08,
     "currency": "USD",
     "sparkline": [
-      7.55,
-      7.67,
       7.52,
       7.47,
       7.58,
       7.95,
-      7.81
+      7.81,
+      7.89,
+      7.77
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 6.7
-      },
-      {
-        "date": "2026-06-22",
-        "price": 7.01
-      },
       {
         "date": "2026-06-23",
         "price": 7.16
@@ -21044,6 +21036,14 @@
       {
         "date": "2026-07-31",
         "price": 7.81
+      },
+      {
+        "date": "2026-08-03",
+        "price": 7.89
+      },
+      {
+        "date": "2026-08-04",
+        "price": 7.77
       }
     ]
   },
@@ -21055,9 +21055,9 @@
     "price": 4.29,
     "prev_close": 4.19,
     "daily_change": 0.1,
-    "daily_change_pct": 2.34,
+    "daily_change_pct": 2.48,
     "wow_change": -0.07,
-    "wow_change_pct": -1.65,
+    "wow_change_pct": -1.51,
     "high_52": 4.82,
     "low_52": 2.2,
     "currency": "EUR",
@@ -21928,12 +21928,12 @@
     "name": "SBM Offshore N.V.",
     "category": "Offshore",
     "region": "Global",
-    "price": 32.16,
+    "price": 31.68,
     "prev_close": 32.34,
-    "daily_change": -0.18,
-    "daily_change_pct": -0.56,
-    "wow_change": -0.16,
-    "wow_change_pct": -0.5,
+    "daily_change": -0.66,
+    "daily_change_pct": -2.04,
+    "wow_change": -0.64,
+    "wow_change_pct": -1.98,
     "high_52": 37,
     "low_52": 21.2,
     "currency": "EUR",
@@ -21944,7 +21944,7 @@
       31.7,
       32.1,
       32.34,
-      32.16
+      31.68
     ],
     "history": [
       {
@@ -22065,7 +22065,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 32.16
+        "price": 31.68
       }
     ]
   },
@@ -22074,33 +22074,25 @@
     "name": "Scorpio Tankers Inc.",
     "category": "Tanker",
     "region": "US/Global",
-    "price": 77.77,
-    "prev_close": 77.86,
-    "daily_change": -0.09,
-    "daily_change_pct": -0.12,
-    "wow_change": -1.72,
-    "wow_change_pct": -2.16,
+    "price": 76.89,
+    "prev_close": 77.77,
+    "daily_change": -0.87,
+    "daily_change_pct": -1.13,
+    "wow_change": -2.19,
+    "wow_change_pct": -2.78,
     "high_52": 86.62,
     "low_52": 44.07,
     "currency": "USD",
     "sparkline": [
-      79.4,
-      79.49,
       78.4,
       79.09,
       78.53,
       75.53,
-      77.86
+      77.86,
+      77.77,
+      76.89
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 80.58
-      },
-      {
-        "date": "2026-06-22",
-        "price": 82.45
-      },
       {
         "date": "2026-06-23",
         "price": 81.7
@@ -22212,6 +22204,14 @@
       {
         "date": "2026-07-31",
         "price": 77.86
+      },
+      {
+        "date": "2026-08-03",
+        "price": 77.77
+      },
+      {
+        "date": "2026-08-04",
+        "price": 76.89
       }
     ]
   },
@@ -22220,33 +22220,25 @@
     "name": "SEACOR Marine Holdings Inc.",
     "category": "Offshore",
     "region": "US/Global",
-    "price": 9.48,
-    "prev_close": 9.43,
-    "daily_change": 0.05,
-    "daily_change_pct": 0.53,
-    "wow_change": 1.48,
-    "wow_change_pct": 18.5,
-    "high_52": 9.54,
+    "price": 9.57,
+    "prev_close": 9.48,
+    "daily_change": 0.09,
+    "daily_change_pct": 0.95,
+    "wow_change": 1.6,
+    "wow_change_pct": 20.08,
+    "high_52": 9.57,
     "low_52": 4.81,
     "currency": "USD",
     "sparkline": [
-      7.68,
-      8,
       8.09,
       7.97,
       7.72,
       9.54,
-      9.43
+      9.43,
+      9.48,
+      9.57
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 6.68
-      },
-      {
-        "date": "2026-06-22",
-        "price": 7.93
-      },
       {
         "date": "2026-06-23",
         "price": 7.86
@@ -22358,6 +22350,14 @@
       {
         "date": "2026-07-31",
         "price": 9.43
+      },
+      {
+        "date": "2026-08-03",
+        "price": 9.48
+      },
+      {
+        "date": "2026-08-04",
+        "price": 9.57
       }
     ]
   },
@@ -22366,33 +22366,25 @@
     "name": "Seadrill Limited",
     "category": "Offshore",
     "region": "US/Global",
-    "price": 42.6,
-    "prev_close": 44.84,
-    "daily_change": -2.24,
-    "daily_change_pct": -5,
-    "wow_change": -2.33,
-    "wow_change_pct": -5.19,
+    "price": 42.45,
+    "prev_close": 42.6,
+    "daily_change": -0.15,
+    "daily_change_pct": -0.35,
+    "wow_change": 1.44,
+    "wow_change_pct": 3.51,
     "high_52": 54.8,
     "low_52": 28.04,
     "currency": "USD",
     "sparkline": [
-      45.51,
-      44.93,
       42.98,
       41.01,
       41.34,
       43.24,
-      44.84
+      44.84,
+      42.6,
+      42.45
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 38.54
-      },
-      {
-        "date": "2026-06-22",
-        "price": 39.89
-      },
       {
         "date": "2026-06-23",
         "price": 39.77
@@ -22504,6 +22496,14 @@
       {
         "date": "2026-07-31",
         "price": 44.84
+      },
+      {
+        "date": "2026-08-03",
+        "price": 42.6
+      },
+      {
+        "date": "2026-08-04",
+        "price": 42.45
       }
     ]
   },
@@ -22950,33 +22950,25 @@
     "name": "SFL Corporation Ltd.",
     "category": "Tanker",
     "region": "US/Global",
-    "price": 12.38,
-    "prev_close": 12.34,
-    "daily_change": 0.04,
-    "daily_change_pct": 0.32,
-    "wow_change": 0.46,
-    "wow_change_pct": 3.86,
+    "price": 12.07,
+    "prev_close": 12.38,
+    "daily_change": -0.31,
+    "daily_change_pct": -2.51,
+    "wow_change": -0.06,
+    "wow_change_pct": -0.5,
     "high_52": 12.8,
     "low_52": 6.84,
     "currency": "USD",
     "sparkline": [
-      11.86,
-      11.92,
       11.94,
       12.13,
       12.13,
       12.3,
-      12.34
+      12.34,
+      12.38,
+      12.07
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 10.81
-      },
-      {
-        "date": "2026-06-22",
-        "price": 11.25
-      },
       {
         "date": "2026-06-23",
         "price": 11.49
@@ -23088,6 +23080,14 @@
       {
         "date": "2026-07-31",
         "price": 12.34
+      },
+      {
+        "date": "2026-08-03",
+        "price": 12.38
+      },
+      {
+        "date": "2026-08-04",
+        "price": 12.07
       }
     ]
   },
@@ -23096,12 +23096,12 @@
     "name": "Siem Offshore Inc",
     "category": "Offshore",
     "region": "Global",
-    "price": 2.46,
+    "price": 2.42,
     "prev_close": 2.45,
-    "daily_change": 0.01,
-    "daily_change_pct": 0.61,
-    "wow_change": 0.05,
-    "wow_change_pct": 2.28,
+    "daily_change": -0.04,
+    "daily_change_pct": -1.43,
+    "wow_change": 0,
+    "wow_change_pct": 0.21,
     "high_52": 3.15,
     "low_52": 1.65,
     "currency": "EUR",
@@ -23112,7 +23112,7 @@
       2.33,
       2.34,
       2.45,
-      2.46
+      2.41
     ],
     "history": [
       {
@@ -23233,7 +23233,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 2.46
+        "price": 2.41
       }
     ]
   },
@@ -23996,12 +23996,12 @@
     "name": "Western Bulk Chartering AS",
     "category": "Dry Bulk",
     "region": "Europe",
-    "price": 1.76,
+    "price": 1.86,
     "prev_close": 1.73,
-    "daily_change": 0.03,
-    "daily_change_pct": 1.73,
-    "wow_change": -0.06,
-    "wow_change_pct": -3.3,
+    "daily_change": 0.13,
+    "daily_change_pct": 7.51,
+    "wow_change": 0.04,
+    "wow_change_pct": 2.2,
     "high_52": 2,
     "low_52": 1.08,
     "currency": "EUR",
@@ -24012,7 +24012,7 @@
       1.77,
       1.79,
       1.73,
-      1.76
+      1.86
     ],
     "history": [
       {
@@ -24133,7 +24133,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 1.76
+        "price": 1.86
       }
     ]
   },
@@ -24142,33 +24142,25 @@
     "name": "StealthGas Inc.",
     "category": "Gas Carrier",
     "region": "US/Global",
-    "price": 8.86,
-    "prev_close": 8.92,
-    "daily_change": -0.06,
-    "daily_change_pct": -0.67,
-    "wow_change": 0.03,
-    "wow_change_pct": 0.34,
+    "price": 8.64,
+    "prev_close": 8.86,
+    "daily_change": -0.22,
+    "daily_change_pct": -2.48,
+    "wow_change": -0.22,
+    "wow_change_pct": -2.48,
     "high_52": 10.39,
     "low_52": 6.26,
     "currency": "USD",
     "sparkline": [
-      9.01,
-      8.83,
       8.86,
       8.86,
       8.76,
       8.84,
-      8.92
+      8.92,
+      8.86,
+      8.64
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 8.29
-      },
-      {
-        "date": "2026-06-22",
-        "price": 8.45
-      },
       {
         "date": "2026-06-23",
         "price": 8.52
@@ -24280,6 +24272,14 @@
       {
         "date": "2026-07-31",
         "price": 8.92
+      },
+      {
+        "date": "2026-08-03",
+        "price": 8.86
+      },
+      {
+        "date": "2026-08-04",
+        "price": 8.64
       }
     ]
   },
@@ -24312,22 +24312,22 @@
     "name": "Subsea 7 SA",
     "category": "Offshore",
     "region": "Global",
-    "price": 325.4,
-    "prev_close": 325.4,
+    "price": 328.4,
+    "prev_close": 328.4,
     "daily_change": 0,
     "daily_change_pct": 0,
     "wow_change": 0,
     "wow_change_pct": 0,
-    "high_52": 325.4,
-    "low_52": 325.4,
+    "high_52": 328.4,
+    "low_52": 328.4,
     "currency": "NOK",
     "sparkline": [
-      325.4
+      328.4
     ],
     "history": [
       {
         "date": "2026-08-04",
-        "price": 325.4
+        "price": 328.4
       }
     ]
   },
@@ -24340,25 +24340,21 @@
     "prev_close": 10.38,
     "daily_change": 0.14,
     "daily_change_pct": 1.35,
-    "wow_change": 0.7,
-    "wow_change_pct": 7.13,
+    "wow_change": 0.74,
+    "wow_change_pct": 7.57,
     "high_52": 12.18,
     "low_52": 6.62,
     "currency": "USD",
     "sparkline": [
-      9.77,
       9.82,
       9.78,
       9.8,
       9.79,
       10.12,
-      10.38
+      10.38,
+      10.52
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 10.18
-      },
       {
         "date": "2026-06-22",
         "price": 10.08
@@ -24474,6 +24470,10 @@
       {
         "date": "2026-07-31",
         "price": 10.38
+      },
+      {
+        "date": "2026-08-03",
+        "price": 10.52
       }
     ]
   },
@@ -24482,12 +24482,12 @@
     "name": "2020 Bulkers Ltd.",
     "category": "Dry Bulk",
     "region": "Europe",
-    "price": 3.5,
+    "price": 3.49,
     "prev_close": 3.3,
-    "daily_change": 0.2,
-    "daily_change_pct": 6.06,
-    "wow_change": 0.12,
-    "wow_change_pct": 3.55,
+    "daily_change": 0.19,
+    "daily_change_pct": 5.76,
+    "wow_change": 0.11,
+    "wow_change_pct": 3.25,
     "high_52": 149,
     "low_52": 2.8,
     "currency": "NOK",
@@ -24498,7 +24498,7 @@
       3.31,
       3.38,
       3.3,
-      3.5
+      3.49
     ],
     "history": [
       {
@@ -24619,7 +24619,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 3.5
+        "price": 3.49
       }
     ]
   },
@@ -24920,33 +24920,25 @@
     "name": "TechnipFMC plc",
     "category": "Offshore",
     "region": "US/Global",
-    "price": 69.19,
-    "prev_close": 71.66,
-    "daily_change": -2.47,
-    "daily_change_pct": -3.45,
-    "wow_change": -7.56,
-    "wow_change_pct": -9.85,
+    "price": 70.01,
+    "prev_close": 69.19,
+    "daily_change": 0.82,
+    "daily_change_pct": 1.19,
+    "wow_change": -2.38,
+    "wow_change_pct": -3.29,
     "high_52": 76.99,
     "low_52": 34.76,
     "currency": "USD",
     "sparkline": [
-      76.02,
-      76.75,
       75.04,
       72.39,
       71.73,
       68.92,
-      71.66
+      71.66,
+      69.19,
+      70.01
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 65.17
-      },
-      {
-        "date": "2026-06-22",
-        "price": 67.39
-      },
       {
         "date": "2026-06-23",
         "price": 66.14
@@ -25058,6 +25050,14 @@
       {
         "date": "2026-07-31",
         "price": 71.66
+      },
+      {
+        "date": "2026-08-03",
+        "price": 69.19
+      },
+      {
+        "date": "2026-08-04",
+        "price": 70.01
       }
     ]
   },
@@ -25066,33 +25066,25 @@
     "name": "Teekay Tankers Ltd.",
     "category": "Tanker",
     "region": "US/Global",
-    "price": 80.48,
-    "prev_close": 79.37,
-    "daily_change": 1.11,
-    "daily_change_pct": 1.4,
-    "wow_change": 4.67,
-    "wow_change_pct": 6.16,
+    "price": 78.33,
+    "prev_close": 80.48,
+    "daily_change": -2.15,
+    "daily_change_pct": -2.68,
+    "wow_change": 1.55,
+    "wow_change_pct": 2.01,
     "high_52": 83.03,
     "low_52": 43.29,
     "currency": "USD",
     "sparkline": [
-      75.69,
-      75.81,
       75.97,
       76.78,
       78.18,
       77.36,
-      79.37
+      79.37,
+      80.48,
+      78.33
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 74.45
-      },
-      {
-        "date": "2026-06-22",
-        "price": 77.58
-      },
       {
         "date": "2026-06-23",
         "price": 79.21
@@ -25204,6 +25196,14 @@
       {
         "date": "2026-07-31",
         "price": 79.37
+      },
+      {
+        "date": "2026-08-03",
+        "price": 80.48
+      },
+      {
+        "date": "2026-08-04",
+        "price": 78.33
       }
     ]
   },
@@ -25213,24 +25213,28 @@
     "category": "Tanker",
     "region": "India",
     "price": 1435,
-    "prev_close": 1350.3,
-    "daily_change": 84.7,
-    "daily_change_pct": 6.27,
-    "wow_change": 35.8,
-    "wow_change_pct": 2.56,
+    "prev_close": 1372.35,
+    "daily_change": 62.65,
+    "daily_change_pct": 4.57,
+    "wow_change": -2.4,
+    "wow_change_pct": -0.17,
     "high_52": 1718.65,
     "low_52": 924.25,
     "currency": "INR",
     "sparkline": [
+      1440.3,
       1437.4,
       1399.2,
       1377,
       1369.7,
       1372.35,
-      1350.3,
       1435
     ],
     "history": [
+      {
+        "date": "2026-06-22",
+        "price": 1473.15
+      },
       {
         "date": "2026-06-23",
         "price": 1468.05
@@ -25342,10 +25346,6 @@
       {
         "date": "2026-07-30",
         "price": 1372.35
-      },
-      {
-        "date": "2026-07-31",
-        "price": 1350.3
       },
       {
         "date": "2026-08-04",
@@ -25505,24 +25505,28 @@
     "category": "Ports & Logistics",
     "region": "Europe",
     "price": 39,
-    "prev_close": 38.5,
-    "daily_change": 0.5,
-    "daily_change_pct": 1.3,
-    "wow_change": 1.2,
-    "wow_change_pct": 3.17,
+    "prev_close": 38.6,
+    "daily_change": 0.4,
+    "daily_change_pct": 1.04,
+    "wow_change": 1.1,
+    "wow_change_pct": 2.9,
     "high_52": 40.2,
     "low_52": 33,
     "currency": "EUR",
     "sparkline": [
+      37.5,
       37.9,
       37.8,
       38.4,
       38.3,
       38.6,
-      38.5,
       39
     ],
     "history": [
+      {
+        "date": "2026-06-22",
+        "price": 39
+      },
       {
         "date": "2026-06-23",
         "price": 38.6
@@ -25634,10 +25638,6 @@
       {
         "date": "2026-07-30",
         "price": 38.6
-      },
-      {
-        "date": "2026-07-31",
-        "price": 38.5
       },
       {
         "date": "2026-08-04",
@@ -25796,33 +25796,25 @@
     "name": "Tidewater Inc.",
     "category": "Offshore",
     "region": "US/Global",
-    "price": 71.48,
-    "prev_close": 75.06,
-    "daily_change": -3.58,
-    "daily_change_pct": -4.77,
-    "wow_change": -7.06,
-    "wow_change_pct": -8.99,
+    "price": 77.73,
+    "prev_close": 71.48,
+    "daily_change": 6.25,
+    "daily_change_pct": 8.75,
+    "wow_change": 3.04,
+    "wow_change_pct": 4.07,
     "high_52": 91.12,
     "low_52": 47.29,
     "currency": "USD",
     "sparkline": [
-      77.44,
-      78.54,
       78.54,
       74.69,
       73.04,
       73.48,
-      75.06
+      75.06,
+      71.48,
+      77.73
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 64.67
-      },
-      {
-        "date": "2026-06-22",
-        "price": 66.35
-      },
       {
         "date": "2026-06-23",
         "price": 66.41
@@ -25934,6 +25926,14 @@
       {
         "date": "2026-07-31",
         "price": 75.06
+      },
+      {
+        "date": "2026-08-03",
+        "price": 71.48
+      },
+      {
+        "date": "2026-08-04",
+        "price": 77.73
       }
     ]
   },
@@ -25942,33 +25942,25 @@
     "name": "Top Ships Inc.",
     "category": "Tanker",
     "region": "US/Global",
-    "price": 0.73,
-    "prev_close": 0.63,
-    "daily_change": 0.11,
-    "daily_change_pct": 16.67,
-    "wow_change": -0.04,
-    "wow_change_pct": -5.77,
+    "price": 0.71,
+    "prev_close": 0.74,
+    "daily_change": -0.03,
+    "daily_change_pct": -4.05,
+    "wow_change": -0.03,
+    "wow_change_pct": -4.05,
     "high_52": 6.25,
     "low_52": 0.63,
     "currency": "USD",
     "sparkline": [
-      0.8,
-      0.78,
       0.78,
       0.74,
       0.65,
       0.67,
-      0.63
+      0.63,
+      0.74,
+      0.71
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 0.93
-      },
-      {
-        "date": "2026-06-22",
-        "price": 0.89
-      },
       {
         "date": "2026-06-23",
         "price": 0.89
@@ -26080,6 +26072,14 @@
       {
         "date": "2026-07-31",
         "price": 0.63
+      },
+      {
+        "date": "2026-08-03",
+        "price": 0.74
+      },
+      {
+        "date": "2026-08-04",
+        "price": 0.71
       }
     ]
   },
@@ -26088,33 +26088,25 @@
     "name": "Toro Corp.",
     "category": "Tanker",
     "region": "US/Global",
-    "price": 5.35,
-    "prev_close": 5.19,
-    "daily_change": 0.16,
-    "daily_change_pct": 3.08,
-    "wow_change": 0.28,
-    "wow_change_pct": 5.52,
+    "price": 5.32,
+    "prev_close": 5.35,
+    "daily_change": -0.03,
+    "daily_change_pct": -0.56,
+    "wow_change": 0.23,
+    "wow_change_pct": 4.52,
     "high_52": 7.68,
     "low_52": 2.68,
     "currency": "USD",
     "sparkline": [
-      5.05,
-      5.07,
       5.04,
       5.09,
       5.06,
       5.06,
-      5.19
+      5.19,
+      5.35,
+      5.32
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 5.02
-      },
-      {
-        "date": "2026-06-22",
-        "price": 5.11
-      },
       {
         "date": "2026-06-23",
         "price": 5.14
@@ -26226,6 +26218,14 @@
       {
         "date": "2026-07-31",
         "price": 5.19
+      },
+      {
+        "date": "2026-08-03",
+        "price": 5.35
+      },
+      {
+        "date": "2026-08-04",
+        "price": 5.32
       }
     ]
   },
@@ -26526,33 +26526,25 @@
     "name": "Transocean Ltd.",
     "category": "Offshore",
     "region": "US/Global",
-    "price": 5.15,
-    "prev_close": 5.32,
-    "daily_change": -0.17,
-    "daily_change_pct": -3.2,
-    "wow_change": -0.2,
-    "wow_change_pct": -3.74,
+    "price": 5.19,
+    "prev_close": 5.15,
+    "daily_change": 0.04,
+    "daily_change_pct": 0.78,
+    "wow_change": 0.2,
+    "wow_change_pct": 4.01,
     "high_52": 7.58,
     "low_52": 2.8,
     "currency": "USD",
     "sparkline": [
-      5.32,
-      5.35,
       5.28,
       4.99,
       4.95,
       5.08,
-      5.32
+      5.32,
+      5.15,
+      5.19
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 5.31
-      },
-      {
-        "date": "2026-06-22",
-        "price": 5.41
-      },
       {
         "date": "2026-06-23",
         "price": 5.29
@@ -26664,6 +26656,14 @@
       {
         "date": "2026-07-31",
         "price": 5.32
+      },
+      {
+        "date": "2026-08-03",
+        "price": 5.15
+      },
+      {
+        "date": "2026-08-04",
+        "price": 5.19
       }
     ]
   },
@@ -26818,33 +26818,25 @@
     "name": "Tsakos Energy Navigation Limited",
     "category": "Tanker",
     "region": "US/Global",
-    "price": 39.61,
-    "prev_close": 40.12,
-    "daily_change": -0.51,
-    "daily_change_pct": -1.27,
-    "wow_change": 0.21,
-    "wow_change_pct": 0.53,
+    "price": 39.38,
+    "prev_close": 39.61,
+    "daily_change": -0.23,
+    "daily_change_pct": -0.58,
+    "wow_change": 0.14,
+    "wow_change_pct": 0.36,
     "high_52": 44.47,
     "low_52": 19.77,
     "currency": "USD",
     "sparkline": [
-      39.43,
-      39.4,
       39.17,
       39.24,
       39.42,
       39.69,
-      40.12
+      40.12,
+      39.61,
+      39.38
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 38.29
-      },
-      {
-        "date": "2026-06-22",
-        "price": 39.72
-      },
       {
         "date": "2026-06-23",
         "price": 41.15
@@ -26956,6 +26948,14 @@
       {
         "date": "2026-07-31",
         "price": 40.12
+      },
+      {
+        "date": "2026-08-03",
+        "price": 39.61
+      },
+      {
+        "date": "2026-08-04",
+        "price": 39.38
       }
     ]
   },
@@ -27256,33 +27256,25 @@
     "name": "Valaris Limited",
     "category": "Offshore",
     "region": "US/Global",
-    "price": 76.82,
-    "prev_close": 79.19,
-    "daily_change": -2.37,
-    "daily_change_pct": -2.99,
-    "wow_change": -2.71,
-    "wow_change_pct": -3.41,
+    "price": 77.57,
+    "prev_close": 76.82,
+    "daily_change": 0.75,
+    "daily_change_pct": 0.98,
+    "wow_change": 3.11,
+    "wow_change_pct": 4.18,
     "high_52": 113.42,
     "low_52": 44.25,
     "currency": "USD",
     "sparkline": [
-      79.15,
-      79.53,
       78.47,
       74.46,
       74.18,
       75.58,
-      79.19
+      79.19,
+      76.82,
+      77.57
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 78.56
-      },
-      {
-        "date": "2026-06-22",
-        "price": 79.92
-      },
       {
         "date": "2026-06-23",
         "price": 78.54
@@ -27394,6 +27386,14 @@
       {
         "date": "2026-07-31",
         "price": 79.19
+      },
+      {
+        "date": "2026-08-03",
+        "price": 76.82
+      },
+      {
+        "date": "2026-08-04",
+        "price": 77.57
       }
     ]
   },
@@ -27402,33 +27402,25 @@
     "name": "Vale S.A.",
     "category": "Diversified",
     "region": "US/Global",
-    "price": 14.58,
-    "prev_close": 15.06,
-    "daily_change": -0.48,
-    "daily_change_pct": -3.19,
-    "wow_change": -0.21,
-    "wow_change_pct": -1.42,
+    "price": 14.89,
+    "prev_close": 14.58,
+    "daily_change": 0.32,
+    "daily_change_pct": 2.16,
+    "wow_change": 0.2,
+    "wow_change_pct": 1.33,
     "high_52": 17.82,
     "low_52": 9.71,
     "currency": "USD",
     "sparkline": [
-      14.83,
-      14.79,
       14.78,
       14.7,
       14.65,
       14.99,
-      15.06
+      15.06,
+      14.58,
+      14.9
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 15.42
-      },
-      {
-        "date": "2026-06-22",
-        "price": 15.71
-      },
       {
         "date": "2026-06-23",
         "price": 15.31
@@ -27540,6 +27532,14 @@
       {
         "date": "2026-07-31",
         "price": 15.06
+      },
+      {
+        "date": "2026-08-03",
+        "price": 14.58
+      },
+      {
+        "date": "2026-08-04",
+        "price": 14.9
       }
     ]
   },
@@ -28424,33 +28424,25 @@
     "name": "World Kinect Corporation",
     "category": "Ports & Logistics",
     "region": "US/Global",
-    "price": 39.06,
-    "prev_close": 39.86,
-    "daily_change": -0.8,
-    "daily_change_pct": -2.01,
-    "wow_change": 0.92,
-    "wow_change_pct": 2.41,
+    "price": 39,
+    "prev_close": 39.06,
+    "daily_change": -0.06,
+    "daily_change_pct": -0.15,
+    "wow_change": -1.05,
+    "wow_change_pct": -2.62,
     "high_52": 40.25,
     "low_52": 22.59,
     "currency": "USD",
     "sparkline": [
-      36.27,
-      38.14,
       39.79,
       40.05,
       40.25,
       39.73,
-      39.86
+      39.86,
+      39.06,
+      39
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 31.12
-      },
-      {
-        "date": "2026-06-22",
-        "price": 31.68
-      },
       {
         "date": "2026-06-23",
         "price": 31.94
@@ -28562,6 +28554,14 @@
       {
         "date": "2026-07-31",
         "price": 39.86
+      },
+      {
+        "date": "2026-08-03",
+        "price": 39.06
+      },
+      {
+        "date": "2026-08-04",
+        "price": 39
       }
     ]
   },
@@ -28726,19 +28726,15 @@
     "low_52": 2.07,
     "currency": "USD",
     "sparkline": [
-      2.77,
       3.08,
       3.08,
       3.08,
+      2.88,
       2.88,
       2.88,
       2.88
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 2.63
-      },
       {
         "date": "2026-06-22",
         "price": 2.63
@@ -28854,6 +28850,10 @@
       {
         "date": "2026-07-31",
         "price": 2.88
+      },
+      {
+        "date": "2026-08-03",
+        "price": 2.88
       }
     ]
   },
@@ -28862,33 +28862,25 @@
     "name": "ZIM Integrated Shipping Services Ltd.",
     "category": "Container",
     "region": "US/Global",
-    "price": 26.07,
-    "prev_close": 25.19,
-    "daily_change": 0.88,
-    "daily_change_pct": 3.49,
-    "wow_change": 1.17,
-    "wow_change_pct": 4.7,
+    "price": 26.14,
+    "prev_close": 26.07,
+    "daily_change": 0.07,
+    "daily_change_pct": 0.27,
+    "wow_change": 2.11,
+    "wow_change_pct": 8.78,
     "high_52": 29.27,
     "low_52": 12.44,
     "currency": "USD",
     "sparkline": [
-      25.59,
-      24.9,
       24.56,
       24.03,
       24.58,
       24.73,
-      25.19
+      25.19,
+      26.07,
+      26.14
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 24.34
-      },
-      {
-        "date": "2026-06-22",
-        "price": 25.27
-      },
       {
         "date": "2026-06-23",
         "price": 25.43
@@ -29000,6 +28992,14 @@
       {
         "date": "2026-07-31",
         "price": 25.19
+      },
+      {
+        "date": "2026-08-03",
+        "price": 26.07
+      },
+      {
+        "date": "2026-08-04",
+        "price": 26.14
       }
     ]
   },
@@ -29154,12 +29154,12 @@
     "name": "Klaveness Combination Carriers ASA",
     "category": "Dry Bulk",
     "region": "Europe",
-    "price": 100.6,
+    "price": 99.5,
     "prev_close": 100.4,
-    "daily_change": 0.2,
-    "daily_change_pct": 0.2,
-    "wow_change": 2.2,
-    "wow_change_pct": 2.24,
+    "daily_change": -0.9,
+    "daily_change_pct": -0.9,
+    "wow_change": 1.1,
+    "wow_change_pct": 1.12,
     "high_52": 103.4,
     "low_52": 68.9,
     "currency": "NOK",
@@ -29170,7 +29170,7 @@
       98.5,
       99.8,
       100.4,
-      100.6
+      99.5
     ],
     "history": [
       {
@@ -29291,7 +29291,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 100.6
+        "price": 99.5
       }
     ]
   },
@@ -29300,33 +29300,25 @@
     "name": "Okeanis Eco Tankers Corp.",
     "category": "Tanker",
     "region": "US/Global",
-    "price": 61.38,
-    "prev_close": 60.33,
-    "daily_change": 1.05,
-    "daily_change_pct": 1.74,
-    "wow_change": 3.5,
-    "wow_change_pct": 6.05,
-    "high_52": 60.33,
+    "price": 60.74,
+    "prev_close": 61.38,
+    "daily_change": -0.64,
+    "daily_change_pct": -1.04,
+    "wow_change": 2.39,
+    "wow_change_pct": 4.1,
+    "high_52": 61.38,
     "low_52": 24.2,
     "currency": "USD",
     "sparkline": [
-      57.46,
-      57.88,
       57.56,
       58.35,
       58.32,
       59.86,
-      60.33
+      60.33,
+      61.38,
+      60.74
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 52.48
-      },
-      {
-        "date": "2026-06-22",
-        "price": 54.99
-      },
       {
         "date": "2026-06-23",
         "price": 56.64
@@ -29438,6 +29430,14 @@
       {
         "date": "2026-07-31",
         "price": 60.33
+      },
+      {
+        "date": "2026-08-03",
+        "price": 61.38
+      },
+      {
+        "date": "2026-08-04",
+        "price": 60.74
       }
     ]
   },
@@ -29592,13 +29592,13 @@
     "name": "Prosafe SE",
     "category": "Offshore",
     "region": "Europe",
-    "price": 6.01,
+    "price": 6,
     "prev_close": 5.58,
-    "daily_change": 0.43,
-    "daily_change_pct": 7.71,
-    "wow_change": 0.56,
-    "wow_change_pct": 10.28,
-    "high_52": 6.01,
+    "daily_change": 0.42,
+    "daily_change_pct": 7.53,
+    "wow_change": 0.55,
+    "wow_change_pct": 10.09,
+    "high_52": 6,
     "low_52": 3,
     "currency": "NOK",
     "sparkline": [
@@ -29608,7 +29608,7 @@
       5.75,
       5.63,
       5.58,
-      6.01
+      6
     ],
     "history": [
       {
@@ -29729,7 +29729,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 6.01
+        "price": 6
       }
     ]
   },
@@ -29738,12 +29738,12 @@
     "name": "DEME Group NV",
     "category": "Offshore",
     "region": "Global",
-    "price": 167.2,
+    "price": 167,
     "prev_close": 165.2,
-    "daily_change": 2,
-    "daily_change_pct": 1.21,
-    "wow_change": 1.6,
-    "wow_change_pct": 0.97,
+    "daily_change": 1.8,
+    "daily_change_pct": 1.09,
+    "wow_change": 1.4,
+    "wow_change_pct": 0.85,
     "high_52": 204,
     "low_52": 121.4,
     "currency": "EUR",
@@ -29754,7 +29754,7 @@
       164.2,
       166.8,
       165.2,
-      167.2
+      167
     ],
     "history": [
       {
@@ -29875,7 +29875,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 167.2
+        "price": 167
       }
     ]
   },
@@ -30030,33 +30030,25 @@
     "name": "Teekay Corporation Ltd.",
     "category": "Tanker",
     "region": "US/Global",
-    "price": 11.79,
-    "prev_close": 11.65,
-    "daily_change": 0.14,
-    "daily_change_pct": 1.2,
-    "wow_change": 0.59,
-    "wow_change_pct": 5.27,
+    "price": 11.4,
+    "prev_close": 11.79,
+    "daily_change": -0.39,
+    "daily_change_pct": -3.31,
+    "wow_change": 0.13,
+    "wow_change_pct": 1.15,
     "high_52": 14.15,
     "low_52": 7.41,
     "currency": "USD",
     "sparkline": [
-      11.18,
-      11.2,
       11.19,
       11.27,
       11.45,
       11.3,
-      11.65
+      11.65,
+      11.79,
+      11.4
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 11.91
-      },
-      {
-        "date": "2026-06-22",
-        "price": 12.32
-      },
       {
         "date": "2026-06-23",
         "price": 12.45
@@ -30168,6 +30160,14 @@
       {
         "date": "2026-07-31",
         "price": 11.65
+      },
+      {
+        "date": "2026-08-03",
+        "price": 11.79
+      },
+      {
+        "date": "2026-08-04",
+        "price": 11.4
       }
     ]
   },
@@ -30468,29 +30468,25 @@
     "name": "Ernst Russ AG",
     "category": "Offshore",
     "region": "Global",
-    "price": 7.6,
+    "price": 7.48,
     "prev_close": 7.52,
-    "daily_change": 0.08,
-    "daily_change_pct": 1.06,
-    "wow_change": 0.04,
-    "wow_change_pct": 0.53,
+    "daily_change": -0.04,
+    "daily_change_pct": -0.53,
+    "wow_change": -0.22,
+    "wow_change_pct": -2.86,
     "high_52": 9.2,
     "low_52": 6.48,
     "currency": "EUR",
     "sparkline": [
-      7.5,
       7.56,
       7.7,
       7.56,
       7.56,
       7.52,
-      7.52
+      7.52,
+      7.48
     ],
     "history": [
-      {
-        "date": "2026-06-22",
-        "price": 7.92
-      },
       {
         "date": "2026-06-23",
         "price": 7.94
@@ -30606,6 +30602,10 @@
       {
         "date": "2026-07-31",
         "price": 7.52
+      },
+      {
+        "date": "2026-08-04",
+        "price": 7.48
       }
     ]
   },
@@ -30760,12 +30760,12 @@
     "name": "Reach Subsea ASA",
     "category": "Offshore",
     "region": "Europe",
-    "price": 0.47,
+    "price": 0.48,
     "prev_close": 0.46,
-    "daily_change": 0.01,
-    "daily_change_pct": 2.38,
+    "daily_change": 0.02,
+    "daily_change_pct": 3.24,
     "wow_change": 0.03,
-    "wow_change_pct": 6.16,
+    "wow_change_pct": 7.05,
     "high_52": 0.71,
     "low_52": 0.41,
     "currency": "EUR",
@@ -30776,7 +30776,7 @@
       0.44,
       0.46,
       0.46,
-      0.47
+      0.48
     ],
     "history": [
       {
@@ -30897,7 +30897,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 0.47
+        "price": 0.48
       }
     ]
   },
@@ -32807,9 +32807,9 @@
     "price": 0.1,
     "prev_close": 0.09,
     "daily_change": 0,
-    "daily_change_pct": 0,
+    "daily_change_pct": 5.56,
     "wow_change": 0.01,
-    "wow_change_pct": 11.76,
+    "wow_change_pct": 7.95,
     "high_52": 0.28,
     "low_52": 0.08,
     "currency": "AUD",
@@ -32823,6 +32823,10 @@
       0.09
     ],
     "history": [
+      {
+        "date": "2026-06-23",
+        "price": 0.08
+      },
       {
         "date": "2026-06-24",
         "price": 0.08
@@ -32937,10 +32941,6 @@
       },
       {
         "date": "2026-08-03",
-        "price": 0.09
-      },
-      {
-        "date": "2026-08-04",
         "price": 0.09
       }
     ]
@@ -35581,9 +35581,9 @@
     "price": 0.06,
     "prev_close": 0.06,
     "daily_change": 0,
-    "daily_change_pct": -3.23,
+    "daily_change_pct": 0,
     "wow_change": -0.01,
-    "wow_change_pct": -11.76,
+    "wow_change_pct": -8.82,
     "high_52": 0.08,
     "low_52": 0.06,
     "currency": "EUR",
@@ -35874,25 +35874,21 @@
     "prev_close": 3.14,
     "daily_change": 0.07,
     "daily_change_pct": 2.23,
-    "wow_change": -0.21,
-    "wow_change_pct": -6.14,
+    "wow_change": -0.04,
+    "wow_change_pct": -1.23,
     "high_52": 4.38,
     "low_52": 2.98,
     "currency": "BRL",
     "sparkline": [
-      3.34,
       3.42,
       3.25,
       3.23,
       3.18,
       3.18,
-      3.14
+      3.14,
+      3.21
     ],
     "history": [
-      {
-        "date": "2026-06-22",
-        "price": 3.52
-      },
       {
         "date": "2026-06-23",
         "price": 3.59
@@ -36008,6 +36004,10 @@
       {
         "date": "2026-07-31",
         "price": 3.14
+      },
+      {
+        "date": "2026-08-04",
+        "price": 3.21
       }
     ]
   },
@@ -36162,13 +36162,13 @@
     "name": "Viking Supply Ships AB (publ)",
     "category": "Offshore",
     "region": "Global",
-    "price": 144.5,
+    "price": 150,
     "prev_close": 145,
-    "daily_change": -0.5,
-    "daily_change_pct": -0.34,
-    "wow_change": 8.5,
-    "wow_change_pct": 6.25,
-    "high_52": 147.5,
+    "daily_change": 5,
+    "daily_change_pct": 3.45,
+    "wow_change": 14,
+    "wow_change_pct": 10.29,
+    "high_52": 150,
     "low_52": 104.5,
     "currency": "SEK",
     "sparkline": [
@@ -36178,7 +36178,7 @@
       138.5,
       139,
       145,
-      144.5
+      150
     ],
     "history": [
       {
@@ -36299,7 +36299,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 144.5
+        "price": 150
       }
     ]
   },
@@ -36308,12 +36308,12 @@
     "name": "Eimskipafélag Íslands hf.",
     "category": "Ports & Logistics",
     "region": "Global",
-    "price": 254,
+    "price": 253,
     "prev_close": 252,
-    "daily_change": 2,
-    "daily_change_pct": 0.79,
-    "wow_change": 2,
-    "wow_change_pct": 0.79,
+    "daily_change": 1,
+    "daily_change_pct": 0.4,
+    "wow_change": 1,
+    "wow_change_pct": 0.4,
     "high_52": 384,
     "low_52": 220,
     "currency": "ISK",
@@ -36324,7 +36324,7 @@
       252,
       252,
       252,
-      254
+      253
     ],
     "history": [
       {
@@ -36445,7 +36445,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 254
+        "price": 253
       }
     ]
   },
@@ -36601,24 +36601,28 @@
     "category": "Ports & Logistics",
     "region": "Global",
     "price": 27.46,
-    "prev_close": 27.26,
-    "daily_change": 0.2,
-    "daily_change_pct": 0.73,
-    "wow_change": 1.44,
-    "wow_change_pct": 5.53,
+    "prev_close": 26.7,
+    "daily_change": 0.76,
+    "daily_change_pct": 2.85,
+    "wow_change": -0.72,
+    "wow_change_pct": -2.56,
     "high_52": 34.5,
     "low_52": 22.18,
     "currency": "EUR",
     "sparkline": [
+      28.36,
       28.18,
       26.02,
       27.24,
       26.68,
       26.7,
-      27.26,
       27.46
     ],
     "history": [
+      {
+        "date": "2026-06-22",
+        "price": 27.28
+      },
       {
         "date": "2026-06-23",
         "price": 27.72
@@ -36732,10 +36736,6 @@
         "price": 26.7
       },
       {
-        "date": "2026-07-31",
-        "price": 27.26
-      },
-      {
         "date": "2026-08-04",
         "price": 27.46
       }
@@ -36746,25 +36746,29 @@
     "name": "Luka Koper d.d.",
     "category": "Ports & Logistics",
     "region": "Europe",
-    "price": 128,
-    "prev_close": 127.5,
-    "daily_change": 0.5,
-    "daily_change_pct": 0.39,
-    "wow_change": 9,
-    "wow_change_pct": 7.56,
-    "high_52": 130,
+    "price": 133,
+    "prev_close": 130,
+    "daily_change": 3,
+    "daily_change_pct": 2.31,
+    "wow_change": 11.5,
+    "wow_change_pct": 9.47,
+    "high_52": 133,
     "low_52": 63,
     "currency": "EUR",
     "sparkline": [
+      118,
       121.5,
       119,
       125.5,
       130,
       130,
-      127.5,
-      128
+      133
     ],
     "history": [
+      {
+        "date": "2026-06-22",
+        "price": 100
+      },
       {
         "date": "2026-06-23",
         "price": 100
@@ -36878,12 +36882,8 @@
         "price": 130
       },
       {
-        "date": "2026-07-31",
-        "price": 127.5
-      },
-      {
         "date": "2026-08-04",
-        "price": 128
+        "price": 133
       }
     ]
   },
@@ -36892,23 +36892,23 @@
     "name": "Golden Ocean Group Limited",
     "category": "Dry Bulk",
     "region": "US/Global",
-    "price": 28.6,
-    "prev_close": 26.13,
-    "daily_change": 2.47,
-    "daily_change_pct": 9.45,
-    "wow_change": 7.44,
-    "wow_change_pct": 35.16,
+    "price": 28.36,
+    "prev_close": 28.6,
+    "daily_change": -0.25,
+    "daily_change_pct": -0.86,
+    "wow_change": 5.38,
+    "wow_change_pct": 23.39,
     "high_52": 28.83,
     "low_52": 21.07,
     "currency": "USD",
     "sparkline": [
-      21.07,
-      21.16,
       22.1,
       22.98,
       23.29,
       23.06,
-      26.13
+      26.13,
+      28.6,
+      28.35
     ],
     "history": [
       {
@@ -37010,6 +37010,14 @@
       {
         "date": "2026-07-31",
         "price": 26.13
+      },
+      {
+        "date": "2026-08-03",
+        "price": 28.6
+      },
+      {
+        "date": "2026-08-04",
+        "price": 28.35
       }
     ]
   },
@@ -37018,12 +37026,12 @@
     "name": "Dampskibsselskabet Norden A/S",
     "category": "Dry Bulk",
     "region": "Europe",
-    "price": 335.4,
+    "price": 328,
     "prev_close": 336.6,
-    "daily_change": -1.2,
-    "daily_change_pct": -0.36,
-    "wow_change": 4.6,
-    "wow_change_pct": 1.39,
+    "daily_change": -8.6,
+    "daily_change_pct": -2.55,
+    "wow_change": -2.8,
+    "wow_change_pct": -0.85,
     "high_52": 336.8,
     "low_52": 215.8,
     "currency": "DKK",
@@ -37034,7 +37042,7 @@
       329.6,
       333.6,
       336.6,
-      335.4
+      328
     ],
     "history": [
       {
@@ -37155,7 +37163,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 335.4
+        "price": 328
       }
     ]
   },
@@ -37164,12 +37172,12 @@
     "name": "Odfjell SE",
     "category": "Tanker",
     "region": "Europe",
-    "price": 115.8,
+    "price": 112.8,
     "prev_close": 114,
-    "daily_change": 1.8,
-    "daily_change_pct": 1.58,
-    "wow_change": 1.8,
-    "wow_change_pct": 1.58,
+    "daily_change": -1.2,
+    "daily_change_pct": -1.05,
+    "wow_change": -1.2,
+    "wow_change_pct": -1.05,
     "high_52": 140.4,
     "low_52": 100.6,
     "currency": "NOK",
@@ -37180,7 +37188,7 @@
       111.6,
       112.8,
       114,
-      115.8
+      112.8
     ],
     "history": [
       {
@@ -37301,7 +37309,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 115.8
+        "price": 112.8
       }
     ]
   },
@@ -37456,13 +37464,13 @@
     "name": "Höegh Autoliners ASA",
     "category": "Ports & Logistics",
     "region": "Europe",
-    "price": 169.8,
+    "price": 167,
     "prev_close": 168.5,
-    "daily_change": 1.3,
-    "daily_change_pct": 0.77,
-    "wow_change": 7.9,
-    "wow_change_pct": 4.88,
-    "high_52": 169.8,
+    "daily_change": -1.5,
+    "daily_change_pct": -0.89,
+    "wow_change": 5.1,
+    "wow_change_pct": 3.15,
+    "high_52": 168.5,
     "low_52": 85.1,
     "currency": "NOK",
     "sparkline": [
@@ -37472,7 +37480,7 @@
       166.6,
       168,
       168.5,
-      169.8
+      167
     ],
     "history": [
       {
@@ -37593,7 +37601,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 169.8
+        "price": 167
       }
     ]
   },
@@ -37748,33 +37756,25 @@
     "name": "TORM plc",
     "category": "Tanker",
     "region": "Europe",
-    "price": 30.18,
-    "prev_close": 30.31,
-    "daily_change": -0.13,
-    "daily_change_pct": -0.43,
-    "wow_change": -0.1,
-    "wow_change_pct": -0.33,
+    "price": 29.6,
+    "prev_close": 30.18,
+    "daily_change": -0.58,
+    "daily_change_pct": -1.92,
+    "wow_change": -0.2,
+    "wow_change_pct": -0.67,
     "high_52": 34.87,
     "low_52": 18.55,
     "currency": "USD",
     "sparkline": [
-      30.19,
-      30.28,
       29.8,
       29.8,
       29.83,
       30.24,
-      30.31
+      30.31,
+      30.18,
+      29.6
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 29.41
-      },
-      {
-        "date": "2026-06-22",
-        "price": 30.27
-      },
       {
         "date": "2026-06-23",
         "price": 29.14
@@ -37886,6 +37886,14 @@
       {
         "date": "2026-07-31",
         "price": 30.31
+      },
+      {
+        "date": "2026-08-03",
+        "price": 30.18
+      },
+      {
+        "date": "2026-08-04",
+        "price": 29.6
       }
     ]
   },
@@ -37894,33 +37902,25 @@
     "name": "Capital Clean Energy Carriers L.P.",
     "category": "Container",
     "region": "Europe",
-    "price": 22.91,
-    "prev_close": 22.28,
-    "daily_change": 0.62,
-    "daily_change_pct": 2.81,
-    "wow_change": -0.45,
-    "wow_change_pct": -1.91,
+    "price": 22.9,
+    "prev_close": 22.91,
+    "daily_change": -0.01,
+    "daily_change_pct": -0.04,
+    "wow_change": 0.24,
+    "wow_change_pct": 1.06,
     "high_52": 23.79,
     "low_52": 17.32,
     "currency": "USD",
     "sparkline": [
-      23,
-      23.35,
       23.65,
       22.66,
       22.72,
       22.39,
-      22.28
+      22.28,
+      22.91,
+      22.9
     ],
     "history": [
-      {
-        "date": "2026-06-18",
-        "price": 20.03
-      },
-      {
-        "date": "2026-06-22",
-        "price": 19.86
-      },
       {
         "date": "2026-06-23",
         "price": 20.21
@@ -38032,6 +38032,14 @@
       {
         "date": "2026-07-31",
         "price": 22.28
+      },
+      {
+        "date": "2026-08-03",
+        "price": 22.91
+      },
+      {
+        "date": "2026-08-04",
+        "price": 22.9
       }
     ]
   },
@@ -38186,12 +38194,12 @@
     "name": "MPC Container Ships ASA",
     "category": "Container",
     "region": "Europe",
-    "price": 24.42,
+    "price": 24.07,
     "prev_close": 24.36,
-    "daily_change": 0.06,
-    "daily_change_pct": 0.25,
-    "wow_change": 0.18,
-    "wow_change_pct": 0.74,
+    "daily_change": -0.29,
+    "daily_change_pct": -1.19,
+    "wow_change": -0.17,
+    "wow_change_pct": -0.7,
     "high_52": 27.04,
     "low_52": 15.65,
     "currency": "NOK",
@@ -38202,7 +38210,7 @@
       24.33,
       24.42,
       24.36,
-      24.42
+      24.07
     ],
     "history": [
       {
@@ -38323,7 +38331,7 @@
       },
       {
         "date": "2026-08-04",
-        "price": 24.42
+        "price": 24.07
       }
     ]
   },
