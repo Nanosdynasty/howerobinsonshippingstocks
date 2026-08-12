@@ -114,8 +114,12 @@ async function crawlerLoop() {
     return;
   }
 
-  const comp = COMPANIES[crawlerIndex];
-  crawlerIndex = (crawlerIndex + 1) % COMPANIES.length;
+  // Prioritize stocks with no valid price in cache first
+  let comp = COMPANIES.find(c => !cache.stocks[c.symbol] || cache.stocks[c.symbol].price === 0);
+  if (!comp) {
+    comp = COMPANIES[crawlerIndex];
+    crawlerIndex = (crawlerIndex + 1) % COMPANIES.length;
+  }
 
   try {
     const escapedSymbol = encodeURIComponent(comp.symbol);
@@ -210,10 +214,8 @@ async function crawlerLoop() {
           history: historyData
         };
 
-        // Persist cache every 10 crawlings to decrease disk wear
-        if (crawlerIndex % 10 === 0) {
-          fs.writeFile(CACHE_FILE, JSON.stringify(cache.stocks, null, 2), () => {});
-        }
+        // Persist cache to disk
+        fs.writeFile(CACHE_FILE, JSON.stringify(cache.stocks, null, 2), () => {});
       }
     }
   } catch (err) {

@@ -1756,12 +1756,12 @@
     "name": "BW Offshore Limited",
     "category": "Offshore",
     "region": "Europe",
-    "price": 45.8,
+    "price": 45.7,
     "prev_close": 45.55,
-    "daily_change": 0.25,
-    "daily_change_pct": 0.55,
-    "wow_change": 0.35,
-    "wow_change_pct": 0.77,
+    "daily_change": 0.15,
+    "daily_change_pct": 0.33,
+    "wow_change": 0.25,
+    "wow_change_pct": 0.55,
     "high_52": 53.3,
     "low_52": 34.05,
     "currency": "NOK",
@@ -1772,7 +1772,7 @@
       45.2,
       45.5,
       45.55,
-      45.8
+      45.7
     ],
     "history": [
       {
@@ -1893,7 +1893,7 @@
       },
       {
         "date": "2026-08-12",
-        "price": 45.8
+        "price": 45.7
       }
     ]
   },
@@ -8764,12 +8764,12 @@
     "name": "Glencore plc",
     "category": "Diversified",
     "region": "Europe",
-    "price": 575.1,
+    "price": 575.3,
     "prev_close": 574.2,
-    "daily_change": 0.9,
-    "daily_change_pct": 0.16,
-    "wow_change": 1.8,
-    "wow_change_pct": 0.31,
+    "daily_change": 1.1,
+    "daily_change_pct": 0.19,
+    "wow_change": 2,
+    "wow_change_pct": 0.35,
     "high_52": 615,
     "low_52": 284.3,
     "currency": "GBp",
@@ -8780,7 +8780,7 @@
       557,
       568.7,
       574.2,
-      575.1
+      575.3
     ],
     "history": [
       {
@@ -8901,7 +8901,7 @@
       },
       {
         "date": "2026-08-12",
-        "price": 575.1
+        "price": 575.3
       }
     ]
   },
@@ -16940,12 +16940,12 @@
     "name": "Neste Oyj",
     "category": "Diversified",
     "region": "Global",
-    "price": 29.76,
+    "price": 29.8,
     "prev_close": 29.62,
-    "daily_change": 0.14,
-    "daily_change_pct": 0.47,
-    "wow_change": 1.29,
-    "wow_change_pct": 4.53,
+    "daily_change": 0.18,
+    "daily_change_pct": 0.61,
+    "wow_change": 1.33,
+    "wow_change_pct": 4.67,
     "high_52": 33.59,
     "low_52": 14.32,
     "currency": "EUR",
@@ -16956,7 +16956,7 @@
       28.14,
       28.85,
       29.62,
-      29.76
+      29.8
     ],
     "history": [
       {
@@ -17077,7 +17077,7 @@
       },
       {
         "date": "2026-08-12",
-        "price": 29.76
+        "price": 29.8
       }
     ]
   },
@@ -38422,6 +38422,152 @@
       {
         "date": "2026-08-12",
         "price": 4.49
+      }
+    ]
+  },
+  "501833.BO": {
+    "symbol": "501833.BO",
+    "name": "Chowgule Steamships Limited",
+    "category": "Dry Bulk",
+    "region": "Asia",
+    "price": 31.48,
+    "prev_close": 23.74,
+    "daily_change": 7.74,
+    "daily_change_pct": 32.6,
+    "wow_change": 0,
+    "wow_change_pct": 0,
+    "high_52": 27.860000610351562,
+    "low_52": 17.18000030517578,
+    "currency": "INR",
+    "sparkline": [
+      22.64,
+      22.5,
+      22.12,
+      21.69,
+      21.63,
+      22.47,
+      21.98
+    ],
+    "history": [
+      {
+        "date": "2026-07-01",
+        "price": 22.8
+      },
+      {
+        "date": "2026-07-02",
+        "price": 22.22
+      },
+      {
+        "date": "2026-07-03",
+        "price": 23.18
+      },
+      {
+        "date": "2026-07-06",
+        "price": 22.67
+      },
+      {
+        "date": "2026-07-07",
+        "price": 22.42
+      },
+      {
+        "date": "2026-07-08",
+        "price": 21.99
+      },
+      {
+        "date": "2026-07-09",
+        "price": 22.65
+      },
+      {
+        "date": "2026-07-10",
+        "price": 22.15
+      },
+      {
+        "date": "2026-07-13",
+        "price": 23.88
+      },
+      {
+        "date": "2026-07-14",
+        "price": 24.22
+      },
+      {
+        "date": "2026-07-15",
+        "price": 22.83
+      },
+      {
+        "date": "2026-07-16",
+        "price": 22.87
+      },
+      {
+        "date": "2026-07-17",
+        "price": 22.93
+      },
+      {
+        "date": "2026-07-20",
+        "price": 22.57
+      },
+      {
+        "date": "2026-07-21",
+        "price": 22.95
+      },
+      {
+        "date": "2026-07-22",
+        "price": 22.62
+      },
+      {
+        "date": "2026-07-23",
+        "price": 23.21
+      },
+      {
+        "date": "2026-07-24",
+        "price": 22.05
+      },
+      {
+        "date": "2026-07-27",
+        "price": 22.89
+      },
+      {
+        "date": "2026-07-28",
+        "price": 22.31
+      },
+      {
+        "date": "2026-07-29",
+        "price": 22.3
+      },
+      {
+        "date": "2026-07-30",
+        "price": 22.15
+      },
+      {
+        "date": "2026-07-31",
+        "price": 22
+      },
+      {
+        "date": "2026-08-03",
+        "price": 22.64
+      },
+      {
+        "date": "2026-08-04",
+        "price": 22.5
+      },
+      {
+        "date": "2026-08-05",
+        "price": 22.12
+      },
+      {
+        "date": "2026-08-06",
+        "price": 21.69
+      },
+      {
+        "date": "2026-08-07",
+        "price": 21.63
+      },
+      {
+        "date": "2026-08-10",
+        "price": 22.47
+      },
+      {
+        "date": "2026-08-11",
+        "price": 21.98
       }
     ]
   }
