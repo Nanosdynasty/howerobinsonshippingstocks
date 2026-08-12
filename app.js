@@ -564,7 +564,8 @@ async function selectStock(key, isUnlisted, cardId) {
 
     document.getElementById("news-feed-container").innerHTML =
       '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--color-text-muted);font-size:0.8rem;">News unavailable for unlisted companies</div>';
-    document.getElementById("btn-export-single").disabled = true;
+    var btnSingle = document.getElementById("btn-export-single");
+    if (btnSingle) btnSingle.disabled = true;
 
     showChartPlaceholder("EXCHANGE FEED OFFLINE", "This company is unlisted. Price data cannot be fetched.", true);
   } else {
@@ -584,7 +585,8 @@ async function selectStock(key, isUnlisted, cardId) {
     var card = document.getElementById("card-" + key);
     if (card) card.classList.add("active");
 
-    document.getElementById("btn-export-single").disabled = false;
+    var btnSingle = document.getElementById("btn-export-single");
+    if (btnSingle) btnSingle.disabled = false;
 
     document.getElementById("active-name").innerText = stock.name;
     document.getElementById("active-symbol").innerText = stock.symbol;
