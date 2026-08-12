@@ -44,6 +44,7 @@ const COMPANY_OFFICIAL_IR_SITES = {
   "HSHIP.OL": "https://www.himalaya-shipping.com/investors",
   "2020.OL": "https://2020bulkers.com/investor-relations/",
   "5077.KL": "https://www.maybulk.com.my/investor-relations",
+  "501833.BO": "https://www.chowgule.co.in/chowgule-steamships-ltd/",
   "SCI.NS": "https://www.shipindia.com/investor-relations/financial-results",
   "GESHIP.NS": "https://www.greatship.com/investors.html",
   "MATS": "https://investors.matson.com/financials/quarterly-results",
