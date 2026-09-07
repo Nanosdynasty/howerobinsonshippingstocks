@@ -1213,7 +1213,7 @@ async function exportSingleCompany() {
       doc.setFont("Helvetica", "italic");
       doc.setFontSize(8);
       doc.setTextColor(150, 150, 150);
-      doc.text("Page " + i + " of " + pageCount + "  |  Maritime Stock Terminal", 40, 815);
+      doc.text("Page " + i + " of " + pageCount + "  |  Howe Robinson Shipping Stocks Terminal", 40, 815);
     }
     
     doc.save(activeStock.symbol + "_financial_report.pdf");
@@ -1407,7 +1407,7 @@ async function exportConsolidated() {
       doc.setFont("Helvetica", "italic");
       doc.setFontSize(8);
       doc.setTextColor(150, 150, 150);
-      doc.text("Page " + i + " of " + pageCount + "  |  Maritime Stock Terminal", 40, 570);
+      doc.text("Page " + i + " of " + pageCount + "  |  Howe Robinson Shipping Stocks Terminal", 40, 570);
     }
     
     function getOrdinalNum(n) {

@@ -419,5 +419,5 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`Starting Maritime Stock Terminal server at http://localhost:${PORT}`);
+  console.log(`Starting Howe Robinson Shipping Stocks Terminal server at http://localhost:${PORT}`);
 });
