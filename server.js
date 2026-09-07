@@ -147,20 +147,17 @@ async function crawlerLoop() {
       const timestamps = validHistory.map(item => item.timestamp);
 
       if (closePrices.length > 0) {
-        const currentPrice = (meta.regularMarketPrice !== undefined && meta.regularMarketPrice !== null && meta.regularMarketPrice > 0)
-          ? meta.regularMarketPrice
-          : closePrices[closePrices.length - 1];
+        const currentPrice = meta.regularMarketPrice || closePrices[closePrices.length - 1];
         
-        let prevClose = meta.chartPreviousClose || meta.previousClose || meta.regularMarketPreviousClose;
-        if (!prevClose || prevClose === 0) {
-          const lastClose = closePrices[closePrices.length - 1];
-          if (Math.abs(currentPrice - lastClose) > 0.001) {
-            prevClose = lastClose;
-          } else if (closePrices.length > 1) {
-            prevClose = closePrices[closePrices.length - 2];
-          } else {
-            prevClose = currentPrice;
-          }
+        let prevClose = null;
+        const lastClose = closePrices[closePrices.length - 1];
+        
+        if (Math.abs(currentPrice - lastClose) > 0.001) {
+          prevClose = lastClose;
+        } else if (closePrices.length > 1) {
+          prevClose = closePrices[closePrices.length - 2];
+        } else {
+          prevClose = currentPrice;
         }
 
         const dailyChange = currentPrice - prevClose;
@@ -184,11 +181,6 @@ async function crawlerLoop() {
         const low_52 = Math.min(...closePrices);
         const high_52 = Math.max(...closePrices);
 
-        const formatVal = (v) => {
-          if (v === undefined || v === null || isNaN(v)) return 0;
-          return (Math.abs(v) > 0 && Math.abs(v) < 1) ? Number(v.toFixed(4)) : Number(v.toFixed(2));
-        };
-
         // Compile history of last 30 trading days
         const historyData = [];
         const startIndex = Math.max(0, closePrices.length - 30);
@@ -200,7 +192,7 @@ async function crawlerLoop() {
             const dateStr = dt.getUTCFullYear() + '-' + 
                             String(dt.getUTCMonth() + 1).padStart(2, '0') + '-' + 
                             String(dt.getUTCDate()).padStart(2, '0');
-            historyData.push({ date: dateStr, price: formatVal(p) });
+            historyData.push({ date: dateStr, price: Number(p.toFixed(2)) });
           }
         }
 
@@ -209,16 +201,16 @@ async function crawlerLoop() {
           name: comp.name,
           category: comp.category,
           region: comp.region,
-          price: formatVal(currentPrice),
-          prev_close: formatVal(prevClose),
-          daily_change: formatVal(dailyChange),
+          price: Number(currentPrice.toFixed(2)),
+          prev_close: Number(prevClose.toFixed(2)),
+          daily_change: Number(dailyChange.toFixed(2)),
           daily_change_pct: Number(dailyChangePct.toFixed(2)),
-          wow_change: formatVal(wowChange),
+          wow_change: Number(wowChange.toFixed(2)),
           wow_change_pct: Number(wowChangePct.toFixed(2)),
-          high_52: formatVal(high_52),
-          low_52: formatVal(low_52),
+          high_52: Number(high_52.toFixed(2)),
+          low_52: Number(low_52.toFixed(2)),
           currency: currency,
-          sparkline: closePrices.slice(-7).map(p => formatVal(p)),
+          sparkline: closePrices.slice(-7).map(p => Number(p.toFixed(2))),
           history: historyData
         };
 
