@@ -1,6 +1,6 @@
 {
-  "name": "shipping-stock-tracker",
-  "version": "1.0.0",
+  "name": "howerobinsonshippingstocks",
+  "version": "1.0.1",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
