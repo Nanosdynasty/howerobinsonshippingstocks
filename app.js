@@ -222,6 +222,13 @@ function getTradingViewSymbol(yfSymbol) {
   if (parts.length === 1) return yfSymbol;
   const ticker = parts[0];
   const suffix = parts[1].toUpperCase();
+
+  // Format HKEX symbols with 5-digit padding (e.g. 2343 -> HKEX:02343)
+  if (suffix === 'HK') {
+    var padded = ticker.padStart(5, '0');
+    return 'HKEX:' + padded;
+  }
+
   const map = {
     'NS': 'NSE', 'BO': 'BSE', 'KL': 'MYX', 'HK': 'HKEX', 'TW': 'TWSE',
     'TWO': 'TPEX', 'T': 'TSE', 'DE': 'XETR', 'SI': 'SGX', 'VN': 'HOSE',
@@ -920,15 +927,18 @@ function switchChartTab(tab) {
 
   if (tab === "historical") {
     if (tabBtns[0]) tabBtns[0].classList.add("active");
-    histEl.style.display = "block";
-    tvEl.style.display = "none";
+    if (histEl) histEl.style.display = "block";
+    if (tvEl) tvEl.style.display = "none";
     if (historyChart) {
       historyChart.resize();
     }
   } else {
     if (tabBtns[1]) tabBtns[1].classList.add("active");
-    histEl.style.display = "none";
-    tvEl.style.display = "block";
+    if (histEl) histEl.style.display = "none";
+    if (tvEl) tvEl.style.display = "block";
+    if (activeStock && activeStock.symbol) {
+      loadTradingViewWidgets(activeStock.symbol);
+    }
   }
 }
 
