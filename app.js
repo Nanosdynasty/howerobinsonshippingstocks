@@ -319,17 +319,15 @@ async function fetchData() {
     if (stocksData && stocksData.length > 0) {
       var first = stocksData.find(function(s) { return s.price > 0; }) || stocksData[0];
       
-      // Collapse all categories by default, except the active stock's category
-      var activeCatId = catId(first.category);
+      // Collapse all categories by default on initial landing page load
       collapsedCategories = {};
       stocksData.forEach(function(s) {
         collapsedCategories[catId(s.category)] = true;
       });
-      collapsedCategories[activeCatId] = false;
       
       renderStockCards();
       renderTickerTape();
-      selectStock(first.symbol, false);
+      selectStock(first.symbol, false, null, true);
     } else {
       document.getElementById("stock-list").innerHTML = '<p style="padding:16px;color:var(--color-danger);">No shipping stocks found.</p>';
     }
@@ -534,7 +532,7 @@ function showLoader(show) {
 }
 
 // ===== STOCK SELECTION =====
-async function selectStock(key, isUnlisted, cardId) {
+async function selectStock(key, isUnlisted, cardId, isInitialLoad) {
   document.querySelectorAll(".stock-card").forEach(function(c) { c.classList.remove("active"); });
 
   if (isUnlisted) {
@@ -573,11 +571,13 @@ async function selectStock(key, isUnlisted, cardId) {
     var stock = stocksData.find(function(s) { return s.symbol === key; });
     if (!stock) return;
 
-    // Auto-expand category group of the selected stock if currently collapsed
-    var safeId = catId(stock.category);
-    if (collapsedCategories[safeId] === true) {
-      collapsedCategories[safeId] = false;
-      renderStockCards();
+    // Auto-expand category group of the selected stock if currently collapsed (unless initial page load)
+    if (!isInitialLoad) {
+      var safeId = catId(stock.category);
+      if (collapsedCategories[safeId] === true) {
+        collapsedCategories[safeId] = false;
+        renderStockCards();
+      }
     }
 
     activeStock = JSON.parse(JSON.stringify(stock));
