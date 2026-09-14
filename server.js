@@ -339,49 +339,77 @@ const server = http.createServer(async (req, res) => {
     try {
       // Find company name for richer search
       const comp = COMPANIES.find(c => c.symbol === symbol);
-      const companyName = comp ? encodeURIComponent(comp.name) : encodeURIComponent(symbol);
-      const rssUrl = `https://news.google.com/rss/search?q=${companyName}+shipping+stock&hl=en-US&gl=US&ceid=US:en`;
-      const rssXml = await fetchHttpsRaw(rssUrl);
+      const companyName = comp ? comp.name : symbol;
+      
+      // Query Google News RSS with recency filter (when:1y)
+      let query = encodeURIComponent(`${companyName} shipping stock when:1y`);
+      let rssUrl = `https://news.google.com/rss/search?q=${query}&hl=en-US&gl=US&ceid=US:en`;
+      let rssXml = await fetchHttpsRaw(rssUrl);
 
-      // Parse RSS XML with regex
-      const items = [];
-      const itemRegex = /<item>(.*?)<\/item>/gs;
-      let match;
-      while ((match = itemRegex.exec(rssXml)) !== null && items.length < 8) {
-        const itemXml = match[1];
-        const titleMatch = itemXml.match(/<title><!\[CDATA\[(.*?)\]\]><\/title>/) || itemXml.match(/<title>(.*?)<\/title>/);
-        const linkMatch = itemXml.match(/<link>(.*?)<\/link>/) || itemXml.match(/<link\/>(\S+)/);
-        const pubDateMatch = itemXml.match(/<pubDate>(.*?)<\/pubDate>/);
-        const sourceMatch = itemXml.match(/<source[^>]*>(.*?)<\/source>/) || itemXml.match(/<source[^>]*><!\[CDATA\[(.*?)\]\]><\/source>/);
-        const descMatch = itemXml.match(/<description>(.*?)<\/description>/gs) || itemXml.match(/<description><!\[CDATA\[(.*?)\]\]><\/description>/gs);
+      const parseRssItems = (xml) => {
+        const parsed = [];
+        const itemRegex = /<item>(.*?)<\/item>/gs;
+        let match;
+        while ((match = itemRegex.exec(xml)) !== null) {
+          const itemXml = match[1];
+          const titleMatch = itemXml.match(/<title><!\[CDATA\[(.*?)\]\]><\/title>/) || itemXml.match(/<title>(.*?)<\/title>/);
+          const linkMatch = itemXml.match(/<link>(.*?)<\/link>/) || itemXml.match(/<link\/>(\S+)/);
+          const pubDateMatch = itemXml.match(/<pubDate>(.*?)<\/pubDate>/);
+          const sourceMatch = itemXml.match(/<source[^>]*>(.*?)<\/source>/) || itemXml.match(/<source[^>]*><!\[CDATA\[(.*?)\]\]><\/source>/);
+          const descMatch = itemXml.match(/<description>(.*?)<\/description>/gs) || itemXml.match(/<description><!\[CDATA\[(.*?)\]\]><\/description>/gs);
 
-        let title = titleMatch ? titleMatch[1].trim() : 'No title';
-        title = title.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
-        title = title.replace(/^<!\[CDATA\[(.*?)\]\]>$/g, '$1');
+          let title = titleMatch ? titleMatch[1].trim() : 'No title';
+          title = title.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+          title = title.replace(/^<!\[CDATA\[(.*?)\]\]>$/g, '$1');
 
-        let description = '';
-        if (descMatch) {
-          description = descMatch[0].replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&apos;/g, "'").trim();
-          description = description.replace(/^<!\[CDATA\[(.*?)\]\]>$/g, '$1');
-          if (description.length > 180) {
-            description = description.substring(0, 177) + '...';
+          let description = '';
+          if (descMatch) {
+            description = descMatch[0].replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&apos;/g, "'").trim();
+            description = description.replace(/^<!\[CDATA\[(.*?)\]\]>$/g, '$1');
+            if (description.length > 180) {
+              description = description.substring(0, 177) + '...';
+            }
           }
-        }
 
-        items.push({
-          title: title,
-          link: linkMatch ? linkMatch[1].trim() : '',
-          pubDate: pubDateMatch ? pubDateMatch[1].trim() : '',
-          source: sourceMatch ? sourceMatch[1].replace(/<[^>]*>/g, '').trim() : 'Unknown',
-          description: description || title // fallback to title if empty
-        });
+          const rawDate = pubDateMatch ? pubDateMatch[1].trim() : '';
+          const ts = rawDate ? Date.parse(rawDate) : 0;
+
+          parsed.push({
+            title: title,
+            link: linkMatch ? linkMatch[1].trim() : '',
+            pubDate: rawDate,
+            timestamp: isNaN(ts) ? 0 : ts,
+            source: sourceMatch ? sourceMatch[1].replace(/<[^>]*>/g, '').trim() : 'News',
+            description: description || title
+          });
+        }
+        return parsed;
+      };
+
+      let items = parseRssItems(rssXml);
+
+      // Fallback query if no recent items found
+      if (items.length === 0) {
+        query = encodeURIComponent(`${companyName} shipping`);
+        rssUrl = `https://news.google.com/rss/search?q=${query}&hl=en-US&gl=US&ceid=US:en`;
+        rssXml = await fetchHttpsRaw(rssUrl);
+        items = parseRssItems(rssXml);
       }
 
+      // Sort items descending by publication timestamp (newest first on top)
+      items.sort((a, b) => b.timestamp - a.timestamp);
+
+      // Filter out outdated news older than 365 days if recent articles exist
+      const currentMs = Date.now();
+      const oneYearMs = 365 * 24 * 60 * 60 * 1000;
+      const recentOnly = items.filter(item => item.timestamp > 0 && (currentMs - item.timestamp) <= oneYearMs);
+      const finalItems = (recentOnly.length > 0 ? recentOnly : items).slice(0, 8);
+
       // Cache the result
-      newsCache[symbol] = { data: items, timestamp: now };
+      newsCache[symbol] = { data: finalItems, timestamp: now };
 
       res.writeHead(200, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify(items));
+      res.end(JSON.stringify(finalItems));
     } catch (err) {
       console.error(`News fetch error for ${symbol}:`, err.message);
       res.writeHead(200, { 'Content-Type': 'application/json' });

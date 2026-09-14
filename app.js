@@ -942,17 +942,25 @@ async function loadCompanyNews(symbol) {
       return;
     }
 
+    // Sort newest-first on top
+    news.sort(function(a, b) {
+      var tsA = a.timestamp || (a.pubDate ? Date.parse(a.pubDate) : 0);
+      var tsB = b.timestamp || (b.pubDate ? Date.parse(b.pubDate) : 0);
+      return tsB - tsA;
+    });
+
     container.innerHTML = "";
     news.forEach(function(item) {
       var div = document.createElement("div");
       div.className = "news-item";
-      var pubDate = item.pubDate ? new Date(item.pubDate).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) : "";
+      var ts = item.timestamp || (item.pubDate ? Date.parse(item.pubDate) : 0);
+      var pubDate = ts ? new Date(ts).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) : "";
 
       div.innerHTML =
         '<a class="news-title" href="' + item.link + '" target="_blank" rel="noopener">' + item.title + '</a>' +
         '<div class="news-meta">' +
           '<span>' + (item.source || "News") + '</span>' +
-          '<span>' + pubDate + '</span>' +
+          '<span style="color:var(--color-primary);font-weight:600;">' + pubDate + '</span>' +
         '</div>';
       container.appendChild(div);
     });
