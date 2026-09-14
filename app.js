@@ -901,17 +901,32 @@ async function loadHistoryChart(symbol) {
 function loadTradingViewWidgets(symbol) {
   var tvSymbol = getTradingViewSymbol(symbol);
   var chartContainer = document.getElementById("tradingview-chart-container");
-  chartContainer.innerHTML = '<div id="tv_chart_inner" style="width:100%;height:100%;"></div>';
+  
+  var cleanSymbol = tvSymbol ? tvSymbol.replace(':', '-') : symbol;
+  var tvDirectUrl = `https://www.tradingview.com/symbols/${cleanSymbol}/`;
+
+  chartContainer.innerHTML = 
+    '<div style="display:flex;align-items:center;justify-content:space-between;padding:6px 12px;background:rgba(0,130,240,0.1);border-bottom:1px solid rgba(0,130,240,0.2);font-size:0.75rem;height:32px;">' +
+      '<span style="color:var(--color-text-muted);">Symbol: <strong style="color:var(--color-primary);font-family:\'JetBrains Mono\',monospace;">' + tvSymbol + '</strong></span>' +
+      '<a href="' + tvDirectUrl + '" target="_blank" rel="noopener" style="color:var(--color-primary);text-decoration:none;font-weight:600;display:flex;align-items:center;gap:4px;">' +
+        'Open Full Workstation on TradingView ↗' +
+      '</a>' +
+    '</div>' +
+    '<div id="tv_chart_inner" style="width:100%;height:calc(100% - 32px);"></div>';
 
   if (typeof TradingView !== "undefined") {
-    new TradingView.widget({
-      width: "100%", height: "100%",
-      symbol: tvSymbol, interval: "D",
-      timezone: "Etc/UTC", theme: "dark", style: "1",
-      locale: "en", enable_publishing: false,
-      hide_side_toolbar: false, allow_symbol_change: false,
-      container_id: "tv_chart_inner"
-    });
+    try {
+      new TradingView.widget({
+        width: "100%", height: "100%",
+        symbol: tvSymbol, interval: "D",
+        timezone: "Etc/UTC", theme: "dark", style: "1",
+        locale: "en", enable_publishing: false,
+        hide_side_toolbar: false, allow_symbol_change: false,
+        container_id: "tv_chart_inner"
+      });
+    } catch (err) {
+      console.warn("TradingView widget init error:", err);
+    }
   }
 }
 
