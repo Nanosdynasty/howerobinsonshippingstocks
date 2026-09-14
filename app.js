@@ -215,19 +215,28 @@ function catId(cat) {
   return cat.replace(/[^a-zA-Z0-9]/g, '_');
 }
 
+const TRADINGVIEW_EXPLICIT_MAP = {
+  "5077.KL": "MYX:MAYBULK",        // Maybulk Berhad
+  "2343.HK": "HKEX:2343",           // Pacific Basin Shipping Ltd
+  "028670.KS": "KRX:028670",        // Pan Ocean Co., Ltd.
+  "CHOWGULSTM.BO": "BSE:CHOWGULSTM",// Chowgule Steamships
+  "SCI.NS": "NSE:SCI",              // Shipping Corporation of India
+  "GESHIP.NS": "NSE:GESHIP",        // Great Eastern Shipping
+  "MAERSK-B.CO": "CPH:MAERSK_B",    // A.P. Moller - Maersk
+  "HSHIP.OL": "OSE:HSHIP",          // Himalaya Shipping
+  "2020.OL": "OSE:2020"             // 2020 Bulkers
+};
+
 // Convert Yahoo Finance symbols to TradingView symbols
 function getTradingViewSymbol(yfSymbol) {
   if (!yfSymbol) return "";
+  if (TRADINGVIEW_EXPLICIT_MAP[yfSymbol]) {
+    return TRADINGVIEW_EXPLICIT_MAP[yfSymbol];
+  }
   const parts = yfSymbol.split('.');
   if (parts.length === 1) return yfSymbol;
   const ticker = parts[0];
   const suffix = parts[1].toUpperCase();
-
-  // Format HKEX symbols with 5-digit padding (e.g. 2343 -> HKEX:02343)
-  if (suffix === 'HK') {
-    var padded = ticker.padStart(5, '0');
-    return 'HKEX:' + padded;
-  }
 
   const map = {
     'NS': 'NSE', 'BO': 'BSE', 'KL': 'MYX', 'HK': 'HKEX', 'TW': 'TWSE',
