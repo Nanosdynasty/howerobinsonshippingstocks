@@ -914,6 +914,26 @@ function loadTradingViewWidgets(symbol) {
   var cleanSymbol = tvSymbol ? tvSymbol.replace(':', '-') : symbol;
   var tvDirectUrl = `https://www.tradingview.com/symbols/${cleanSymbol}/`;
 
+  // Regional exchange stocks (e.g. .HK, .KL, .KS, .BO, .NS, .CO) are restricted by TradingView's free iframe
+  var isRegionalExchange = symbol.includes('.');
+
+  if (isRegionalExchange) {
+    chartContainer.innerHTML = 
+      '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:14px;padding:24px;text-align:center;background:rgba(4, 7, 15, 0.8);border-radius:6px;border:1px solid rgba(0, 130, 240, 0.15);">' +
+        '<div style="font-size:0.85rem;color:var(--color-primary);font-weight:700;letter-spacing:1px;text-transform:uppercase;">' +
+          'TECHNICAL ANALYSIS WORKSTATION' +
+        '</div>' +
+        '<div style="font-size:0.8rem;color:var(--color-text-muted);max-width:420px;line-height:1.5;">' +
+          'Direct embedded chart stream is restricted by TradingView for regional exchange symbol <strong>' + symbol + '</strong> (' + tvSymbol + ').' +
+        '</div>' +
+        '<a href="' + tvDirectUrl + '" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg, #0082f0, #0056b3);color:#ffffff;padding:9px 18px;border-radius:4px;font-size:0.8rem;font-weight:700;text-decoration:none;box-shadow:0 4px 12px rgba(0,130,240,0.3);transition:all 0.2s ease;">' +
+          'Open ' + symbol + ' Workstation on TradingView ↗' +
+        '</a>' +
+      '</div>';
+    return;
+  }
+
+  // Native TradingView widget for supported US exchange symbols
   chartContainer.innerHTML = 
     '<div style="display:flex;align-items:center;justify-content:space-between;padding:6px 12px;background:rgba(0,130,240,0.1);border-bottom:1px solid rgba(0,130,240,0.2);font-size:0.75rem;height:32px;">' +
       '<span style="color:var(--color-text-muted);">Symbol: <strong style="color:var(--color-primary);font-family:\'JetBrains Mono\',monospace;">' + tvSymbol + '</strong></span>' +
