@@ -89,41 +89,47 @@ function renderQtrReports(selectedStock) {
   var name = selectedStock.name || sym;
   if (tagEl) tagEl.innerText = sym;
 
-  // The last 4 Quarters (latest first): 2026 Q1, 2025 Q4, 2025 Q3, 2025 Q2
-  var quarters = [
-    {
-      qLabel: "2026 Q1",
-      badgeColor: "#00f2fe",
-      title: `${sym} 2026 Q1 Financial Report`,
-      desc: "Three Months Ended March 31, 2026",
-      isLatest: true,
-      url: getExactReportUrl(sym, "2026 Q1", name)
-    },
-    {
-      qLabel: "2025 Q4",
-      badgeColor: "#0082f0",
-      title: `${sym} 2025 Q4 & Annual Report`,
-      desc: "Fourth Quarter & Full Year Ended Dec 31, 2025",
-      isLatest: false,
-      url: getExactReportUrl(sym, "2025 Q4", name)
-    },
-    {
-      qLabel: "2025 Q3",
-      badgeColor: "#0082f0",
-      title: `${sym} 2025 Q3 Financial Report`,
-      desc: "Three Months Ended September 30, 2025",
-      isLatest: false,
-      url: getExactReportUrl(sym, "2025 Q3", name)
-    },
-    {
-      qLabel: "2025 Q2",
-      badgeColor: "#0082f0",
-      title: `${sym} 2025 Q2 Financial Report`,
-      desc: "Three Months Ended June 30, 2025",
-      isLatest: false,
-      url: getExactReportUrl(sym, "2025 Q2", name)
-    }
-  ];
+  // Dynamically compute the 4 latest available financial quarters (auto-updates in the future)
+  var now = new Date();
+  var year = now.getFullYear();
+  var month = now.getMonth() + 1;
+
+  var latestQ, latestYr;
+  if (month >= 1 && month <= 3) {
+    latestQ = 4; latestYr = year - 1;
+  } else if (month >= 4 && month <= 6) {
+    latestQ = 1; latestYr = year;
+  } else if (month >= 7 && month <= 9) {
+    latestQ = 2; latestYr = year;
+  } else {
+    latestQ = 3; latestYr = year;
+  }
+
+  var quarters = [];
+  var q = latestQ;
+  var y = latestYr;
+
+  var qDetails = {
+    1: { name: "Q1 Financial Report", desc: "Three Months Ended March 31," },
+    2: { name: "Q2 Financial Report", desc: "Three Months Ended June 30," },
+    3: { name: "Q3 Financial Report", desc: "Three Months Ended September 30," },
+    4: { name: "Q4 & Annual Report", desc: "Fourth Quarter & Full Year Ended Dec 31," }
+  };
+
+  for (var i = 0; i < 4; i++) {
+    var qLabel = y + " Q" + q;
+    var info = qDetails[q];
+    quarters.push({
+      qLabel: qLabel,
+      badgeColor: i === 0 ? "#00f2fe" : "#0082f0",
+      title: `${sym} ${qLabel} ${info.name}`,
+      desc: `${info.desc} ${y}`,
+      isLatest: i === 0,
+      url: getExactReportUrl(sym, qLabel, name)
+    });
+    q--;
+    if (q < 1) { q = 4; y--; }
+  }
 
   var html = '';
   quarters.forEach(function(q) {
