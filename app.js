@@ -323,7 +323,10 @@ async function fetchData() {
     if (unlistedTab) unlistedTab.innerText = "Unlisted (" + unlistedData.length + ")";
 
     if (stocksData && stocksData.length > 0) {
-      var first = stocksData.find(function(s) { return s.price > 0; }) || stocksData[0];
+      // Default to Pacific Basin Shipping Ltd (2343.HK) on initial landing page load
+      var defaultStock = stocksData.find(function(s) { return s.symbol === '2343.HK'; }) ||
+                         stocksData.find(function(s) { return s.price > 0; }) ||
+                         stocksData[0];
       
       // Collapse all categories by default on initial landing page load
       collapsedCategories = {};
@@ -333,7 +336,7 @@ async function fetchData() {
       
       renderStockCards();
       renderTickerTape();
-      selectStock(first.symbol, false, null, true);
+      selectStock(defaultStock.symbol, false, null, true);
     } else {
       document.getElementById("stock-list").innerHTML = '<p style="padding:16px;color:var(--color-danger);">No shipping stocks found.</p>';
     }
